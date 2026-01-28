@@ -21,7 +21,35 @@ test.describe("Quiz Selection Page", () => {
   });
 
   test("should navigate to quiz config when clicking start", async ({ page }) => {
-    await page.getByRole("link", { name: /start quiz/i }).first().click();
+    // Wait for quiz cards to be visible first
+    await expect(page.getByText(/what is a vc fund/i).first()).toBeVisible();
+    
+    // Find all "Start Quiz" links and filter to get one that goes to a specific quiz (not /quiz)
+    const allStartLinks = page.getByRole("link", { name: /start quiz|retake quiz/i });
+    const count = await allStartLinks.count();
+    
+    // Find a link that has an href pointing to a specific quiz (contains /quiz/ with a slug after)
+    let startLink = null;
+    for (let i = 0; i < count; i++) {
+      const link = allStartLinks.nth(i);
+      const href = await link.getAttribute("href");
+      if (href && href.match(/\/quiz\/[^/]+$/) && href !== "/quiz") {
+        startLink = link;
+        break;
+      }
+    }
+    
+    // Verify we found a valid quiz link
+    expect(startLink).toBeTruthy();
+    const href = await startLink!.getAttribute("href");
+    expect(href).toMatch(/\/quiz\/[^/]+$/);
+    
+    // Click and wait for navigation
+    await Promise.all([
+      page.waitForURL(/\/quiz\/[^/]+$/, { timeout: 10000 }),
+      startLink!.click()
+    ]);
+    
     // Verify URL is properly formed (not containing template literal syntax)
     const currentUrl = page.url();
     expect(currentUrl).toContain("/quiz/");
@@ -32,7 +60,8 @@ test.describe("Quiz Selection Page", () => {
 
 test.describe("Quiz Configuration Page", () => {
   test("should display question count options", async ({ page }) => {
-    await page.goto("/quiz/what-is-a-vc-fund");
+    // Use a quiz with 25+ questions to ensure Standard option is available
+    await page.goto("/quiz/data-providers");
     
     await expect(page.getByText(/quick/i).first()).toBeVisible();
     await expect(page.getByText(/standard/i).first()).toBeVisible();
@@ -49,6 +78,8 @@ test.describe("Quiz Configuration Page", () => {
     await page.goto("/quiz/what-is-a-vc-fund");
     
     await page.getByRole("button", { name: /start quiz/i }).click();
+    // Wait for navigation to complete
+    await page.waitForURL(/\/play/, { timeout: 5000 });
     await expect(page.url()).toContain("/play");
   });
 });

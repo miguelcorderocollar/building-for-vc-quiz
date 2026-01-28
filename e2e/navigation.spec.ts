@@ -3,14 +3,21 @@ import { test, expect } from "@playwright/test";
 test.describe("Navigation", () => {
   test("should navigate between pages using header links", async ({ page }) => {
     await page.goto("/");
+    
+    // Check viewport width - skip on mobile (mobile navigation tested separately)
+    const viewport = page.viewportSize();
+    if (viewport && viewport.width < 768) {
+      test.skip(true, "Mobile navigation tested in Responsive Navigation suite");
+      return;
+    }
 
-    // Navigate to Quizzes via header
-    await page.locator("header").getByRole("link", { name: /quizzes/i }).click();
-    await expect(page).toHaveURL("/quiz");
+    // Desktop navigation
+    await page.locator("header nav").getByRole("link", { name: /quizzes/i }).click();
+    await expect(page).toHaveURL("/quiz", { timeout: 5000 });
 
     // Navigate to Results via header
-    await page.locator("header").getByRole("link", { name: /my results/i }).click();
-    await expect(page).toHaveURL("/results");
+    await page.locator("header nav").getByRole("link", { name: /my results/i }).click();
+    await expect(page).toHaveURL("/results", { timeout: 5000 });
 
     // Navigate back to home via logo
     await page.goto("/");
