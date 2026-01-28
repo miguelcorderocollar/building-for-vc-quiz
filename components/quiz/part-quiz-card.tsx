@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { BookOpen, Cpu, Wrench } from "lucide-react";
 import { getQuizzesByPart } from "@/data/questions";
 import { getQuizResults } from "@/lib/storage";
+import type { QuizResult } from "@/types/quiz";
 
 interface PartQuizCardProps {
   part: 1 | 2 | 3;
@@ -40,14 +42,25 @@ export function PartQuizCard({ part }: PartQuizCardProps) {
   const partQuizzes = getQuizzesByPart(part);
   const totalQuestions = partQuizzes.reduce((sum, q) => sum + q.totalQuestions, 0);
   
-  // Get best score for this part's quiz
-  const allResults = getQuizResults();
-  const partResults = allResults.filter((r) => r.quizId === `part-${part}`);
-  const bestResult = partResults.length > 0
-    ? partResults.reduce((best, curr) => 
+  // Use state to prevent hydration mismatch - only read from localStorage after mount
+  const [bestResult, setBestResult] = useState<QuizResult | null>(null);
+  const [partResults, setPartResults] = useState<QuizResult[]>([]);
+
+  useEffect(() => {
+    // Get best score for this part's quiz
+    // Synchronizing with localStorage (external system) - valid use of useEffect
+    const allResults = getQuizResults();
+    const filteredResults = allResults.filter((r) => r.quizId === `part-${part}`);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Reading from localStorage (external system)
+    setPartResults(filteredResults);
+    
+    if (filteredResults.length > 0) {
+      const best = filteredResults.reduce((best, curr) => 
         curr.percentage > best.percentage ? curr : best
-      )
-    : null;
+      );
+      setBestResult(best);
+    }
+  }, [part]);
 
   return (
     <Card className="relative overflow-hidden bg-card/50 hover:bg-card/80 transition-colors">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,7 +14,14 @@ interface QuizCardProps {
 }
 
 export function QuizCard({ quiz }: QuizCardProps) {
-  const [metadata] = useState<QuizMetadata | null>(() => getQuizMetadata(quiz.id));
+  // Use state to prevent hydration mismatch - only read from localStorage after mount
+  const [metadata, setMetadata] = useState<QuizMetadata | null>(null);
+
+  useEffect(() => {
+    // Synchronizing with localStorage (external system) - valid use of useEffect
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Reading from localStorage (external system)
+    setMetadata(getQuizMetadata(quiz.id));
+  }, [quiz.id]);
 
   return (
     <Card className="p-6 hover:shadow-lg transition-shadow">

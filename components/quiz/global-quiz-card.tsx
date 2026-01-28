@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,18 +8,30 @@ import { Button } from "@/components/ui/button";
 import { Globe, Sparkles } from "lucide-react";
 import { getTotalQuestions } from "@/data/questions";
 import { getQuizResults } from "@/lib/storage";
+import type { QuizResult } from "@/types/quiz";
 
 export function GlobalQuizCard() {
   const totalQuestions = getTotalQuestions();
   
-  // Get best score for global quiz
-  const allResults = getQuizResults();
-  const globalResults = allResults.filter((r) => r.quizId === "global");
-  const bestResult = globalResults.length > 0
-    ? globalResults.reduce((best, curr) => 
+  // Use state to prevent hydration mismatch - only read from localStorage after mount
+  const [bestResult, setBestResult] = useState<QuizResult | null>(null);
+  const [globalResults, setGlobalResults] = useState<QuizResult[]>([]);
+
+  useEffect(() => {
+    // Get best score for global quiz
+    // Synchronizing with localStorage (external system) - valid use of useEffect
+    const allResults = getQuizResults();
+    const filteredResults = allResults.filter((r) => r.quizId === "global");
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Reading from localStorage (external system)
+    setGlobalResults(filteredResults);
+    
+    if (filteredResults.length > 0) {
+      const best = filteredResults.reduce((best, curr) => 
         curr.percentage > best.percentage ? curr : best
-      )
-    : null;
+      );
+      setBestResult(best);
+    }
+  }, []);
 
   return (
     <Card className="relative overflow-hidden border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-background to-primary/10">
