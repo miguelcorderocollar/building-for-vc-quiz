@@ -77,7 +77,7 @@ function normalizeHashForMatching(hash: string): string[] {
   // Helper function to apply apostrophe fixes
   const fixApostrophes = (str: string): string[] => {
     const results = [str];
-    const apostrophePatterns = [
+    const apostrophePatterns: [RegExp, string][] = [
       [/dont/g, "don't"],
       [/wont/g, "won't"],
       [/cant/g, "can't"],
@@ -103,7 +103,7 @@ function normalizeHashForMatching(hash: string): string[] {
   };
   
   // Start with base hash and apply apostrophes first
-  let currentVariations = [hash, ...fixApostrophes(hash)];
+  const currentVariations = [hash, ...fixApostrophes(hash)];
   
   // Pattern 1: mistake-1-xxx -> mistake-#1:-xxx (numbered sections)
   // Apply to both original and apostrophe-fixed versions
@@ -426,7 +426,7 @@ async function validateUrls(): Promise<ValidationResult> {
 
     try {
       data = JSON.parse(content);
-    } catch (e) {
+    } catch {
       result.errors.push({
         questionId: "N/A",
         url: file,

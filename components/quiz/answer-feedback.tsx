@@ -1,7 +1,6 @@
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, XCircle, ExternalLink } from "lucide-react";
-import Link from "next/link";
 
 interface AnswerFeedbackProps {
   isCorrect: boolean;

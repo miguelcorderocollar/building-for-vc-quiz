@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import type { QuizResult } from "@/types/quiz";
 
 interface ResultCardProps {

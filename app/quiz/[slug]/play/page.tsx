@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { QuizProgress } from "@/components/quiz/quiz-progress";
 import { QuestionCard } from "@/components/quiz/question-card";
@@ -22,8 +22,7 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-export default function QuizPlayPage({ params }: PageProps) {
-  const { slug } = use(params);
+function QuizPlayContent({ slug }: { slug: string }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const quiz = getQuizById(slug);
@@ -263,5 +262,18 @@ export default function QuizPlayPage({ params }: PageProps) {
         </DialogContent>
       </Dialog>
     </>
+  );
+}
+
+export default function QuizPlayPage({ params }: PageProps) {
+  const { slug } = use(params);
+  return (
+    <Suspense fallback={
+      <div className="container mx-auto px-4 md:px-6 py-12 text-center">
+        <p className="text-muted-foreground">Loading quiz...</p>
+      </div>
+    }>
+      <QuizPlayContent slug={slug} />
+    </Suspense>
   );
 }

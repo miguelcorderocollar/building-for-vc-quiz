@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import type { Quiz } from "@/types/quiz";
 import { getQuizMetadata } from "@/lib/storage";
@@ -15,12 +14,7 @@ interface QuizCardProps {
 }
 
 export function QuizCard({ quiz }: QuizCardProps) {
-  const [metadata, setMetadata] = useState<QuizMetadata | null>(null);
-
-  useEffect(() => {
-    // Only read from localStorage after component mounts on client
-    setMetadata(getQuizMetadata(quiz.id));
-  }, [quiz.id]);
+  const [metadata] = useState<QuizMetadata | null>(() => getQuizMetadata(quiz.id));
 
   return (
     <Card className="p-6 hover:shadow-lg transition-shadow">

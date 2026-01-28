@@ -2,7 +2,6 @@
 
 import { Card } from "@/components/ui/card";
 import { getPerformanceMessage } from "@/lib/quiz-engine";
-import { useEffect, useState } from "react";
 
 interface ScoreDisplayProps {
   score: number;
@@ -11,12 +10,7 @@ interface ScoreDisplayProps {
 }
 
 export function ScoreDisplay({ score, total, percentage }: ScoreDisplayProps) {
-  const [mounted, setMounted] = useState(false);
   const message = getPerformanceMessage(percentage);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <Card className="p-4 md:p-8">

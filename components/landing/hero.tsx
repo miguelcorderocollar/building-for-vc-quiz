@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { getTotalQuestions, QUIZZES } from "@/data/questions";
 
 export function Hero() {

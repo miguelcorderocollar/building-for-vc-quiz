@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { QuizProgress } from "@/components/quiz/quiz-progress";
 import { QuestionCard } from "@/components/quiz/question-card";
@@ -28,9 +28,7 @@ interface PageProps {
   params: Promise<{ partNum: string }>;
 }
 
-export default function PartQuizPlayPage({ params }: PageProps) {
-  const { partNum } = use(params);
-  const partNumber = parseInt(partNum) as 1 | 2 | 3;
+function PartQuizPlayContent({ partNumber }: { partNumber: 1 | 2 | 3 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const count = parseInt(searchParams.get("count") || "20");
@@ -262,5 +260,19 @@ export default function PartQuizPlayPage({ params }: PageProps) {
         </DialogContent>
       </Dialog>
     </>
+  );
+}
+
+export default function PartQuizPlayPage({ params }: PageProps) {
+  const { partNum } = use(params);
+  const partNumber = parseInt(partNum) as 1 | 2 | 3;
+  return (
+    <Suspense fallback={
+      <div className="container mx-auto px-4 md:px-6 py-12 text-center">
+        <p className="text-muted-foreground">Loading quiz...</p>
+      </div>
+    }>
+      <PartQuizPlayContent partNumber={partNumber} />
+    </Suspense>
   );
 }

@@ -1,5 +1,4 @@
 import { Alert } from "@/components/ui/alert";
-import Link from "next/link";
 
 export function AttributionBanner() {
   return (

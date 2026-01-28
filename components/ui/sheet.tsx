@@ -25,15 +25,27 @@ function SheetTrigger({ className, ...props }: SheetPrimitive.Trigger.Props) {
   )
 }
 
-function SheetClose({ asChild, ...props }: SheetPrimitive.Close.Props) {
-  // Only pass asChild when it's explicitly true to prevent it from leaking to DOM
+function SheetClose({ asChild, children, ...props }: SheetPrimitive.Close.Props & { asChild?: boolean; children?: React.ReactNode }) {
+  if (asChild && React.isValidElement(children)) {
+    // Use render prop to render the child element with close functionality
+    // asChild is already extracted from props, so it won't leak to DOM
+    return (
+      <SheetPrimitive.Close
+        data-slot="sheet-close"
+        render={children}
+        {...props}
+      />
+    );
+  }
+  
   return (
     <SheetPrimitive.Close
       data-slot="sheet-close"
-      {...(asChild === true ? { asChild } : {})}
       {...props}
-    />
-  )
+    >
+      {children}
+    </SheetPrimitive.Close>
+  );
 }
 
 function SheetPortal({ ...props }: SheetPrimitive.Portal.Props) {

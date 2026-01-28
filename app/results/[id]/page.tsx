@@ -18,20 +18,18 @@ interface PageProps {
 export default function ResultDetailPage({ params }: PageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const [result, setResult] = useState<QuizResult | null>(null);
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [result] = useState<QuizResult | null>(() => {
+    const allResults = getQuizResults();
+    return allResults.find((r) => r.id === id) || null;
+  });
+  const [questions] = useState<Question[]>([]);
 
   useEffect(() => {
-    const allResults = getQuizResults();
-    const found = allResults.find((r) => r.id === id);
-    
-    if (found) {
-      setResult(found);
-    } else {
+    if (!result) {
       // Result not found, redirect
       router.push("/results");
     }
-  }, [id, router]);
+  }, [result, router]);
 
   if (!result) {
     return (

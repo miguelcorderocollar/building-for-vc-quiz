@@ -44,6 +44,7 @@ export default function PartQuizConfigPage({ params }: PageProps) {
   const { partNum } = use(params);
   const partNumber = parseInt(partNum) as 1 | 2 | 3;
   const router = useRouter();
+  const [selectedCount, setSelectedCount] = useState(20);
   
   // Validate part number
   if (![1, 2, 3].includes(partNumber)) {
@@ -66,7 +67,6 @@ export default function PartQuizConfigPage({ params }: PageProps) {
   const Icon = config.icon;
   const partQuizzes = getQuizzesByPart(partNumber);
   const totalQuestions = partQuizzes.reduce((sum, q) => sum + q.totalQuestions, 0);
-  const [selectedCount, setSelectedCount] = useState(20);
 
   const options: QuestionCountOption[] = [
     {

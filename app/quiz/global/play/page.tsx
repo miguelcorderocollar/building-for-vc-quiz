@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { QuizProgress } from "@/components/quiz/quiz-progress";
 import { QuestionCard } from "@/components/quiz/question-card";
@@ -18,7 +18,7 @@ import {
 import { addQuizResult, clearCurrentQuizProgress } from "@/lib/storage";
 import { X } from "lucide-react";
 
-export default function GlobalQuizPlayPage() {
+function GlobalQuizPlayContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const count = parseInt(searchParams.get("count") || "20");
@@ -245,5 +245,17 @@ export default function GlobalQuizPlayPage() {
         </DialogContent>
       </Dialog>
     </>
+  );
+}
+
+export default function GlobalQuizPlayPage() {
+  return (
+    <Suspense fallback={
+      <div className="container mx-auto px-4 md:px-6 py-12 text-center">
+        <p className="text-muted-foreground">Loading global quiz...</p>
+      </div>
+    }>
+      <GlobalQuizPlayContent />
+    </Suspense>
   );
 }

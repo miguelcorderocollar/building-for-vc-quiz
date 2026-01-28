@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,12 +12,8 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { cn } from "@/lib/utils";
 
 export default function ResultsHistoryPage() {
-  const [results, setResults] = useState<QuizResult[]>([]);
+  const [results, setResults] = useState<QuizResult[]>(() => getQuizResults());
   const [showClearDialog, setShowClearDialog] = useState(false);
-
-  useEffect(() => {
-    setResults(getQuizResults());
-  }, []);
 
   const handleClearHistory = () => {
     clearAllProgress();

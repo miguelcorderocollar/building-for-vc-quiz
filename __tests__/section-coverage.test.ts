@@ -80,7 +80,7 @@ function loadQuestions(filePath: string): Question[] {
     const data = JSON.parse(content);
     // Handle both formats: array or { questions: [...] }
     return Array.isArray(data) ? data : data.questions || [];
-  } catch (error) {
+  } catch {
     return [];
   }
 }

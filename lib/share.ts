@@ -54,7 +54,7 @@ export async function shareViaWebAPI(data: { text: string; url?: string }): Prom
   try {
     await navigator.share(data);
     return true;
-  } catch (error) {
+  } catch {
     // User cancelled or error occurred
     return false;
   }

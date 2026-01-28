@@ -1,8 +1,6 @@
 import {
   getUserProgress,
-  saveUserProgress,
   addQuizResult,
-  getQuizMetadata,
   getQuizResults,
   clearAllProgress,
 } from "@/lib/storage";
