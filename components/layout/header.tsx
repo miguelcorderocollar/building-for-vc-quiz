@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Menu01Icon } from "@hugeicons/core-free-icons";
+import { Github } from "lucide-react";
 
 export function Header() {
   return (
@@ -31,6 +32,15 @@ export function Header() {
           <Link href="/results" className="text-sm font-medium transition-colors hover:text-primary">
             My Results
           </Link>
+          <a
+            href="https://github.com/miguelcorderocollar/building-for-vc-quiz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="GitHub Repository"
+          >
+            <Github className="h-5 w-5" />
+          </a>
           <ThemeToggle />
           <Link href="/quiz" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90">
             Start Quiz
@@ -65,6 +75,17 @@ export function Header() {
                   >
                     My Results
                   </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <a
+                    href="https://github.com/miguelcorderocollar/building-for-vc-quiz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base font-medium transition-colors hover:text-primary py-2 text-left flex items-center gap-2"
+                  >
+                    <Github className="h-5 w-5" />
+                    GitHub
+                  </a>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link

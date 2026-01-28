@@ -43,6 +43,16 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
+                  href="https://github.com/miguelcorderocollar/building-for-vc-quiz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Quiz Platform GitHub
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://github.com/alexpatow/building-for-vc"
                   target="_blank"
                   rel="noopener noreferrer"
