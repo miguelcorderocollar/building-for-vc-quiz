@@ -1,0 +1,426 @@
+[
+  {
+    "id": "portfolio-1",
+    "chapter": "portfolio-support",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "How is portfolio support fundamentally different from other parts of the VC tech stack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's the same as other tools"
+      },
+      {
+        "id": "b",
+        "text": "Most portfolio support doesn't fit into repeatable products - every company has different needs at different times"
+      },
+      {
+        "id": "c",
+        "text": "It's easier to build"
+      },
+      {
+        "id": "d",
+        "text": "It's more expensive"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Portfolio support is fundamentally different because most of it doesn't fit into repeatable products. Every company has different needs at different times. The patterns that justify building software (doing the same thing repeatedly, at scale, with clear value) often don't apply.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-2",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are the core areas VCs help with in portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Talent - helping portfolio companies hire"
+      },
+      {
+        "id": "b",
+        "text": "Fundraising - supporting portfolio companies raising their next round"
+      },
+      {
+        "id": "c",
+        "text": "Customer discovery - helping identify potential customers"
+      },
+      {
+        "id": "d",
+        "text": "Exit planning - helping think about acquisitions or IPO readiness"
+      },
+      {
+        "id": "e",
+        "text": "Board participation and strategic guidance"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e"],
+    "explanation": "VCs help with talent (hiring), fundraising (raising next rounds), customer discovery (identifying customers), exit planning (acquisitions/IPO), and board participation/strategic guidance.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-3",
+    "chapter": "portfolio-support",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the pattern regarding technology's role in portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Technology replaces human judgment"
+      },
+      {
+        "id": "b",
+        "text": "Technology enhances connection-making and information-organizing parts, but can't replace relationships, judgment, and specific expertise"
+      },
+      {
+        "id": "c",
+        "text": "Technology is unnecessary"
+      },
+      {
+        "id": "d",
+        "text": "Technology does everything"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Technology enhances the connection-making and information-organizing parts of portfolio support. It can't replace the relationships, judgment, and specific expertise that make portfolio support actually valuable.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-4",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why don't products work for portfolio support like they do for CRM or fund operations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because portfolio support is too expensive"
+      },
+      {
+        "id": "b",
+        "text": "Every company has different needs at different times - there's no common workflow or repeatable pattern"
+      },
+      {
+        "id": "c",
+        "text": "Because it's illegal"
+      },
+      {
+        "id": "d",
+        "text": "Because no one needs portfolio support"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Products work for CRM because every fund tracks relationships the same way. Portfolio support is different: every company has different needs at different times. A deep tech hardware company needs different help than a consumer social app or B2B SaaS company.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-5",
+    "chapter": "portfolio-support",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the biggest mistake funds make with portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not doing it at all"
+      },
+      {
+        "id": "b",
+        "text": "Building platforms before validating that founders actually want them - they spend months building something founders don't use"
+      },
+      {
+        "id": "c",
+        "text": "Doing too much"
+      },
+      {
+        "id": "d",
+        "text": "Asking founders what they need"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The biggest mistake is building platforms before validating that founders actually want them. Funds imagine a platform, spend six months building it, and founders don't use it. Start with projects instead - solve specific problems when founders ask.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-6",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What should you start with for portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build a comprehensive platform immediately"
+      },
+      {
+        "id": "b",
+        "text": "Start with projects - when a founder asks for help, solve that specific problem, see if they use it, see if other founders have the same need"
+      },
+      {
+        "id": "c",
+        "text": "Don't do portfolio support"
+      },
+      {
+        "id": "d",
+        "text": "Only help with fundraising"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Start with projects instead of platforms. When a founder asks for help, solve that specific problem. Build a lightweight tool or analysis. See if they use it. See if other founders have the same need. If you do the same type of project 5-10 times, then maybe it's worth building a product.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-7",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are different technology strategies for portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No technology investment - focus resources on research and deal flow"
+      },
+      {
+        "id": "b",
+        "text": "Opportunistic projects - help with specific data/technology projects when asked"
+      },
+      {
+        "id": "c",
+        "text": "Strategic technology investment - focus on specific high-value areas"
+      },
+      {
+        "id": "d",
+        "text": "Platform-driven support - make it core to value proposition with dedicated teams"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Different strategies include: no technology investment (focus elsewhere), opportunistic projects (help when asked), strategic technology investment (focus on specific high-value areas), and platform-driven support (make it core like YC).",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-8",
+    "chapter": "portfolio-support",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is an example of a quick win for portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building a comprehensive platform"
+      },
+      {
+        "id": "b",
+        "text": "Setting up a portfolio jobs board using tools like Getro or Consider - they aggregate job postings and create a branded careers page, no engineering work required"
+      },
+      {
+        "id": "c",
+        "text": "Building custom recruiting software"
+      },
+      {
+        "id": "d",
+        "text": "Doing nothing"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "A quick win is setting up a portfolio jobs board. Tools like Getro or Consider automate this entirely: they aggregate job postings from your portfolio companies and create a branded careers page for your fund. No engineering work required.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-9",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What questions should you answer before building anything for portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "What's the cheapest option?"
+      },
+      {
+        "id": "b",
+        "text": "Is portfolio support core to our value proposition or supplementary? Do we have resources to deliver meaningful support? What specific types can we provide better than founders could get elsewhere?"
+      },
+      {
+        "id": "c",
+        "text": "What do other funds do?"
+      },
+      {
+        "id": "d",
+        "text": "What's the most impressive thing to build?"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Before building, be explicit about your strategy. Is portfolio support core to your value proposition or supplementary? Do you have resources to deliver meaningful support? What specific types can you provide better than founders could get elsewhere?",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-10",
+    "chapter": "portfolio-support",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What was Inflection's experience with portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They built comprehensive platforms"
+      },
+      {
+        "id": "b",
+        "text": "They focused on hiring support and customer discovery, but these have all been projects, not products - every request is different"
+      },
+      {
+        "id": "c",
+        "text": "They don't do portfolio support"
+      },
+      {
+        "id": "d",
+        "text": "They only help with fundraising"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "At Inflection, they focused portfolio support on hiring support and customer discovery. What's notable is that these have all been projects, not products. They've never built a repeatable tool that multiple portfolio companies use regularly. Every request is different.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-11",
+    "chapter": "portfolio-support",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the implication of portfolio support being project-based rather than product-based?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You should build more products"
+      },
+      {
+        "id": "b",
+        "text": "You should be very careful about investing significant engineering time - you'll likely build something that helps 2-3 companies but doesn't generalize, while you could improve research or deal flow tools"
+      },
+      {
+        "id": "c",
+        "text": "It doesn't matter"
+      },
+      {
+        "id": "d",
+        "text": "All funds should build platforms"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The implication is that you should be very careful about investing significant engineering time in portfolio support platforms. You'll likely build something that helps 2-3 companies but doesn't generalize. Meanwhile, you could have been improving your research platform or deal flow tools.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-12",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is a legitimate strategy for portfolio support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every fund must do systematic portfolio support"
+      },
+      {
+        "id": "b",
+        "text": "Many funds, including large ones, explicitly don't invest engineering or data resources in portfolio support - they focus on research, deal flow, and operations"
+      },
+      {
+        "id": "c",
+        "text": "Only small funds should do it"
+      },
+      {
+        "id": "d",
+        "text": "It's required by LPs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Many funds, including large ones, explicitly don't invest engineering or data resources in portfolio support. The reasoning is that it doesn't scale and they have limited resources. They'd rather focus on research platforms, deal flow tools, and fund operations.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-13",
+    "chapter": "portfolio-support",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is platform-driven support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not doing portfolio support"
+      },
+      {
+        "id": "b",
+        "text": "Making portfolio support a core part of your value proposition with significant resources - like YC with Bookface, Work at a Startup, and Startup School"
+      },
+      {
+        "id": "c",
+        "text": "Using existing platforms only"
+      },
+      {
+        "id": "d",
+        "text": "Building one small tool"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Platform-driven support makes portfolio support a core part of your value proposition and invests significant resources (people and technology) in it. YC is the extreme version: their portfolio support infrastructure is as important as their capital. This requires real commitment.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-14",
+    "chapter": "portfolio-support",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Where will you likely get more value from your engineering resources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building portfolio support platforms"
+      },
+      {
+        "id": "b",
+        "text": "Improving your research, deal flow, or operations tools"
+      },
+      {
+        "id": "c",
+        "text": "They're equal"
+      },
+      {
+        "id": "d",
+        "text": "Building everything at once"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "If your goal is to build data and technology infrastructure for your fund, you'll likely get more value from improving your research, deal flow, or operations tools than from building portfolio support platforms. Portfolio support is where human judgment and relationships matter most.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  },
+  {
+    "id": "portfolio-15",
+    "chapter": "portfolio-support",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What should you do if you solve the same portfolio support problem 5-10 times?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep doing projects"
+      },
+      {
+        "id": "b",
+        "text": "Then maybe it's worth building a product - but more likely you'll end up with scripts and templates that speed up future projects without becoming a maintained product"
+      },
+      {
+        "id": "c",
+        "text": "Stop helping"
+      },
+      {
+        "id": "d",
+        "text": "Build a comprehensive platform immediately"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "If you do the same type of project 5-10 times, then maybe it's worth building a product. More likely, you'll end up with a collection of scripts and templates that speed up future projects without becoming a maintained product.",
+    "sourceUrl": "/guide/part-2-tech-stack/portfolio-support"
+  }
+]

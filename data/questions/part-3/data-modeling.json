@@ -1,0 +1,586 @@
+[
+  {
+    "id": "data-modeling-001",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the most important modeling decision in VC systems?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Choosing the right database"
+      },
+      {
+        "id": "b",
+        "text": "Separating companies from deals"
+      },
+      {
+        "id": "c",
+        "text": "Normalizing all data"
+      },
+      {
+        "id": "d",
+        "text": "Using the latest ORM"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The most important modeling decision is separating companies from deals. A company exists independently of your fund, while a deal represents your fund's relationship with that company. Your fund can have multiple deals with the same company (pass on seed, invest in Series A, consider follow-on).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-002",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why should roles be modeled as a separate table rather than fields in the people table?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's easier to query"
+      },
+      {
+        "id": "b",
+        "text": "To track full history and capture overlapping time periods (e.g., someone working multiple jobs simultaneously)"
+      },
+      {
+        "id": "c",
+        "text": "To reduce database size"
+      },
+      {
+        "id": "d",
+        "text": "To improve performance"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Roles must be separate tables with start and end dates to capture overlapping time periods. Founders often work multiple jobs simultaneously (running startup while advising, sitting on boards). If you store current role as a field in the people table, you lose history and can't answer questions about past roles.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-003",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How should you model the hierarchy of investors, funds, and funding rounds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Investor → Funding Round (skip funds)"
+      },
+      {
+        "id": "b",
+        "text": "Investor → Fund → Funding Round (model fund-level detail)"
+      },
+      {
+        "id": "c",
+        "text": "Only model investors, ignore funds"
+      },
+      {
+        "id": "d",
+        "text": "Only model funding rounds"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Model the hierarchy as Investor → Fund → Funding Round. One investor (firm) can have multiple funds (Sequoia Fund XIV, Sequoia Fund XV). Different funds from the same investor can make different investment decisions. You need to know which specific fund made the investment, not just which firm.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-004",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are core entities that most VC systems share?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Companies"
+      },
+      {
+        "id": "b",
+        "text": "Deals"
+      },
+      {
+        "id": "c",
+        "text": "People"
+      },
+      {
+        "id": "d",
+        "text": "Roles"
+      },
+      {
+        "id": "e",
+        "text": "Education"
+      },
+      {
+        "id": "f",
+        "text": "Funding Rounds"
+      },
+      {
+        "id": "g",
+        "text": "Investors and Funds"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e", "f", "g"],
+    "explanation": "Most VC systems share these core entities: Companies (startups, portfolio companies, competitors), Deals (your fund's relationship with companies), People (founders, executives, employees), Roles (connections between people and companies), Education (where people went to school), Funding Rounds (capital raised), and Investors/Funds (VC firms and their specific funds).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-005",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the recommended approach for handling temporal data and history?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Update records in place, overwriting old values"
+      },
+      {
+        "id": "b",
+        "text": "Start with append-only tables, then use dbt to transform to latest values"
+      },
+      {
+        "id": "c",
+        "text": "Only keep current state, discard history"
+      },
+      {
+        "id": "d",
+        "text": "Use separate databases for historical data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Start with append-only tables - never update or delete data, append new rows with timestamps. This creates an audit trail. Then use dbt to transform append-only staging tables into intermediate tables with current values. You have both full history and convenient latest-values tables for queries.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-006",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why should your data model allow for uncertainty in funding round data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To make queries faster"
+      },
+      {
+        "id": "b",
+        "text": "Because VC data is messy - early-stage companies raise money in ways not always captured (SAFE notes, stealth rounds, incomplete vendor data)"
+      },
+      {
+        "id": "c",
+        "text": "To reduce database size"
+      },
+      {
+        "id": "d",
+        "text": "To simplify the schema"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "VC data is messy. Early-stage companies raise money via SAFE notes, convertible notes, rolling closes, stealth rounds. Crunchbase and PitchBook miss things, especially for pre-seed and seed companies. Your model should allow unknown/estimated amounts, approximate dates, rumored rounds, and multiple rounds of the same type.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-007",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the difference between a company and a deal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are the same thing"
+      },
+      {
+        "id": "b",
+        "text": "A company is an entity that exists independently; a deal is your fund's relationship with that company"
+      },
+      {
+        "id": "c",
+        "text": "A deal is always an investment, a company is not"
+      },
+      {
+        "id": "d",
+        "text": "Companies are public, deals are private"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "A company is an entity that exists independently of your fund (Stripe exists whether or not your fund talks to them). A deal is your fund's relationship with that company (you sourced them, met with founders, decided to invest or pass). One company can have multiple deals with your fund.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-008",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What properties belong to deals rather than companies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deal source (how you found the company)"
+      },
+      {
+        "id": "b",
+        "text": "Who at your fund is leading the deal"
+      },
+      {
+        "id": "c",
+        "text": "Deal stage (Sourced, Meeting, Diligence, etc.)"
+      },
+      {
+        "id": "d",
+        "text": "Investment amount and ownership percentage"
+      },
+      {
+        "id": "e",
+        "text": "Company employee count"
+      },
+      {
+        "id": "f",
+        "text": "Company funding history"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Deal properties include: deal source, who at your fund is leading, deal stage, initial contact date, investment amount, ownership percentage. Company properties (employee count, funding history, product description) are shared across all deals with that company.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-009",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What validation rules should you avoid when modeling funding rounds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Series B must come after Series A"
+      },
+      {
+        "id": "b",
+        "text": "Funding amounts must be known"
+      },
+      {
+        "id": "c",
+        "text": "Valuations must increase with each round"
+      },
+      {
+        "id": "d",
+        "text": "All of the above - real companies break these rules constantly"
+      }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "Don't build validation rules that enforce 'Series B must come after Series A' or 'funding amounts must be known' or 'valuations must increase.' Real companies break these rules constantly (down rounds, retroactive announcements, multiple rounds of same type), and your data sources break them even more.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-010",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How should you structure append-only tables for company data from vendors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Update existing rows when new data arrives"
+      },
+      {
+        "id": "b",
+        "text": "Insert new rows with timestamps every time you fetch data, never update or delete"
+      },
+      {
+        "id": "c",
+        "text": "Delete old rows when new data arrives"
+      },
+      {
+        "id": "d",
+        "text": "Only keep the latest snapshot"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Append-only tables insert new rows with timestamps (fetched_at) every time you fetch data from vendors. You never update or delete existing rows. This preserves full history - you can see what PitchBook reported about a company on any date. Use dbt to transform to latest values for convenient querying.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-011",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the recommended approach for storing historical data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep all history in staging tables - storage is cheap, and you can query transformed latest-values tables when you don't need history"
+      },
+      {
+        "id": "b",
+        "text": "Only keep data for the last 30 days"
+      },
+      {
+        "id": "c",
+        "text": "Archive old data to separate databases"
+      },
+      {
+        "id": "d",
+        "text": "Delete history after 1 year"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Keep all history in staging tables. Storage is cheap - a year of daily company snapshots for thousands of companies costs pennies. When you need to analyze changes over time, you have the data. When you don't need it, you're querying transformed latest-values tables, so it doesn't cost anything.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-012",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why is it important to model education separately from people?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To reduce database size"
+      },
+      {
+        "id": "b",
+        "text": "To capture multiple degrees and overlapping education periods"
+      },
+      {
+        "id": "c",
+        "text": "To improve query performance"
+      },
+      {
+        "id": "d",
+        "text": "To simplify the schema"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Education must be separate to capture multiple degrees and overlapping education periods. People pursue education while working (part-time MBAs, executive programs, online courses). This enables analysis like 'which universities produce the most founders in our focus areas?'",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-013",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How should you handle the case where a data provider only knows 'Sequoia invested' but not which specific Sequoia fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Don't store the data at all"
+      },
+      {
+        "id": "b",
+        "text": "Create a placeholder fund or link directly to the investor, but structure your schema to support fund-level data when available"
+      },
+      {
+        "id": "c",
+        "text": "Guess which fund it was"
+      },
+      {
+        "id": "d",
+        "text": "Only store investor-level data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When fund-level detail isn't available, you can create a placeholder fund or link directly to the investor, but structure your schema to support fund-level data when you have it. Some data providers are better at this than others. When available, capture it.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-014",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are examples of queries that become possible with proper role modeling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Show me all founders who worked at Google"
+      },
+      {
+        "id": "b",
+        "text": "Which schools produce the most founders in fintech"
+      },
+      {
+        "id": "c",
+        "text": "Find people who worked at multiple companies simultaneously"
+      },
+      {
+        "id": "d",
+        "text": "Track career progression over time"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "With proper role modeling (separate tables with start/end dates), you can query: all founders who worked at Google (join people → roles → companies), which schools produce the most founders (join people → roles → companies → education), people with overlapping roles, and full career progression history.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-015",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What should you do when querying deals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Query deals directly without joining to companies"
+      },
+      {
+        "id": "b",
+        "text": "Join deals to companies to get company information"
+      },
+      {
+        "id": "c",
+        "text": "Only query companies, ignore deals"
+      },
+      {
+        "id": "d",
+        "text": "Store all deal data in the companies table"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When you query deals, you join to companies to get company information. When you're analyzing companies (building market maps, tracking sectors), you query companies directly without caring about deals. This separation is fundamental to building VC software that works.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-016",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the dbt pattern for transforming append-only staging tables?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use DISTINCT ON to get the latest record per company, ordered by fetched_at DESC"
+      },
+      {
+        "id": "b",
+        "text": "Update records in place"
+      },
+      {
+        "id": "c",
+        "text": "Delete old records"
+      },
+      {
+        "id": "d",
+        "text": "Create separate databases"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Use dbt models with DISTINCT ON (company_id) to get the latest record per company from append-only staging data, ordered by fetched_at DESC. This creates intermediate tables with current values while preserving full history in staging tables.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-017",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What entities might you model beyond the core entities, depending on what you're building?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Board seats"
+      },
+      {
+        "id": "b",
+        "text": "Advisors"
+      },
+      {
+        "id": "c",
+        "text": "Customers (for B2B portfolio companies)"
+      },
+      {
+        "id": "d",
+        "text": "Competitors, acquisitions, exits, fund entities"
+      },
+      {
+        "id": "e",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswers": ["e"],
+    "explanation": "Depending on what you're building, you might also model: board seats, advisors, customers (for B2B portfolio companies), competitors, acquisitions, exits, fund entities (if you manage multiple funds), and more. Start with entities your application actually needs, not a comprehensive schema you think you might need someday.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-018",
+    "chapter": "data-modeling",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What happens if you try to embed deals into the companies table or vice versa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It works perfectly"
+      },
+      {
+        "id": "b",
+        "text": "You create a mess that's hard to query and impossible to extend"
+      },
+      {
+        "id": "c",
+        "text": "It improves performance"
+      },
+      {
+        "id": "d",
+        "text": "It simplifies the schema"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "If you try to embed deals into the companies table or vice versa, you create a mess that's hard to query and impossible to extend. This separation is fundamental to building VC software that works. As emphasized in the CRM chapter, this distinction is one of the most important architectural decisions you'll make.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-019",
+    "chapter": "data-modeling",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the exception to keeping all historical data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There are no exceptions - always keep everything"
+      },
+      {
+        "id": "b",
+        "text": "If you're storing truly high-volume data (real-time metrics, streaming data, logs), you might need retention policies"
+      },
+      {
+        "id": "c",
+        "text": "Always delete data after 1 year"
+      },
+      {
+        "id": "d",
+        "text": "Never keep historical data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The main exception: if you're storing truly high-volume data (real-time metrics, streaming data, logs), you might need retention policies. But for standard VC data (company attributes, funding rounds, people roles), just keep it all. Storage is cheap and simpler than trying to decide upfront what might be valuable.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  },
+  {
+    "id": "data-modeling-020",
+    "chapter": "data-modeling",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the recommended approach when starting to model VC data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build a comprehensive schema for everything you might need someday"
+      },
+      {
+        "id": "b",
+        "text": "Start with entities your application actually needs, add more as your systems grow"
+      },
+      {
+        "id": "c",
+        "text": "Copy schemas from other funds"
+      },
+      {
+        "id": "d",
+        "text": "Use a generic CRM schema"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Start with entities your application actually needs, not a comprehensive schema you think you might need someday. Your data model will vary based on what you're building (CRM, research platform, portfolio dashboard). Add entities as your systems grow and needs become clear.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-modeling"
+  }
+]

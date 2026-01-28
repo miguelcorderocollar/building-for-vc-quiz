@@ -1,0 +1,304 @@
+[
+  {
+    "id": "signal-data-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the primary purpose of signal data for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To track historical funding rounds"
+      },
+      {
+        "id": "b",
+        "text": "To find companies before they're widely known"
+      },
+      {
+        "id": "c",
+        "text": "To manage portfolio companies"
+      },
+      {
+        "id": "d",
+        "text": "To generate financial reports"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Signal data helps you find companies before they're widely known. These are early indicators that a company is growing, raising funding, or becoming interesting: job postings, web traffic, social media activity, product launches, hiring velocity.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-2",
+    "chapter": "data-providers",
+    "section": "founder-signals",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What are examples of founder signals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "New company formations"
+      },
+      {
+        "id": "b",
+        "text": "Founders in 'stealth mode'"
+      },
+      {
+        "id": "c",
+        "text": "Founder backgrounds and previous exits"
+      },
+      {
+        "id": "d",
+        "text": "Team composition changes"
+      },
+      {
+        "id": "e",
+        "text": "Historical funding amounts"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Founder signals include new company formations, founders in 'stealth mode', founder backgrounds and previous exits, and team composition changes. Historical funding amounts are not signals - they're historical data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-3",
+    "chapter": "data-providers",
+    "section": "funding-signals",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are examples of funding signals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Indicators that a company is raising (even before announced)"
+      },
+      {
+        "id": "b",
+        "text": "Investor interest signals"
+      },
+      {
+        "id": "c",
+        "text": "Press and media coverage"
+      },
+      {
+        "id": "d",
+        "text": "Completed funding rounds"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Funding signals include indicators that a company is raising (even before announced), investor interest signals, and press and media coverage. Completed funding rounds are historical data, not signals.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-4",
+    "chapter": "data-providers",
+    "section": "hiring-signals",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What hiring signals are valuable for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "New job postings (especially leadership roles)"
+      },
+      {
+        "id": "b",
+        "text": "Hiring velocity (how fast they're growing)"
+      },
+      {
+        "id": "c",
+        "text": "Engineering team growth"
+      },
+      {
+        "id": "d",
+        "text": "Location expansion"
+      },
+      {
+        "id": "e",
+        "text": "Historical employee counts"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Hiring signals include new job postings (especially leadership roles), hiring velocity (how fast they're growing), engineering team growth, and location expansion. Historical employee counts are not signals - they're historical data points.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-5",
+    "chapter": "data-providers",
+    "section": "web-product-signals",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are examples of web and product signals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Website traffic growth"
+      },
+      {
+        "id": "b",
+        "text": "Product launches and updates"
+      },
+      {
+        "id": "c",
+        "text": "App store rankings"
+      },
+      {
+        "id": "d",
+        "text": "Social media activity"
+      },
+      {
+        "id": "e",
+        "text": "Total website visitors last year"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Web and product signals include website traffic growth, product launches and updates, app store rankings, and social media activity. Total website visitors last year is historical data, not a signal.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-6",
+    "chapter": "data-providers",
+    "section": "early-stage-providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which signal provider is US-focused and good for pre-seed and seed investors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gravity"
+      },
+      {
+        "id": "b",
+        "text": "Evertrace"
+      },
+      {
+        "id": "c",
+        "text": "Specter"
+      },
+      {
+        "id": "d",
+        "text": "Harmonic"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Gravity is US-focused and good for pre-seed and seed investors looking for companies before they raise or become widely known. These providers often scrape data from government regulatory filings and match them with people data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-7",
+    "chapter": "data-providers",
+    "section": "early-stage-providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which signal provider is Europe-focused and good for pre-seed and seed investors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gravity"
+      },
+      {
+        "id": "b",
+        "text": "Evertrace"
+      },
+      {
+        "id": "c",
+        "text": "Specter"
+      },
+      {
+        "id": "d",
+        "text": "Harmonic"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Evertrace is Europe-focused and good for pre-seed and seed investors. Early-stage signal providers scrape data from government regulatory filings and match them with people data to round out company profiles.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-8",
+    "chapter": "data-providers",
+    "section": "later-stage-providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider offers broad coverage and easy-to-use data dumps from S3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gravity"
+      },
+      {
+        "id": "b",
+        "text": "Evertrace"
+      },
+      {
+        "id": "c",
+        "text": "Specter"
+      },
+      {
+        "id": "d",
+        "text": "Harmonic"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Specter offers broad coverage and easy-to-use data dumps from S3. It's typically better for Series A+ investors tracking growth signals and company momentum.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-9",
+    "chapter": "data-providers",
+    "section": "considerations",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are important considerations when working with signal data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Signal providers prioritize speed over perfection"
+      },
+      {
+        "id": "b",
+        "text": "Volume can be overwhelming - you need good filtering and scoring"
+      },
+      {
+        "id": "c",
+        "text": "Signal data works best alongside traditional company and people data"
+      },
+      {
+        "id": "d",
+        "text": "Signal data should replace traditional data sources"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Important considerations: signal providers prioritize speed over perfection (data might have gaps or errors, but you're seeing it before anyone else), volume can be overwhelming (need good filtering and scoring to avoid drowning in noise), and signal data works best alongside traditional company and people data, not instead of it.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  },
+  {
+    "id": "signal-data-10",
+    "chapter": "data-providers",
+    "section": "later-stage-providers",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the most important factor when choosing between signal providers like Specter and Harmonic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Price"
+      },
+      {
+        "id": "b",
+        "text": "How well you can filter to get signal from noise"
+      },
+      {
+        "id": "c",
+        "text": "Geographic coverage"
+      },
+      {
+        "id": "d",
+        "text": "API documentation quality"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The most important factor is how well you can filter to get signal from noise - that's what matters most with these tools. Sit with your investment team to decide which one is best for you. Choosing between these is largely personal preference.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/signal-data"
+  }
+]

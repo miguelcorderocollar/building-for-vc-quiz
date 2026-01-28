@@ -1,0 +1,344 @@
+{
+  "questions": [
+    {
+      "id": "vc-fund-001",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Players: LPs, GPs, and Portfolio Companies",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What does 'LP' stand for in venture capital, and what is their primary role?",
+      "options": [
+        {"id": "a", "text": "Limited Partner - they provide capital to the fund but have limited involvement in day-to-day operations"},
+        {"id": "b", "text": "Lead Partner - they make all investment decisions for the fund"},
+        {"id": "c", "text": "Liquidity Provider - they manage exits and distributions"},
+        {"id": "d", "text": "Legal Partner - they handle all legal and compliance matters"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Limited Partners (LPs) are the investors who provide capital to venture capital funds. They have 'limited' involvement, meaning they commit capital but don't make investment decisions or participate in day-to-day operations. Their role is largely passive: they commit money, receive reports, and eventually receive distributions when portfolio companies exit.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#limited-partners-the-money"
+    },
+    {
+      "id": "vc-fund-002",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Players: LPs, GPs, and Portfolio Companies",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "When an LP commits $10 million to a fund, what actually happens on day one?",
+      "options": [
+        {"id": "a", "text": "The LP immediately wires $10 million to the fund"},
+        {"id": "b", "text": "The LP promises to provide that capital over time as the fund calls for it"},
+        {"id": "c", "text": "The LP receives $10 million worth of equity in the fund"},
+        {"id": "d", "text": "The LP signs a contract but never actually provides the capital"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "When an LP commits capital, they don't write a check immediately. Instead, they promise to provide that capital over time as the fund needs it for investments. The money stays in the LP's accounts earning returns until the fund calls for it. This distinction between committed capital and called capital is fundamental to how VC funds operate.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#limited-partners-the-money"
+    },
+    {
+      "id": "vc-fund-003",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Players: LPs, GPs, and Portfolio Companies",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "Which of the following are ways that General Partners (GPs) make money? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Management fees, typically 2% of committed capital per year"},
+        {"id": "b", "text": "Carried interest (carry), typically 20% of profits after returning LP capital"},
+        {"id": "c", "text": "Direct fees from portfolio companies for advisory services"},
+        {"id": "d", "text": "Commissions on each investment made"}
+      ],
+      "correctAnswers": ["a", "b"],
+      "explanation": "GPs make money in two primary ways: (1) Management fees, typically 2% of committed capital annually, which cover operating costs regardless of performance. (2) Carried interest (carry), typically 20% of profits, but only after LPs receive back all their invested capital and sometimes after a preferred return hurdle. GPs do not typically charge direct fees from portfolio companies or commissions on investments.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#general-partners-the-operators"
+    },
+    {
+      "id": "vc-fund-004",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Structure: Companies and Vehicles",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the difference between a management company and a fund vehicle?",
+      "options": [
+        {"id": "a", "text": "They are the same entity, just different names"},
+        {"id": "b", "text": "The management company is the operating entity that employs the team, while the fund vehicle is a separate legal entity that holds LP commitments and makes investments"},
+        {"id": "c", "text": "The management company only exists for larger funds, while smaller funds only have a fund vehicle"},
+        {"id": "d", "text": "The fund vehicle is temporary and dissolves after investments are made"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A management company is the operating entity that employs the team, signs leases, and receives management fees. A fund vehicle (like 'Acme Ventures Fund I, LP') is a separate legal entity, usually a limited partnership, that holds LP commitments, makes investments, and distributes returns. A single management company typically manages multiple funds over time. Understanding this separation is essential because money flows differently through these entities.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#the-management-company"
+    },
+    {
+      "id": "vc-fund-005",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Structure: Companies and Vehicles",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is an SPV (Special Purpose Vehicle) and when would a fund create one?",
+      "options": [
+        {"id": "a", "text": "An SPV is a backup fund created in case the main fund fails"},
+        {"id": "b", "text": "An SPV is created for a specific investment when LPs want additional exposure beyond their fund commitment"},
+        {"id": "c", "text": "An SPV is used only for failed investments to limit liability"},
+        {"id": "d", "text": "An SPV is the same as a side car and used interchangeably"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "An SPV (Special Purpose Vehicle) is a separate legal entity created for a specific investment. For example, if a fund wants to invest $5 million in a company but several LPs want additional exposure, the fund might create an SPV just for that deal, allowing those LPs to invest beyond their fund commitment. Side cars are similar but broader - they're parallel vehicles that invest alongside the main fund across multiple deals.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#spvs-and-side-cars"
+    },
+    {
+      "id": "vc-fund-006",
+      "chapter": "what-is-a-vc-fund",
+      "section": "How Money Moves: The Capital Lifecycle",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is a capital call?",
+      "options": [
+        {"id": "a", "text": "A call between GPs and LPs to discuss fund strategy"},
+        {"id": "b", "text": "A formal notice to LPs requesting their pro-rata share of capital needed for an investment"},
+        {"id": "c", "text": "A call to portfolio companies requesting they return capital"},
+        {"id": "d", "text": "A fundraising pitch to new potential LPs"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A capital call is a formal notice to LPs saying the fund needs capital for an investment. Each LP must send their pro-rata share within a specified timeframe (often 30 days). For example, if a fund needs $3 million and an LP committed 10% of the fund, they would need to wire $300,000. This happens repeatedly throughout the investment period as the fund makes investments.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#capital-calls"
+    },
+    {
+      "id": "vc-fund-007",
+      "chapter": "what-is-a-vc-fund",
+      "section": "How Money Moves: The Capital Lifecycle",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is 'dry powder' in the context of VC funds?",
+      "options": [
+        {"id": "a", "text": "Cash that has been called but not yet invested"},
+        {"id": "b", "text": "Committed capital that has not yet been called from LPs"},
+        {"id": "c", "text": "Returns from exits that haven't been distributed yet"},
+        {"id": "d", "text": "Management fees that have been collected but not spent"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Dry powder refers to committed capital that remains uncalled - capital that LPs have committed but the fund hasn't yet requested. Funds constantly track how much each LP has committed, how much has been called, and how much remains uncalled (dry powder). This is important for planning future investments and understanding the fund's capacity.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#capital-calls"
+    },
+    {
+      "id": "vc-fund-008",
+      "chapter": "what-is-a-vc-fund",
+      "section": "How Money Moves: The Capital Lifecycle",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "In a standard VC distribution waterfall, what happens first when exits generate returns?",
+      "options": [
+        {"id": "a", "text": "GPs receive their 20% carry immediately"},
+        {"id": "b", "text": "All capital is returned to LPs first, then remaining profits are split 80/20 (LPs/GPs)"},
+        {"id": "c", "text": "LPs receive a preferred return, then GPs get carry, then remaining capital is returned"},
+        {"id": "d", "text": "Returns are split proportionally based on who invested first"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The standard VC distribution waterfall works like this: first, return all the capital that LPs invested. If the fund called $80 million total, the first $80 million of exits goes back to LPs. Then split remaining profits: typically 80% to LPs, 20% to GPs as carry. Some funds (more common in PE) include a preferred return hurdle between these steps, but the basic structure is capital return first, then profit split.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#exits-and-distributions"
+    },
+    {
+      "id": "vc-fund-009",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What does DPI (Distributions to Paid-In Capital) measure?",
+      "options": [
+        {"id": "a", "text": "The total value of all investments including unrealized gains"},
+        {"id": "b", "text": "Actual cash returned to LPs divided by capital called from LPs"},
+        {"id": "c", "text": "The annualized return accounting for timing of cash flows"},
+        {"id": "d", "text": "The percentage of portfolio companies that have exited"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "DPI (Distributions to Paid-In Capital) is the most important metric for LPs because it measures actual cash returned. It's calculated as total cash distributed to LPs divided by total capital called from LPs. For example, if a fund called $80 million and has distributed $120 million, the DPI is 1.5x. This represents real money in LPs' bank accounts, not theoretical value.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#performance-metrics"
+    },
+    {
+      "id": "vc-fund-010",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the key difference between TVPI and DPI?",
+      "options": [
+        {"id": "a", "text": "TVPI includes unrealized gains, while DPI only measures cash distributions"},
+        {"id": "b", "text": "TVPI is annualized, while DPI is a simple multiple"},
+        {"id": "c", "text": "TVPI measures fund performance, while DPI measures individual investment performance"},
+        {"id": "d", "text": "There is no difference - they are the same metric"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "TVPI (Total Value to Paid-In Capital) includes both distributions and the current value of remaining investments, while DPI only includes actual cash distributions. TVPI is less reliable than DPI because it depends on valuations of unrealized investments, which might not materialize. DPI represents real cash in LPs' bank accounts.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#performance-metrics"
+    },
+    {
+      "id": "vc-fund-011",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What does IRR (Internal Rate of Return) account for that DPI and TVPI do not?",
+      "options": [
+        {"id": "a", "text": "The timing of cash flows - returning 3x in 3 years is better than 3x in 10 years"},
+        {"id": "b", "text": "The risk level of investments"},
+        {"id": "c", "text": "The number of portfolio companies"},
+        {"id": "d", "text": "Management fees and expenses"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "IRR (Internal Rate of Return) is time-weighted, accounting for when cash flows occur. Returning 3x in 3 years is much better than returning 3x in 10 years, and IRR captures that difference. It's calculated by finding the discount rate where the net present value of all cash flows equals zero. DPI and TVPI are simple multiples that don't account for timing.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#performance-metrics"
+    },
+    {
+      "id": "vc-fund-012",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is a SAFE (Simple Agreement for Future Equity)?",
+      "options": [
+        {"id": "a", "text": "A type of preferred stock with liquidation preferences"},
+        {"id": "b", "text": "A convertible instrument that converts to equity in a future priced round"},
+        {"id": "c", "text": "A debt instrument that must be repaid with interest"},
+        {"id": "d", "text": "A legal structure for fund formation"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A SAFE (Simple Agreement for Future Equity) is a convertible instrument popular in early-stage investing, invented by Y Combinator. The investor gives the company money now, and the SAFE converts into equity later during a priced round. SAFEs typically have a valuation cap (maximum valuation at which they convert) and/or a discount. They're 'simple' because they defer valuation negotiations until later.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#investment-instruments"
+    },
+    {
+      "id": "vc-fund-013",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the difference between pre-money and post-money valuation?",
+      "options": [
+        {"id": "a", "text": "Pre-money is before the investment, post-money includes the investment amount"},
+        {"id": "b", "text": "Pre-money includes the investment, post-money is before the investment"},
+        {"id": "c", "text": "They are the same - just different terminology"},
+        {"id": "d", "text": "Pre-money is for seed rounds, post-money is for Series A and later"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Pre-money valuation is what the company was worth before the investment. Post-money valuation includes the investment amount. For example, if a company has a $10 million pre-money valuation and the fund invests $3 million, the post-money valuation is $13 million. The fund would own $3M / $13M = 23% of the company.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#valuation-terms"
+    },
+    {
+      "id": "vc-fund-014",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are pro-rata rights?",
+      "options": [
+        {"id": "a", "text": "The right to receive proportional distributions based on ownership"},
+        {"id": "b", "text": "The option to invest in future rounds to maintain ownership percentage"},
+        {"id": "c", "text": "The right to vote on board decisions proportional to ownership"},
+        {"id": "d", "text": "The right to receive information proportional to investment size"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Pro-rata rights give investors the option to invest in future rounds to maintain their ownership percentage. If a fund owns 23% and the company raises a Series B, pro-rata rights let the fund invest enough to stay at 23% instead of getting diluted down. These rights are negotiated as part of each investment and need to be tracked because they affect follow-on investment decisions.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#valuation-terms"
+    },
+    {
+      "id": "vc-fund-015",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What does a '1x liquidation preference' mean in an exit scenario?",
+      "options": [
+        {"id": "a", "text": "The investor gets 1% of the exit proceeds"},
+        {"id": "b", "text": "The investor gets their money back first before other shareholders see anything"},
+        {"id": "c", "text": "The investor gets 1x their ownership percentage of the exit"},
+        {"id": "d", "text": "The investor must wait 1 year before receiving distributions"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A '1x liquidation preference' means the fund gets their money back before other shareholders see anything. In a $50 million exit, if the fund invested $10 million with a 1x preference, they get $10 million off the top, and the remaining $40 million is split among all shareholders. More complex preferences (2x, participating preferences) exist and dramatically affect exit proceeds.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#valuation-terms"
+    },
+    {
+      "id": "vc-fund-016",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Language: Key Terms",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is dilution in the context of venture capital?",
+      "options": [
+        {"id": "a", "text": "When a company's valuation decreases"},
+        {"id": "b", "text": "When a company issues new shares, reducing everyone's percentage ownership"},
+        {"id": "c", "text": "When an investor sells their shares"},
+        {"id": "d", "text": "When a company fails and investors lose their investment"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Dilution is what happens when a company issues new shares, reducing everyone's percentage ownership. If a fund owns 20% and the company raises a new round, the fund might get diluted down to 15%. Tracking dilution accurately requires understanding every financing event in the company's history and how it affected the cap table.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#valuation-terms"
+    },
+    {
+      "id": "vc-fund-017",
+      "chapter": "what-is-a-vc-fund",
+      "section": "How GPs Actually Make Money",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "For a $100 million fund, how much in management fees would the GPs receive annually at the standard 2% rate?",
+      "options": [
+        {"id": "a", "text": "$1 million"},
+        {"id": "b", "text": "$2 million"},
+        {"id": "c", "text": "$20 million"},
+        {"id": "d", "text": "$100 million"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The standard management fee structure is 2% of committed capital annually. For a $100 million fund, that's $2 million per year. Over a typical 10-year fund life, that's $20 million total. Many funds step down fees after the investment period ends - 2% for the first 5 years while actively investing, then 1.5% or less while just managing existing investments.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#management-fees-keeping-the-lights-on"
+    },
+    {
+      "id": "vc-fund-018",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Process: How Deals Flow",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "Which of the following are stages in the typical deal flow process? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Sourcing - deals come in through various channels"},
+        {"id": "b", "text": "Screening - quick filter to see if deals fit the fund's thesis"},
+        {"id": "c", "text": "Due diligence - deeper evaluation of the opportunity"},
+        {"id": "d", "text": "Investment committee - where investment decisions are made"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "The deal flow process typically includes: (1) Research and thesis development - proactive research on trends and markets. (2) Sourcing - deals come from warm introductions, cold emails, events, or proactive outreach. (3) Screening - fast filter to see if deals fit thesis, stage, geography, sector. (4) Due diligence - market research, reference calls, financial review, legal review. (5) Investment committee - where decisions are made. (6) Syndication - bringing in other investors. (7) Closing - legal work, capital calls, money wired. (8) Post-investment - ongoing portfolio management.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#the-process-how-deals-flow"
+    },
+    {
+      "id": "vc-fund-019",
+      "chapter": "what-is-a-vc-fund",
+      "section": "The Timeline: Fund Lifecycle",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What are the typical years for the 'investment period' of a VC fund?",
+      "options": [
+        {"id": "a", "text": "Years 1-4, when the fund is actively making new investments"},
+        {"id": "b", "text": "Year 0, during fundraising"},
+        {"id": "c", "text": "Years 5-10, when the fund focuses on exits"},
+        {"id": "d", "text": "Years 10+, during extension periods"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Years 1-4 are the investment period when the fund is actively looking at deals, making new investments, and deploying capital. This is when deal flow management matters most. The fund is building its portfolio, typically making 20-50 investments depending on stage and strategy. Capital calls go out regularly as new investments are made.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#the-timeline-fund-lifecycle"
+    },
+    {
+      "id": "vc-fund-020",
+      "chapter": "what-is-a-vc-fund",
+      "section": "Common Misconceptions",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Which of the following is a common misconception about VC funds?",
+      "options": [
+        {"id": "a", "text": "VCs have a pile of cash ready to invest - actually they have LP commitments that get called over time"},
+        {"id": "b", "text": "All VC funds work the same way - actually stage, size, and strategy create vastly different operations"},
+        {"id": "c", "text": "Exits happen quickly - actually the average time from investment to exit is 7-10 years"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "All three are common misconceptions. VCs don't have a pile of cash - they have LP commitments that get called over time. Not all VC funds work the same way - a seed fund operates nothing like a growth equity fund. Exits don't happen quickly - the average time from investment to exit is 7-10 years, sometimes longer. Understanding these realities is crucial for building the right software.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/what-is-a-vc-fund#common-misconceptions"
+    }
+  ]
+}

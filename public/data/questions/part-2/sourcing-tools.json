@@ -1,0 +1,259 @@
+{
+  "questions": [
+    {
+      "id": "part2-sourcing-001",
+      "chapter": "sourcing-tools",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the key insight about sourcing tools?",
+      "options": [
+        {"id": "a", "text": "All funds need sophisticated sourcing tools"},
+        {"id": "b", "text": "Understanding when sourcing tools create value matters more than understanding how to build them"},
+        {"id": "c", "text": "Sourcing tools are always worth building"},
+        {"id": "d", "text": "Sourcing tools only work for large funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Sourcing tools don't work equally well for all funds, and understanding when they create value matters more than understanding how to build them. Many early-stage, thesis-driven funds find that companies are too early for datasets and criteria are too specific for effective filtering.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools"
+    },
+    {
+      "id": "part2-sourcing-002",
+      "chapter": "sourcing-tools",
+      "section": "The Historical Advantage",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why did funds that invested in sourcing infrastructure around 2017-2018 get competitive advantage?",
+      "options": [
+        {"id": "a", "text": "Because they had more capital"},
+        {"id": "b", "text": "Because the infrastructure didn't exist yet - there were no purpose-built VC sourcing tools"},
+        {"id": "c", "text": "Because they hired better engineers"},
+        {"id": "d", "text": "Because they focused only on late-stage deals"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Around 2017-2018, funds that invested in sourcing infrastructure got real competitive advantage because the infrastructure didn't exist yet. There were no purpose-built VC sourcing tools. Data providers had limited coverage. If you wanted systematic sourcing, you had to build it yourself. The funds that invested in this infrastructure got ahead and proved the model worked.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-historical-advantage"
+    },
+    {
+      "id": "part2-sourcing-003",
+      "chapter": "sourcing-tools",
+      "section": "What Sourcing Tools Do",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What are the key functions of sourcing tools? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Discovery - finding companies that match your criteria"},
+        {"id": "b", "text": "Tracking - monitoring companies over time"},
+        {"id": "c", "text": "Enrichment - layering on data from multiple sources"},
+        {"id": "d", "text": "Outreach - managing the process of reaching out"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Sourcing tools help with: (1) Discovery - finding companies that match your criteria by aggregating data from multiple sources. (2) Tracking - monitoring companies automatically and surfacing changes worth paying attention to. (3) Enrichment - combining multiple data sources to create a more complete view. (4) Outreach - managing the process of reaching out systematically.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#what-sourcing-tools-do"
+    },
+    {
+      "id": "part2-sourcing-004",
+      "chapter": "sourcing-tools",
+      "section": "When Sourcing Actually Works",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "Why don't sourcing tools work well for pre-seed and early seed investments?",
+      "options": [
+        {"id": "a", "text": "Because they're too expensive"},
+        {"id": "b", "text": "Because companies often don't exist in any dataset yet - they're too early"},
+        {"id": "c", "text": "Because pre-seed investors don't need data"},
+        {"id": "d", "text": "Because sourcing tools are only for Series A+"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Sourcing tools rely on companies existing in datasets. If you're investing pre-seed or at the earliest stage of seed, companies often don't exist in any dataset yet. They're two founders working nights and weekends - no website, no job postings, no press releases, no funding data. Sourcing tools can't find what isn't there.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#when-sourcing-actually-works"
+    },
+    {
+      "id": "part2-sourcing-005",
+      "chapter": "sourcing-tools",
+      "section": "When Sourcing Actually Works",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What creates a signal-to-noise problem for thesis-driven funds using sourcing tools?",
+      "options": [
+        {"id": "a", "text": "Too much data"},
+        {"id": "b", "text": "Broad filters work well, but thesis-driven funds with specific criteria get overwhelmed with noise"},
+        {"id": "c", "text": "Not enough data sources"},
+        {"id": "d", "text": "Poor quality data"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Thesis-driven investing creates a signal-to-noise problem. If your criteria are relatively broad (B2B SaaS companies in the US with 10-50 employees), filters work well. But thesis-driven funds with specific criteria (Hardware startups building autonomous vehicles for mining) get overwhelmed with noise. You get hundreds of companies that match broad filters but aren't actually relevant.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#when-sourcing-actually-works"
+    },
+    {
+      "id": "part2-sourcing-006",
+      "chapter": "sourcing-tools",
+      "section": "The Build vs. Buy Decision",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the recommendation for most funds regarding sourcing tools?",
+      "options": [
+        {"id": "a", "text": "Always build custom sourcing infrastructure"},
+        {"id": "b", "text": "Don't build generic sourcing infrastructure - the tools exist (Harmonic, Specter) and work well"},
+        {"id": "c", "text": "Only use sourcing tools if you're a large fund"},
+        {"id": "d", "text": "Sourcing tools are never worth it"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Don't build generic sourcing infrastructure. The tools exist (Harmonic, Specter), they work well, and the data is commoditized. Building this is like building your own CRM instead of using something off-the-shelf. The exception is genuinely unique niches where custom tooling creates real advantage.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-build-vs-buy-decision"
+    },
+    {
+      "id": "part2-sourcing-007",
+      "chapter": "sourcing-tools",
+      "section": "The Build vs. Buy Decision",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the exception to the 'don't build' rule for sourcing tools?",
+      "options": [
+        {"id": "a", "text": "If you want different filters"},
+        {"id": "b", "text": "Genuinely unique niches where custom tooling creates real advantage, like knowledge graphs tracking interactions or deep open source analysis"},
+        {"id": "c", "text": "If you have a large budget"},
+        {"id": "d", "text": "If you're a new fund"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The exception is genuinely unique niches where custom tooling creates real advantage. Some funds have built knowledge graphs tracking interactions to optimize warm intro paths. Others have built deep open source analysis tools (GitHub stars, commit velocity, code quality) for investing exclusively in open source companies. These work because they're truly specialized, not just 'we want different filters.'",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-build-vs-buy-decision"
+    },
+    {
+      "id": "part2-sourcing-008",
+      "chapter": "sourcing-tools",
+      "section": "Common Tools",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Which is the most popular purpose-built VC sourcing platform?",
+      "options": [
+        {"id": "a", "text": "Crunchbase"},
+        {"id": "b", "text": "Harmonic"},
+        {"id": "c", "text": "Salesforce"},
+        {"id": "d", "text": "Notion"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Harmonic is the most popular purpose-built VC sourcing platform. It aggregates data from multiple sources, supports search and filtering, tracks companies over time, and integrates with CRMs.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#common-tools"
+    },
+    {
+      "id": "part2-sourcing-009",
+      "chapter": "sourcing-tools",
+      "section": "When Sourcing Actually Works",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why might network-driven funds not need sourcing tools at all?",
+      "options": [
+        {"id": "a", "text": "Because they're too expensive"},
+        {"id": "b", "text": "Because their competitive advantage is relationships that lead to warm introductions"},
+        {"id": "c", "text": "Because they only invest in late-stage"},
+        {"id": "d", "text": "Because sourcing tools don't work"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Network-driven funds might not need sourcing at all. If your competitive advantage is relationships that lead to warm introductions, you're not trying to systematically find companies. Sourcing tools don't match your workflow.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#when-sourcing-actually-works"
+    },
+    {
+      "id": "part2-sourcing-010",
+      "chapter": "sourcing-tools",
+      "section": "When Sourcing Actually Works",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the 'uncomfortable truth' about sourcing tools for many early-stage, thesis-driven funds?",
+      "options": [
+        {"id": "a", "text": "They're too expensive"},
+        {"id": "b", "text": "Many think they need sourcing tools, but their companies are too early for datasets, criteria are too specific, and competitive advantage comes from research and relationships"},
+        {"id": "c", "text": "They don't work at all"},
+        {"id": "d", "text": "They're only for large funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The uncomfortable truth: Many early-stage, thesis-driven funds think they need sourcing tools because it sounds like the right thing to do. But their companies are too early for datasets, their criteria are too specific for filters, and their competitive advantage comes from research and relationships, not systematic discovery. Sourcing tools become shelf-ware.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#when-sourcing-actually-works"
+    },
+    {
+      "id": "part2-sourcing-011",
+      "chapter": "sourcing-tools",
+      "section": "What Sourcing Tools Do",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the key to making proactive sourcing systematic rather than sporadic?",
+      "options": [
+        {"id": "a", "text": "Using only one data source"},
+        {"id": "b", "text": "Continuously monitoring spaces you care about and building relationships with interesting companies over time"},
+        {"id": "c", "text": "Only searching once per quarter"},
+        {"id": "d", "text": "Focusing only on companies that have raised funding"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The key is making proactive sourcing systematic rather than sporadic. You're not just searching once. You're continuously monitoring spaces you care about and building relationships with interesting companies over time. Sourcing tools help manage that process by tracking who you've contacted and following up systematically.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#what-sourcing-tools-do"
+    },
+    {
+      "id": "part2-sourcing-012",
+      "chapter": "sourcing-tools",
+      "section": "When Sourcing Actually Works",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "At what stage do sourcing tools work best?",
+      "options": [
+        {"id": "a", "text": "Pre-seed and seed"},
+        {"id": "b", "text": "Series A or later, when companies have usually raised previous rounds and generated signals"},
+        {"id": "c", "text": "Only for growth equity"},
+        {"id": "d", "text": "They work equally well at all stages"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Stage matters more than most people think. Sourcing tools rely on companies existing in datasets. If you're investing at Series A or later, companies have usually raised previous rounds, hired employees, built websites, and generated signals that data providers capture. You can find them.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#when-sourcing-actually-works"
+    },
+    {
+      "id": "part2-sourcing-013",
+      "chapter": "sourcing-tools",
+      "section": "The Build vs. Buy Decision",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the realistic recommendation for sourcing tools based on fund stage and criteria?",
+      "options": [
+        {"id": "a", "text": "All funds should build custom sourcing tools"},
+        {"id": "b", "text": "Series A+ with broad criteria: buy Harmonic or Specter. Pre-seed/early seed with specific criteria: probably don't need sourcing tools"},
+        {"id": "c", "text": "Only large funds should use sourcing tools"},
+        {"id": "d", "text": "Sourcing tools are never worth it"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The realistic recommendation: Series A+ with broad criteria? Buy Harmonic or Specter. Pre-seed/early seed with specific criteria? You probably don't need sourcing tools at all. Genuinely unique niche requiring specialized analysis? Consider building that specific piece.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-build-vs-buy-decision"
+    },
+    {
+      "id": "part2-sourcing-014",
+      "chapter": "sourcing-tools",
+      "section": "The Historical Advantage",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "How did the success of early movers in sourcing infrastructure change the market?",
+      "options": [
+        {"id": "a", "text": "It didn't change anything"},
+        {"id": "b", "text": "It led to the creation of tools like Harmonic and Specter, improved data provider coverage, and raised the baseline industry-wide"},
+        {"id": "c", "text": "It made sourcing tools obsolete"},
+        {"id": "d", "text": "It only helped the early movers"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The success of early movers changed the market. The existence of tools like Harmonic and Specter is a direct result of these pioneers demonstrating that systematic sourcing creates value. Data providers improved their coverage because funds demanded it. The baseline rose industry-wide. The barrier to entry for basic sourcing capability has collapsed.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-historical-advantage"
+    },
+    {
+      "id": "part2-sourcing-015",
+      "chapter": "sourcing-tools",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you do before deciding to build sourcing tools?",
+      "options": [
+        {"id": "a", "text": "Build them immediately"},
+        {"id": "b", "text": "Question whether you actually need sourcing tools first"},
+        {"id": "c", "text": "Only build if you have a large budget"},
+        {"id": "d", "text": "Copy what other funds are doing"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Sourcing is where every fund wants to start, but question whether you actually need it first. Many early-stage, thesis-driven funds find that companies are too early for datasets and criteria are too specific for effective filtering. For funds where sourcing works (Series A+, broad criteria), the tools are commoditized - don't build.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/sourcing-tools#the-bottom-line"
+    }
+  ]
+}

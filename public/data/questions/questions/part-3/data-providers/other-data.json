@@ -1,0 +1,238 @@
+[
+  {
+    "id": "other-data-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Beyond company, signal, and people data, what types of specialized data do VC funds often need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Market intelligence, academic research, patents, financial data, and sector-specific sources"
+      },
+      {
+        "id": "b",
+        "text": "Only market intelligence"
+      },
+      {
+        "id": "c",
+        "text": "Only financial data"
+      },
+      {
+        "id": "d",
+        "text": "Only academic research"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Beyond company, signal, and people data, VC funds often need specialized data: market intelligence, academic research, patents, financial data, and sector-specific sources. The specific needs depend on fund focus and sector specialization.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-2",
+    "chapter": "data-providers",
+    "section": "market-financial-data",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "Which providers offer comprehensive financial and market data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "S&P Capital IQ"
+      },
+      {
+        "id": "b",
+        "text": "Bloomberg"
+      },
+      {
+        "id": "c",
+        "text": "Refinitiv (LSEG)"
+      },
+      {
+        "id": "d",
+        "text": "Morningstar"
+      },
+      {
+        "id": "e",
+        "text": "Crunchbase"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "S&P Capital IQ, Bloomberg, Refinitiv (LSEG), and Morningstar offer comprehensive financial and market data. These are primarily useful for growth-stage funds doing comparables analysis. Crunchbase focuses on startup/VC data, not public market financial data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-3",
+    "chapter": "data-providers",
+    "section": "research-academic-data",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which academic research database is essential for bio/healthcare funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "arXiv"
+      },
+      {
+        "id": "b",
+        "text": "PubMed"
+      },
+      {
+        "id": "c",
+        "text": "Semantic Scholar"
+      },
+      {
+        "id": "d",
+        "text": "Google Scholar"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "PubMed provides biomedical and life sciences literature and is essential for bio/healthcare funds. arXiv is for physics, math, CS, AI/ML preprints. Semantic Scholar and Google Scholar are more general academic search tools.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-4",
+    "chapter": "data-providers",
+    "section": "patent-ip-data",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which patent database links patents to academic research and offers an inexpensive yearly subscription for commercial use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lens"
+      },
+      {
+        "id": "b",
+        "text": "Google Patents"
+      },
+      {
+        "id": "c",
+        "text": "USPTO"
+      },
+      {
+        "id": "d",
+        "text": "PatSnap"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Lens offers patent and scholarly search, links patents to academic research, and has an inexpensive yearly subscription for commercial use. Most patent data is publicly available through government databases, but paid tools like Lens add analytics and search.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-5",
+    "chapter": "data-providers",
+    "section": "web-traffic-ecommerce",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which tool is essential for evaluating e-commerce companies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SimilarWeb"
+      },
+      {
+        "id": "b",
+        "text": "Jungle Scout"
+      },
+      {
+        "id": "c",
+        "text": "Sensor Tower"
+      },
+      {
+        "id": "d",
+        "text": "data.ai"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Jungle Scout provides Amazon product research, seller data, and market trends. It's essential for e-commerce companies. SimilarWeb is good for web traffic, Sensor Tower and data.ai are for mobile apps.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-6",
+    "chapter": "data-providers",
+    "section": "geospatial-data",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "Which providers offer location intelligence and geospatial data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CARTO"
+      },
+      {
+        "id": "b",
+        "text": "SafeGraph"
+      },
+      {
+        "id": "c",
+        "text": "SimilarWeb"
+      },
+      {
+        "id": "d",
+        "text": "Bloomberg"
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "explanation": "CARTO and SafeGraph offer location intelligence. CARTO provides demographics, foot traffic, and site selection. SafeGraph provides points of interest and foot traffic patterns. These are useful for retail, real estate, logistics, and location-dependent sectors.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-7",
+    "chapter": "data-providers",
+    "section": "sector-specific",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What specialized data sources are available for healthcare/bio funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ClinicalTrials.gov"
+      },
+      {
+        "id": "b",
+        "text": "FDA databases"
+      },
+      {
+        "id": "c",
+        "text": "BioMedTracker"
+      },
+      {
+        "id": "d",
+        "text": "PubMed"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Healthcare/bio funds can use ClinicalTrials.gov (clinical trial registry), FDA databases (drug approvals, safety data), BioMedTracker (drug pipeline intelligence), and PubMed (biomedical literature). These are essential for evaluating healthcare companies.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  },
+  {
+    "id": "other-data-8",
+    "chapter": "data-providers",
+    "section": "llm-research-tools",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the key advantage of LLM-powered research tools like Perplexity API and Exa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're free to use"
+      },
+      {
+        "id": "b",
+        "text": "They synthesize information from multiple sources and return cited answers"
+      },
+      {
+        "id": "c",
+        "text": "They provide real-time market data"
+      },
+      {
+        "id": "d",
+        "text": "They replace the need for traditional databases"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "LLM-powered research tools synthesize information from multiple sources and return cited answers, so you can verify the underlying data. They're useful for quick market sizing, finding competitors, background research, and synthesizing public information during due diligence. They complement, not replace, traditional databases.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/other-data"
+  }
+]

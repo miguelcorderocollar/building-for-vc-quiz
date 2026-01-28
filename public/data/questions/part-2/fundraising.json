@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "part2-fundraising-001",
+      "chapter": "fundraising",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is fundraising in the context of VC funds?",
+      "options": [
+        {"id": "a", "text": "Helping portfolio companies raise money"},
+        {"id": "b", "text": "How you raise your next fund - convincing LPs to commit capital to Fund II after showing results from Fund I"},
+        {"id": "c", "text": "Raising money from banks"},
+        {"id": "d", "text": "Only for large funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Fundraising is how you raise your next fund. After you've invested Fund I and shown results, you need to convince LPs to commit capital to Fund II. This involves identifying potential LPs, preparing materials that demonstrate your track record, managing relationships over months of conversations, and closing commitments.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising"
+    },
+    {
+      "id": "part2-fundraising-002",
+      "chapter": "fundraising",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What tools do you already have that support fundraising?",
+      "options": [
+        {"id": "a", "text": "You need to buy all new tools"},
+        {"id": "b", "text": "Fund operations software generates track record materials, CRM tracks LP relationships, sourcing tools can help identify potential LPs"},
+        {"id": "c", "text": "No tools support fundraising"},
+        {"id": "d", "text": "Only spreadsheets"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Most of the infrastructure you need for fundraising already exists in tools you've covered. Fund operations software generates your track record materials. Your CRM tracks LP relationships. Sourcing-type tools can help identify potential LPs. Unlike other parts of the VC tech stack, there's no dominant fundraising-specific platform yet.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising"
+    },
+    {
+      "id": "part2-fundraising-003",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How can you identify potential LPs?",
+      "options": [
+        {"id": "a", "text": "Only through personal networks"},
+        {"id": "b", "text": "Use sourcing tools like PitchBook (has good data on institutional investors) or Specter, similar to how you'd find companies"},
+        {"id": "c", "text": "You can't identify them"},
+        {"id": "d", "text": "Only at conferences"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Identifying potential LPs is like sourcing, but for LPs instead of companies. You want to identify institutional investors, family offices, high-net-worth individuals, and fund-of-funds that invest in your stage, geography, and strategy. Use the same sourcing tools: PitchBook has good data on institutional investors, Specter can help identify active LPs in your space. If you're interested in specific datasets for LPs, Preqin is more focused on LP data.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-004",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "How should you prepare fundraising materials?",
+      "options": [
+        {"id": "a", "text": "Build separate systems for fundraising collateral"},
+        {"id": "b", "text": "Export data from your fund operations platform - don't build separate systems, it should come directly from your operations data"},
+        {"id": "c", "text": "Only use spreadsheets"},
+        {"id": "d", "text": "Hire external consultants"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "LPs want to see your track record, fund strategy, team backgrounds, and portfolio performance. Your fund operations platform generates performance data and portfolio summaries automatically. Export this into your pitch deck and fundraising materials. Don't build separate systems for fundraising collateral, it should come directly from your operations data.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-005",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How should you manage the fundraising process?",
+      "options": [
+        {"id": "a", "text": "Only track committed LPs"},
+        {"id": "b", "text": "Use your CRM to track LP prospects and conversations exactly like deal flow - LPs move through stages (initial contact, meeting, diligence, committed)"},
+        {"id": "c", "text": "Don't track anything"},
+        {"id": "d", "text": "Only use email"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Fundraising takes months. You're talking to dozens of potential LPs at different stages: some in early conversations, others doing diligence, some committed. Use your CRM to track LP prospects and conversations exactly like deal flow. LPs move through stages (initial contact, meeting, diligence, committed). Track what materials they've seen, what questions they've asked, and when you need to follow up.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-006",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the standard tool for data rooms during LP diligence?",
+      "options": [
+        {"id": "a", "text": "Google Drive"},
+        {"id": "b", "text": "Docsend"},
+        {"id": "c", "text": "Email attachments"},
+        {"id": "d", "text": "Spreadsheets"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "When LPs do diligence, they want access to detailed fund information: legal documents, portfolio details, historical performance, compliance materials. Docsend is the standard. Organize your materials into a clean structure, grant access to LPs as they enter diligence, and track what they're looking at to understand their concerns and interests.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-007",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the key insight about fundraising tools?",
+      "options": [
+        {"id": "a", "text": "You need to build custom fundraising platforms"},
+        {"id": "b", "text": "Focus on internal tools that help you be more organized, responsive, and prepared - better CRM, better operations software, good data room organization"},
+        {"id": "c", "text": "Fundraising doesn't need tools"},
+        {"id": "d", "text": "Only large funds need tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The key insight: Focus on internal tools that help you be more organized, responsive, and prepared. Better CRM so you never forget an LP conversation. Better operations software so you can generate track record materials quickly. Good data room organization so LPs can find what they need during diligence. The tools exist - use them well.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-008",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How can you track which LPs attend which events?",
+      "options": [
+        {"id": "a", "text": "You can't"},
+        {"id": "b", "text": "Track which LPs attend which events, what conferences matter for your stage and geography - some funds maintain spreadsheets, some data providers focus on events like Sourcescrub"},
+        {"id": "c", "text": "Only through personal networks"},
+        {"id": "d", "text": "Events don't matter"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Much of fundraising happens at conferences, LP events, and industry gatherings. Track which LPs attend which events, what conferences matter for your stage and geography, and where you can create in-person touchpoints. Some funds maintain spreadsheets of relevant events with expected LP attendance. There are some data providers focused on events (e.g., Sourcescrub) which can help find the right gatherings for fundraising.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    },
+    {
+      "id": "part2-fundraising-009",
+      "chapter": "fundraising",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you focus your engineering time on regarding fundraising?",
+      "options": [
+        {"id": "a", "text": "Building custom fundraising platforms"},
+        {"id": "b", "text": "Focus on tools that improve your investment process - fundraising happens episodically and is relationship-driven, the tools you already have are sufficient"},
+        {"id": "c", "text": "Only fundraising tools"},
+        {"id": "d", "text": "Don't use any tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Focus your engineering time on tools that improve your investment process (research, deal flow, operations). Fundraising happens episodically (every few years) and is relationship-driven. The tools you already have are sufficient if you use them well.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-bottom-line"
+    },
+    {
+      "id": "part2-fundraising-010",
+      "chapter": "fundraising",
+      "section": "The Fundraising Process and Tools",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How can Docsend analytics help during fundraising?",
+      "options": [
+        {"id": "a", "text": "They don't help"},
+        {"id": "b", "text": "Docsend analytics show you which documents get the most attention, which helps you prepare for LP questions"},
+        {"id": "c", "text": "They only show who accessed the data room"},
+        {"id": "d", "text": "They're not important"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Docsend analytics show you which documents get the most attention, which helps you prepare for their questions. This is valuable during LP diligence - understanding what LPs are focusing on helps you be more responsive and prepared for their concerns and interests.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/fundraising#the-fundraising-process-and-tools"
+    }
+  ]
+}

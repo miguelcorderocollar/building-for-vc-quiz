@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VC Knowledge Quiz Platform
+
+Test your knowledge of venture capital technology and fund operations with this interactive quiz platform.
+
+## Attribution
+
+**This quiz platform is based on [Building for VC](https://buildingfor.vc), an open-source guide by [Alex Patow](https://www.linkedin.com/in/alexpatow/).**
+
+The original content is licensed under MIT and provides a comprehensive guide to building technology for venture capital funds. We encourage you to read the full guide at:
+
+- 📖 **Documentation**: https://buildingfor.vc
+- 💻 **GitHub**: https://github.com/alexpatow/building-for-vc
+
+This quiz platform is not affiliated with the original authors. All quiz questions are derived from the publicly available documentation.
+
+## Features
+
+- **360+ Questions**: Comprehensive coverage across 28 chapters
+- **Flexible Quiz Lengths**: Choose from Quick (10), Standard (25), or Comprehensive (all questions)
+- **Track Progress**: Save your results locally and review your performance
+- **Share Results**: Share your achievements with others
+- **Dark Mode**: Full dark mode support
+- **Mobile Responsive**: Works on all devices
+
+## Topics Covered
+
+### Part 1: Understanding VC
+- What is a VC Fund?
+- Understanding Your VC Fund
+- Common Mistakes
+- Hiring Your Data Team
+
+### Part 2: The VC Tech Stack
+- Research Platforms
+- Sourcing Tools
+- CRM and Deal Flow
+- Fund Operations
+- Portfolio Support
+- Fundraising
+- Website and External Presence
+- Putting It Together
+
+### Part 3: Technical Foundations
+- Choosing Your Stack
+- Data Modeling
+- Entity Resolution
+- Data Quality
+- Data Warehousing
+- Knowledge Graphs
+- Integrations and APIs
+- Security and Compliance
+- Emerging Trends
+- Data Providers (8 chapters)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Install dependencies
+bun install
+
+# Run development server
 bun dev
+
+# Build for production
+bun run build
+
+# Start production server
+bun start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to use the quiz platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 16
+- **Runtime**: Bun
+- **UI Components**: shadcn/ui (Nova theme)
+- **Styling**: Tailwind CSS 4
+- **Icons**: Hugeicons
+- **Font**: Inter
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+This project uses:
+- TypeScript for type safety
+- ESLint for code quality
+- Local storage for progress persistence
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## Deploy on Vercel
+## Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Quiz content is based on the "Building for VC" guide:
+- **Author**: Alex Patow
+- **Original Repository**: https://github.com/alexpatow/building-for-vc
+- **Original License**: MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Logo and branding belong to the original Building for VC project.

@@ -1,0 +1,259 @@
+{
+  "questions": [
+    {
+      "id": "mistakes-001",
+      "chapter": "common-mistakes",
+      "section": "Mistake #1: Jumping In Too Early",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you do in your first one to three months at a VC fund?",
+      "options": [
+        {"id": "a", "text": "Start coding immediately to prove your value"},
+        {"id": "b", "text": "Mostly research and observation, not building - understand how the fund actually operates"},
+        {"id": "c", "text": "Build a complete CRM system"},
+        {"id": "d", "text": "Focus only on technical architecture"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The first one to three months should be mostly research and observation, not building. You need to understand how the fund actually operates, not how they say they operate in the interview. You need to understand what the real pain points are, what's been tried before and why it failed, and what workflows are essential versus nice-to-have. Spend your first two weeks just observing, shadow each GP, attend partner meetings, watch how deals actually flow.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-1-jumping-in-too-early"
+    },
+    {
+      "id": "mistakes-002",
+      "chapter": "common-mistakes",
+      "section": "Mistake #1: Jumping In Too Early",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is a red flag phrase that indicates you're jumping in too early?",
+      "options": [
+        {"id": "a", "text": "'Let's just start building and iterate'"},
+        {"id": "b", "text": "'This should be quick to throw together'"},
+        {"id": "c", "text": "'We can always change it later'"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Watch out for these red flag phrases, especially from yourself: 'Let's just start building and iterate.' 'This should be quick to throw together.' 'We can always change it later.' These are all signs you're jumping in too early. By week nine, you should have enough context to propose a real technical strategy. Get buy-in on priorities. Now you can start building the right things.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-1-jumping-in-too-early"
+    },
+    {
+      "id": "mistakes-003",
+      "chapter": "common-mistakes",
+      "section": "Mistake #2: Not Aligning on Buy vs. Build Strategy",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "When should you buy software versus build it?",
+      "options": [
+        {"id": "a", "text": "Always build - custom is always better"},
+        {"id": "b", "text": "Always buy - never build anything"},
+        {"id": "c", "text": "Buy commodity functionality (CRM basics, email tracking, document signing), build when you have true differentiation or highly specific workflows"},
+        {"id": "d", "text": "It doesn't matter - either approach works"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "Commodity functionality should almost always be bought: CRM basics, email tracking, document signing. These are solved problems. Complex compliance requirements like fund administration and LP reporting should definitely be bought unless you have deep expertise. Build when you have true differentiation - novel sourcing strategy or unique thesis requiring custom tooling. Build when you have highly specific workflows that genuinely don't map to existing tools. The key is to have this conversation explicitly, not assume everyone's on the same page.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-2-not-aligning-on-buy-vs-build-strategy"
+    },
+    {
+      "id": "mistakes-004",
+      "chapter": "common-mistakes",
+      "section": "Mistake #2: Not Aligning on Buy vs. Build Strategy",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What should you NOT build anymore? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Custom CRMs - you can get most features off the shelf with tools like Affinity or Attio"},
+        {"id": "b", "text": "Data scraping tools - buy data from providers like People Data Labs or Crunchbase"},
+        {"id": "c", "text": "Portfolio tracking systems"},
+        {"id": "d", "text": "LP reporting tools"}
+      ],
+      "correctAnswers": ["a", "b"],
+      "explanation": "Don't build custom CRMs anymore - you can get most features off the shelf with tools like Affinity or Attio. As a solo engineer or small team, don't spend time building a new one from scratch. The same goes for data scraping - don't waste weeks building LinkedIn scrapers when you can buy data from providers like People Data Labs, Crunchbase, or others. Build on top of purchased data, don't recreate it. Your time as an engineer is the most expensive resource.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-2-not-aligning-on-buy-vs-build-strategy"
+    },
+    {
+      "id": "mistakes-005",
+      "chapter": "common-mistakes",
+      "section": "Mistake #3: Not Having Enough Resources",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What can one technical person realistically do at a VC fund?",
+      "options": [
+        {"id": "a", "text": "Build and maintain a full custom stack from scratch"},
+        {"id": "b", "text": "Replace Carta, Affinity, and DocuSign with custom-built alternatives"},
+        {"id": "c", "text": "Integrate and manage existing tools, build one or two custom internal tools, automate workflows, create custom reports and dashboards, manage data infrastructure"},
+        {"id": "d", "text": "Provide 24/7 support for critical systems"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "Here's what one technical person can realistically do: integrate and manage existing tools, build one or two custom internal tools (simple ones), automate some workflows, create custom reports and dashboards, and manage data infrastructure. That's a full plate. That's valuable work. Here's what one technical person cannot do: build and maintain a full custom stack from scratch, replace major platforms with custom alternatives, or provide 24/7 support for critical systems.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-3-not-having-enough-resources"
+    },
+    {
+      "id": "mistakes-006",
+      "chapter": "common-mistakes",
+      "section": "Mistake #3: Not Having Enough Resources",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is a red flag that indicates unrealistic expectations about resources?",
+      "options": [
+        {"id": "a", "text": "'We need custom everything'"},
+        {"id": "b", "text": "'Buying software is expensive' (ignoring that building is far more expensive)"},
+        {"id": "c", "text": "'You'll have help... eventually' (code for no concrete plans to hire)"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Watch out for red flags: 'We need custom everything' usually means nobody's thought about buy versus build. 'Buying software is expensive' ignores that building is far more expensive when you factor in your time. 'You'll have help... eventually' is code for 'we have no concrete plans to hire.' 'Just get something working, we'll improve it later' is how you accumulate crushing technical debt. Set clear expectations about what you can ship in Q1, what requires buying software, what requires hiring another person.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-3-not-having-enough-resources"
+    },
+    {
+      "id": "mistakes-007",
+      "chapter": "common-mistakes",
+      "section": "Mistake #4: Over-Engineering for Scale You Don't Have",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the actual scale of a typical $100M VC fund?",
+      "options": [
+        {"id": "a", "text": "Millions of users, terabytes of data, thousands of requests per minute"},
+        {"id": "b", "text": "Five to twenty employees, 200 to 500 deals per year, 20 to 50 portfolio companies, 20 to 100 LPs, quarterly reporting"},
+        {"id": "c", "text": "Hundreds of employees, thousands of deals"},
+        {"id": "d", "text": "Real-time dashboards with millions of data points"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A $100M VC fund's scale looks like this: five to twenty employees, 200 to 500 deals per year in the funnel, 20 to 50 portfolio companies, 20 to 100 LPs, and quarterly reporting (not real-time dashboards). This is not scale. This is a small business. You can run all of this on a single Postgres database, a monolithic application, simple cron jobs, and basic authentication. You don't need microservices, Kubernetes, or event-driven architecture.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-4-over-engineering-for-scale-you-dont-have"
+    },
+    {
+      "id": "mistakes-008",
+      "chapter": "common-mistakes",
+      "section": "Mistake #4: Over-Engineering for Scale You Don't Have",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "When should you add complexity to your architecture?",
+      "options": [
+        {"id": "a", "text": "From the start, to be 'professional'"},
+        {"id": "b", "text": "When you have a specific problem - the database is slow, deployments are risky, the server goes down"},
+        {"id": "c", "text": "When something 'might be slow someday'"},
+        {"id": "d", "text": "Always use the latest technologies"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Add complexity only when you have a specific problem. The database is slow? Add indexes and optimize queries. Deployments are risky? Add tests and CI/CD. The server goes down? Add monitoring and auto-restart. But don't build complex caching because something 'might be slow someday.' Build it when it's actually slow today. Start with the simplest thing that could possibly work: single application server, one database, cron jobs for batch processing.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-4-over-engineering-for-scale-you-dont-have"
+    },
+    {
+      "id": "mistakes-009",
+      "chapter": "common-mistakes",
+      "section": "Mistake #5: Not Understanding Data Sensitivity and Compliance",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What data is typically highly sensitive in VC funds?",
+      "options": [
+        {"id": "a", "text": "LP identities and commitments, competitive deal flow, detailed diligence notes, fund performance details, portfolio company board materials"},
+        {"id": "b", "text": "Public company information"},
+        {"id": "c", "text": "Marketing materials"},
+        {"id": "d", "text": "Nothing is sensitive"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "What's typically highly sensitive: LP identities and commitments (never public, often contractually confidential), competitive deal flow, detailed diligence notes (legal liability if they leak), fund performance details (LPs or potential LPs only), portfolio company board materials, and specific investment terms (covered by NDAs). You have legal obligations through NDAs, LP agreements, and securities regulations.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-5-not-understanding-data-sensitivity-and-compliance"
+    },
+    {
+      "id": "mistakes-010",
+      "chapter": "common-mistakes",
+      "section": "Mistake #5: Not Understanding Data Sensitivity and Compliance",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the trap to avoid regarding confidentiality?",
+      "options": [
+        {"id": "a", "text": "Being so paranoid about confidentiality that you can't build anything useful"},
+        {"id": "b", "text": "Ignoring confidentiality completely"},
+        {"id": "c", "text": "Only using on-premise systems"},
+        {"id": "d", "text": "Not using any third-party tools"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "The trap is being so paranoid about confidentiality that you can't build anything useful. No third-party tools means no productivity. No AI means no automation. No integrations means manual processes everywhere. That's not the answer either. Find the balance your partnership is comfortable with. Maybe you can use foundational model APIs for non-sensitive tasks but not for deal flow analysis. Maybe you can use cloud logging with proper data filtering. The key is understanding the risks, getting explicit approval, and documenting the decisions.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-5-not-understanding-data-sensitivity-and-compliance"
+    },
+    {
+      "id": "mistakes-011",
+      "chapter": "common-mistakes",
+      "section": "Mistake #6: Building in a Vacuum",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Why do internal tools need constant feedback?",
+      "options": [
+        {"id": "a", "text": "Partners are experts at investing, not at articulating product requirements"},
+        {"id": "b", "text": "Requirements evolve as they start using early versions"},
+        {"id": "c", "text": "Your initial understanding is always incomplete"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Internal tools need constant feedback because partners are experts at investing, not at articulating product requirements. They think in terms of outcomes and workflows, not features and data models. Requirements evolve as they start using early versions and realize what actually matters in practice. Workflows evolve as the fund grows. Your initial understanding is always incomplete, no matter how many questions you asked. Ship incrementally, build the simplest possible version first, get it in their hands, learn what's wrong, iterate based on real usage.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-6-building-in-a-vacuum"
+    },
+    {
+      "id": "mistakes-012",
+      "chapter": "common-mistakes",
+      "section": "Mistake #6: Building in a Vacuum",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How should you create feedback loops?",
+      "options": [
+        {"id": "a", "text": "Build everything first, then show it"},
+        {"id": "b", "text": "Weekly demos, Slack channel for feature requests, regular one-on-ones, usage analytics, embrace being wrong"},
+        {"id": "c", "text": "Only get feedback at the end"},
+        {"id": "d", "text": "Don't ask for feedback"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Create feedback loops: weekly demos to the team, a Slack channel for feature requests, regular one-on-ones with heavy users, usage analytics showing what features actually get used. Embrace being wrong: 'I built this based on what I thought you needed. What's wrong with it?' 'Here are three options. Which direction feels right?' 'This is a prototype to test the concept.' Show progress regularly - err on the side of more frequent, shorter check-ins rather than big quarterly reveals.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-6-building-in-a-vacuum"
+    },
+    {
+      "id": "mistakes-013",
+      "chapter": "common-mistakes",
+      "section": "Mistake #7: Treating Investors Like Engineers",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "How do investors think differently from engineers?",
+      "options": [
+        {"id": "a", "text": "Investors think in outcomes, not implementations"},
+        {"id": "b", "text": "They think in technical specifications"},
+        {"id": "c", "text": "They think in code"},
+        {"id": "d", "text": "They think the same way"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Investors think in outcomes, not implementations. 'I want to see which deals are getting stale.' 'I need to prepare for quarterly LP calls.' 'I can't remember who introduced this company.' The value is in solving the problem, not in how you solve it technically. They trust you to make the technical decisions. Translate technical decisions into business value. Don't say 'I'll implement real-time sync with a WebSocket connection.' Say 'The data will update immediately when anyone makes changes.'",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-7-treating-investors-like-engineers"
+    },
+    {
+      "id": "mistakes-014",
+      "chapter": "common-mistakes",
+      "section": "Mistake #7: Treating Investors Like Engineers",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What type of questions should you ask investors?",
+      "options": [
+        {"id": "a", "text": "'What fields should be in the Deal model?'"},
+        {"id": "b", "text": "'What do you need to know about a deal to make a decision?'"},
+        {"id": "c", "text": "'What database schema do you prefer?'"},
+        {"id": "d", "text": "'What API endpoints do you want?'"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Ask outcome-focused questions. Not 'What fields should be in the Deal model?' Ask 'What do you need to know about a deal to make a decision?' Their requirements come as business needs, not technical specifications. Extract requirements through conversation and observation. Build something, show it, refine it based on how they actually use it. Be the translator - they describe the business problem, you translate that into technical requirements, you build that, you show it, you adjust based on their feedback.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#mistake-7-treating-investors-like-engineers"
+    },
+    {
+      "id": "mistakes-015",
+      "chapter": "common-mistakes",
+      "section": "The Bottom Line",
+      "difficulty": "advanced",
+      "type": "multiple",
+      "question": "What should you do before writing any code? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Spend meaningful time understanding the fund"},
+        {"id": "b", "text": "Align explicitly on buy versus build strategy"},
+        {"id": "c", "text": "Be realistic about what you can accomplish with available resources"},
+        {"id": "d", "text": "Start simple and add complexity only when you have specific problems to solve"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Before you write any code: spend meaningful time understanding the fund, align explicitly on buy versus build strategy, be realistic about what you can accomplish with available resources, start simple and add complexity only when you have specific problems to solve, understand data sensitivity and confidentiality from day one, build for auditability not just functionality, get feedback early and often, communicate in outcomes not technical implementations. The mistakes aren't failures - they're learning opportunities if you catch them early.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/common-mistakes#the-bottom-line"
+    }
+  ]
+}

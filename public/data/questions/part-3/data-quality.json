@@ -1,0 +1,422 @@
+[
+  {
+    "id": "data-quality-001",
+    "chapter": "data-quality",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why is data quality particularly challenging for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "VC funds have perfect data sources"
+      },
+      {
+        "id": "b",
+        "text": "You're aggregating data from multiple external sources, none of which are perfect. You don't control when companies update information or force vendors to be accurate"
+      },
+      {
+        "id": "c",
+        "text": "VC funds don't use external data"
+      },
+      {
+        "id": "d",
+        "text": "Data quality is easy for VC funds"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data quality in VC is challenging because you're aggregating data from multiple external sources (Crunchbase, PitchBook, LinkedIn, CRM), none of which are perfect. Unlike operational systems where you control data entry, VC data comes from the outside world. You don't control when companies update information or force vendors to be accurate.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-002",
+    "chapter": "data-quality",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the trust hierarchy for data sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All sources are equally trustworthy"
+      },
+      {
+        "id": "b",
+        "text": "High trust: Your firm's internal data. Medium trust: Established vendors for their core competency. Low trust: Scraped data, meeting transcriptions, AI summaries"
+      },
+      {
+        "id": "c",
+        "text": "External sources are always more trustworthy"
+      },
+      {
+        "id": "d",
+        "text": "Scraped data is most trustworthy"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The trust hierarchy: High trust - your firm's internal data (portfolio companies, investment amounts, ownership, LP data). Medium trust - established vendors for their core competency (PitchBook for funding, CoreSignal for employee counts). Low trust - scraped data, meeting transcriptions, AI summaries (useful for context, not definitive analysis).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-003",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How should you validate data sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guess which vendors are best"
+      },
+      {
+        "id": "b",
+        "text": "Take 10-20 portfolio companies and check vendor accuracy: funding data, employee counts, descriptions, update speed. Use this to pick authoritative sources"
+      },
+      {
+        "id": "c",
+        "text": "Use all vendors equally"
+      },
+      {
+        "id": "d",
+        "text": "Don't validate, just trust vendors"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Validate with your portfolio: Take 10-20 portfolio companies and check vendor accuracy: funding data, employee counts, descriptions, update speed. This reveals which vendors are reliable for which data types. Use this analysis to pick your authoritative source for each data type. Don't guess.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-004",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why is automated validation limited for VC data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automated validation always works perfectly"
+      },
+      {
+        "id": "b",
+        "text": "Real companies don't follow clean patterns. Every validation rule has exceptions. You'll either have rules too strict (false positives) or too loose (miss real errors)"
+      },
+      {
+        "id": "c",
+        "text": "VC data is always perfect"
+      },
+      {
+        "id": "d",
+        "text": "Validation is not needed"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Automated validation is limited because VC data doesn't follow clean patterns. Should Seed Rounds be less than $1B? Usually, but Thinking Machines raised $2B. Should valuations increase? Usually, but down rounds happen. Every validation rule has exceptions. You'll either have rules too strict (flagging false positives) or too loose (missing real errors).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-005",
+    "chapter": "data-quality",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the most effective validation approach for VC data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automated rules only"
+      },
+      {
+        "id": "b",
+        "text": "Humans with industry knowledge reviewing data. Domain knowledge is your best validation tool"
+      },
+      {
+        "id": "c",
+        "text": "No validation needed"
+      },
+      {
+        "id": "d",
+        "text": "AI validation only"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The most effective validation is humans with industry knowledge reviewing data. Someone who knows fintech will spot that 'Stripe raised a $10M Series A in 2023' is wrong. Automated systems won't catch these errors because they lack context. Domain knowledge is your best validation tool. You should know the industries and markets your fund focuses on.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-006",
+    "chapter": "data-quality",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "How should you handle data staleness?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hide when data was last updated"
+      },
+      {
+        "id": "b",
+        "text": "Always show when data was last updated. Surface freshness to users so they know whether to trust the data"
+      },
+      {
+        "id": "c",
+        "text": "Never update data"
+      },
+      {
+        "id": "d",
+        "text": "Always use the newest data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Surface freshness to users: Always show when data was last updated. If displaying employee count, show '500 employees (as of Dec 2024).' This sets appropriate expectations and shifts responsibility. Users know whether to trust the data for current decisions. If a GP uses 6-month-old data, they knew it was old.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-007",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the 'gut feel test'?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A scientific validation method"
+      },
+      {
+        "id": "b",
+        "text": "Looking at your analysis yourself before showing it to anyone. If something seems wrong (unfamiliar companies, funding totals too high/low), investigate. Your intuition catches problems automated validation misses"
+      },
+      {
+        "id": "c",
+        "text": "Asking AI to validate"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring your intuition"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The gut feel test: When you build an analysis, look at it yourself before showing it to anyone. Does it pass the gut feel test? If you're showing a market map of 200 AI companies and you've never heard of 150 of them, something is probably wrong. If funding totals seem way too high or low, investigate. Your intuition catches problems that automated validation misses.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-008",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How should you pick data sources for analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Merge all sources together"
+      },
+      {
+        "id": "b",
+        "text": "Pick one source per use case. Don't merge sources unnecessarily. Only merge when each source provides unique value and it's required for the analysis"
+      },
+      {
+        "id": "c",
+        "text": "Use whichever source is cheapest"
+      },
+      {
+        "id": "d",
+        "text": "Use all sources equally"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Pick one source per use case. The best way to avoid data quality problems is to not merge sources unnecessarily. Analyzing total market funding? Pick PitchBook and use only that. Don't combine multiple sources - entity resolution creates new errors. Only merge when each source provides unique value and it's required for the type of analysis you're doing.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-009",
+    "chapter": "data-quality",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are good ingestion practices for preventing bad data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normalize data (consistent date formats, naming, lowercase domains)"
+      },
+      {
+        "id": "b",
+        "text": "Store what you received so you can trace errors back to the source"
+      },
+      {
+        "id": "c",
+        "text": "Version your data so you can see what changed and when"
+      },
+      {
+        "id": "d",
+        "text": "Flag data from low-trust sources so it doesn't get used inappropriately"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Good ingestion practices: Normalize data (consistent date formats, consistent naming, lowercase domains), store what you received (trace errors back to source), version your data (see what changed and when), flag data from low-trust sources (don't use inappropriately). These prevent careless mistakes and make debugging easier.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-010",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How should you build trust with GPs when bad data inevitably appears?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Promise perfect data"
+      },
+      {
+        "id": "b",
+        "text": "Demo to friendly associates first, always cite sources, learn from mistakes, accept imperfection and set expectations appropriately"
+      },
+      {
+        "id": "c",
+        "text": "Blame vendors for everything"
+      },
+      {
+        "id": "d",
+        "text": "Hide mistakes"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Build trust by: Demo to friendly associates first (catch mistakes before partners see them), always cite sources ('Funding data from PitchBook, as of January 2026' - sets expectations and lets you shift blame), learn from each mistake (figure out why and fix root cause), accept imperfection (set expectations: 'We use PitchBook, which is generally accurate but has occasional errors').",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-011",
+    "chapter": "data-quality",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why should you always cite sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's not necessary"
+      },
+      {
+        "id": "b",
+        "text": "It sets expectations (people know PitchBook is reliable, LinkedIn is approximate) and lets you shift blame when data is wrong"
+      },
+      {
+        "id": "c",
+        "text": "It makes data more accurate"
+      },
+      {
+        "id": "d",
+        "text": "It's required by law"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Always cite sources: 'Funding data from PitchBook, as of January 2026.' 'Employee counts from LinkedIn.' This sets expectations (people know PitchBook is reliable, LinkedIn is approximate) and lets you shift blame when data is wrong. 'This is what PitchBook reported' is better than 'this is what I analyzed.'",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-012",
+    "chapter": "data-quality",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are useful dbt tests for VC data quality?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uniqueness (each company should have only one canonical ID)"
+      },
+      {
+        "id": "b",
+        "text": "Not null (required fields like company name, founding date are populated)"
+      },
+      {
+        "id": "c",
+        "text": "Relationships (every investment references a valid company and investor)"
+      },
+      {
+        "id": "d",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "Useful dbt tests for VC data: Uniqueness (each company should have only one canonical ID), Not null (required fields like company name, founding date are populated), Relationships (every investment references a valid company and investor). Run these tests frequently (daily or after each data ingestion) to catch issues before bad data reaches dashboards.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-013",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When does data staleness matter most?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It never matters"
+      },
+      {
+        "id": "b",
+        "text": "Staleness matters most for real-time decision-making. If a GP is deciding whether to take a meeting this week, you want current information. For background research, last quarter's data is fine"
+      },
+      {
+        "id": "c",
+        "text": "It always matters equally"
+      },
+      {
+        "id": "d",
+        "text": "Only for historical data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Staleness matters most for real-time decision-making. If a GP is deciding whether to take a meeting with a company this week, you want current information. If you're doing background research on a market, last quarter's data is fine. Understand which use cases are time-sensitive and prioritize freshness there.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-014",
+    "chapter": "data-quality",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is a hidden cost of entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's always free"
+      },
+      {
+        "id": "b",
+        "text": "When you merge multiple sources and data is wrong, blame-shifting becomes harder. Whose fault is it - the vendor, matching algorithm, or your choice of which source to trust?"
+      },
+      {
+        "id": "c",
+        "text": "It makes data more accurate"
+      },
+      {
+        "id": "d",
+        "text": "It reduces storage costs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Entity resolution makes blame-shifting harder. When you merge multiple sources and the data is wrong, whose fault is it? The vendor, the matching algorithm, or your choice of which source to trust? This is a hidden cost of entity resolution. Single-source analyses let you point to the provider when things are wrong.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  },
+  {
+    "id": "data-quality-015",
+    "chapter": "data-quality",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What should you do when bad data reaches GPs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore it"
+      },
+      {
+        "id": "b",
+        "text": "Figure out why and fix the root cause. Report errors to vendors. Improve entity resolution. Don't use low-trust data for high-stakes analysis"
+      },
+      {
+        "id": "c",
+        "text": "Blame the GPs"
+      },
+      {
+        "id": "d",
+        "text": "Delete the data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Learn from each mistake: When bad data reaches GPs, figure out why and fix the root cause. Report errors to vendors. Improve entity resolution. Don't use low-trust data for high-stakes analysis. Each mistake is a chance to improve your infrastructure.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-quality"
+  }
+]

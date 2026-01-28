@@ -1,0 +1,358 @@
+[
+  {
+    "id": "company-data-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the foundation of VC technology?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People data"
+      },
+      {
+        "id": "b",
+        "text": "Company and investment data"
+      },
+      {
+        "id": "c",
+        "text": "Signal data"
+      },
+      {
+        "id": "d",
+        "text": "Market research data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Company and investment data is the foundation of VC technology. You need information about companies (name, location, founding date, description, website) and their funding history (rounds, amounts, dates, investors, valuations). This data powers CRM, deal flow tracking, market analysis, and portfolio monitoring.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-2",
+    "chapter": "data-providers",
+    "section": "company-basics",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What company basics should you look for in company data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Name, description, website"
+      },
+      {
+        "id": "b",
+        "text": "Location and founding date"
+      },
+      {
+        "id": "c",
+        "text": "Industry/sector classification"
+      },
+      {
+        "id": "d",
+        "text": "Employee count"
+      },
+      {
+        "id": "e",
+        "text": "Founder's personal email"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Company basics include name, description, website, location, founding date, industry/sector classification, and employee count. Founder personal emails would be people data, not company data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-3",
+    "chapter": "data-providers",
+    "section": "funding-history",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What information should be included in funding history data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Investment rounds (dates, amounts, valuations)"
+      },
+      {
+        "id": "b",
+        "text": "Investors in each round"
+      },
+      {
+        "id": "c",
+        "text": "Lead investors and co-investors"
+      },
+      {
+        "id": "d",
+        "text": "Total funding raised"
+      },
+      {
+        "id": "e",
+        "text": "Founder's previous companies"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Funding history should include investment rounds (dates, amounts, valuations), investors in each round, lead investors and co-investors, and total funding raised. Founder's previous companies would be people data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-4",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider is best known for analyst-verified financials, valuation history, cap tables, and detailed deal terms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crunchbase"
+      },
+      {
+        "id": "b",
+        "text": "PitchBook"
+      },
+      {
+        "id": "c",
+        "text": "Dealroom"
+      },
+      {
+        "id": "d",
+        "text": "Tracxn"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "PitchBook is known for analyst-verified financials, valuation history, cap tables, and detailed deal terms. It has deep PE/VC data but can be overkill for early-stage focused funds. It's dashboard-first with API secondary.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-5",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider is best for early-stage prospecting with broad startup coverage and AI-powered search?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PitchBook"
+      },
+      {
+        "id": "b",
+        "text": "Crunchbase"
+      },
+      {
+        "id": "c",
+        "text": "Dealroom"
+      },
+      {
+        "id": "d",
+        "text": "Tracxn"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Crunchbase offers broad startup coverage, user-friendly UI, AI-powered search, and is good for prospecting. However, it has less depth on financials and deal terms, and user-contributed data can be stale or inaccurate.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-6",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider has strong European coverage and government partnerships?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PitchBook"
+      },
+      {
+        "id": "b",
+        "text": "Crunchbase"
+      },
+      {
+        "id": "c",
+        "text": "Dealroom"
+      },
+      {
+        "id": "d",
+        "text": "Tracxn"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Dealroom has strong European coverage, government partnerships, ecosystem mapping, and early-stage depth. However, it has weaker US coverage compared to alternatives.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-7",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider has worldwide coverage with better coverage in emerging markets and impressive sector granularity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PitchBook"
+      },
+      {
+        "id": "b",
+        "text": "Crunchbase"
+      },
+      {
+        "id": "c",
+        "text": "Dealroom"
+      },
+      {
+        "id": "d",
+        "text": "Tracxn"
+      }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "Tracxn has worldwide coverage (better than others in emerging markets) and impressive sector granularity. However, it has more reliance on automated data collection and less human verification compared to other providers.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-8",
+    "chapter": "data-providers",
+    "section": "alternatives",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the main difference between the primary providers (PitchBook, Crunchbase, etc.) and alternative providers (CrustData, People Data Labs, etc.)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary providers are cheaper"
+      },
+      {
+        "id": "b",
+        "text": "Primary providers involve human curation and verification, while alternatives are primarily scraped from online sources"
+      },
+      {
+        "id": "c",
+        "text": "Alternatives have better coverage"
+      },
+      {
+        "id": "d",
+        "text": "There is no difference"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Primary providers (PitchBook, Crunchbase, Dealroom, Tracxn) involve human curation and verification, making them more accurate and contextually rich. Alternatives (CrustData, People Data Labs, Mixrank, Coresignal) are primarily scraped from online sources - useful for specific use cases but typically less depth and accuracy.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-9",
+    "chapter": "data-providers",
+    "section": "considerations",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What should you consider when selecting a company data provider?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coverage varies by geography and stage"
+      },
+      {
+        "id": "b",
+        "text": "Data freshness matters"
+      },
+      {
+        "id": "c",
+        "text": "API vs dashboard access"
+      },
+      {
+        "id": "d",
+        "text": "Only the price"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Considerations include: coverage varies by geography and stage (some are stronger in US tech, others in European markets, others in specific stages), data freshness (how quickly they capture new funding rounds), and API vs dashboard (some focus on dashboard access, others have better APIs for programmatic access). Price is important but not the only factor.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-10",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "When would PitchBook be overkill for a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For early-stage focused funds"
+      },
+      {
+        "id": "b",
+        "text": "For growth-stage funds"
+      },
+      {
+        "id": "c",
+        "text": "For funds doing comparables analysis"
+      },
+      {
+        "id": "d",
+        "text": "For funds needing detailed cap tables"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "PitchBook can be overkill for early-stage focused funds. It's dashboard-first with API secondary, and its deep PE/VC data and detailed deal terms are more valuable for growth-stage funds doing deeper due diligence.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-11",
+    "chapter": "data-providers",
+    "section": "alternatives",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "Which alternative providers offer company firmographics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CrustData"
+      },
+      {
+        "id": "b",
+        "text": "People Data Labs"
+      },
+      {
+        "id": "c",
+        "text": "Mixrank"
+      },
+      {
+        "id": "d",
+        "text": "Coresignal"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "All four alternative providers offer company firmographics: CrustData (real-time firmographics via API), People Data Labs (people data provider that also offers company firmographics), Mixrank (basic firmographics), and Coresignal (comprehensive firmographics with many data points).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  },
+  {
+    "id": "company-data-12",
+    "chapter": "data-providers",
+    "section": "investor-data",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What investor data should company data providers include?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Which VCs invested in which companies"
+      },
+      {
+        "id": "b",
+        "text": "Fund-level information"
+      },
+      {
+        "id": "c",
+        "text": "Investment patterns and focus areas"
+      },
+      {
+        "id": "d",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "Investor data should include which VCs invested in which companies, fund-level information, and investment patterns and focus areas. This helps with competitive analysis, understanding market dynamics, and identifying co-investment opportunities.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/company-data"
+  }
+]

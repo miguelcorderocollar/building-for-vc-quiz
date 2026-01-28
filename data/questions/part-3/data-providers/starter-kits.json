@@ -1,0 +1,308 @@
+[
+  {
+    "id": "starter-kits-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What determines what data you need for your VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only your budget"
+      },
+      {
+        "id": "b",
+        "text": "Stage focus, sector specialization, team size, and budget"
+      },
+      {
+        "id": "c",
+        "text": "Only your stage focus"
+      },
+      {
+        "id": "d",
+        "text": "Only your sector specialization"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "What data you need depends on your fund: stage focus, sector specialization, team size, and budget. A pre-seed fund sourcing emerging founders needs different data than a growth fund doing due diligence on Series B companies.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-2",
+    "chapter": "data-providers",
+    "section": "pre-seed-seed",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What data does a pre-seed/seed focused fund typically need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data to support macro and market trend research"
+      },
+      {
+        "id": "b",
+        "text": "Early-stage signal data"
+      },
+      {
+        "id": "c",
+        "text": "Founder and team data"
+      },
+      {
+        "id": "d",
+        "text": "Basic company data"
+      },
+      {
+        "id": "e",
+        "text": "Comprehensive funding databases"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Pre-seed/seed funds need: data to support macro and market trend research, early-stage signal data (who's starting companies), founder and team data (background, previous experience), and basic company data (to track what you find). They probably don't need comprehensive funding databases yet (most targets won't be in them).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-3",
+    "chapter": "data-providers",
+    "section": "pre-seed-seed",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the typical stack for a pre-seed/seed focused fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PitchBook for company data, S&P Capital IQ for financials"
+      },
+      {
+        "id": "b",
+        "text": "Gravity (US) or Evertrace (Europe) for signals, People Data Labs or Coresignal for people/company data, Perplexity API for research"
+      },
+      {
+        "id": "c",
+        "text": "Only Crunchbase"
+      },
+      {
+        "id": "d",
+        "text": "Only signal providers"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Pre-seed/seed funds typically use: Gravity (US) or Evertrace (Europe) for early signal data, People Data Labs or Coresignal for people and company data coverage, and Perplexity API for quick market research. At this stage, signal and people data matter more than comprehensive funding databases.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-4",
+    "chapter": "data-providers",
+    "section": "series-a-b",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What does a Series A/Series B focused fund typically need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Funding history and investor data"
+      },
+      {
+        "id": "b",
+        "text": "Growth signals (hiring, web traffic, product launches)"
+      },
+      {
+        "id": "c",
+        "text": "Team composition and changes"
+      },
+      {
+        "id": "d",
+        "text": "Competitive landscape data"
+      },
+      {
+        "id": "e",
+        "text": "Deep public market data"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Series A/Series B funds need: funding history and investor data, growth signals (hiring, web traffic, product launches), team composition and changes, and competitive landscape data. They probably don't need deep public market data yet.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-5",
+    "chapter": "data-providers",
+    "section": "series-a-b",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the 'balanced' tier for Series A/Series B funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only signal data"
+      },
+      {
+        "id": "b",
+        "text": "Only comprehensive company data"
+      },
+      {
+        "id": "c",
+        "text": "Both signal data (to find companies with momentum) and comprehensive company data (for due diligence)"
+      },
+      {
+        "id": "d",
+        "text": "Only people data"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Series A/Series B is the 'balanced' tier. You need both signal data (to find companies with momentum) and comprehensive company data (for due diligence). This is where you might start to experiment with 'flat files' instead of APIs.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-6",
+    "chapter": "data-providers",
+    "section": "growth-late-stage",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What does a growth/late-stage focused fund typically need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comprehensive funding databases"
+      },
+      {
+        "id": "b",
+        "text": "Financial and operational metrics"
+      },
+      {
+        "id": "c",
+        "text": "Market and competitive analysis"
+      },
+      {
+        "id": "d",
+        "text": "Public company comparables"
+      },
+      {
+        "id": "e",
+        "text": "Early-stage signal data"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Growth/late-stage funds need: comprehensive funding databases, financial and operational metrics, market and competitive analysis, and public company comparables. They probably don't need early-stage signal data (targets are already known).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-7",
+    "chapter": "data-providers",
+    "section": "growth-late-stage",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why is PitchBook worth the investment for growth/late-stage funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's the cheapest option"
+      },
+      {
+        "id": "b",
+        "text": "The coverage and quality of premium data becomes worth it - you need detailed financials, valuation history, and deal terms"
+      },
+      {
+        "id": "c",
+        "text": "It has the best API"
+      },
+      {
+        "id": "d",
+        "text": "It's the only option available"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "At growth/late-stage, the coverage and quality of premium data becomes worth the investment. You need detailed financials, valuation history, and deal terms that lighter providers don't offer. You probably also need full data dumps, rather than just API access.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-8",
+    "chapter": "data-providers",
+    "section": "deep-tech-bio",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What specialized data does a deep tech/bio focused fund need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Academic publication databases"
+      },
+      {
+        "id": "b",
+        "text": "Patent and IP data"
+      },
+      {
+        "id": "c",
+        "text": "Technical founder backgrounds"
+      },
+      {
+        "id": "d",
+        "text": "Research institution connections"
+      },
+      {
+        "id": "e",
+        "text": "Public market comparables"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Deep tech/bio funds need: academic publication databases (arXiv for AI/ML/physics, PubMed for bio/healthcare), patent and IP data (Lens), technical founder backgrounds (People Data Labs), and research institution connections. Public market comparables are more relevant for growth-stage funds.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-9",
+    "chapter": "data-providers",
+    "section": "regional-sector",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the key insight for regional or sector specialist funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Generalist providers have the best coverage everywhere"
+      },
+      {
+        "id": "b",
+        "text": "Generalist providers often have weak coverage outside US tech - look for specialized providers who focus on your market"
+      },
+      {
+        "id": "c",
+        "text": "All providers have identical coverage"
+      },
+      {
+        "id": "d",
+        "text": "You should only use one provider"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Generalist data providers often have weak coverage outside US tech. If you invest in Europe, Asia, or specific verticals, look for specialized providers who focus on your market. For example, Dealroom for Europe, Evertrace for European signals, or sector-specific tools like Jungle Scout for e-commerce.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  },
+  {
+    "id": "starter-kits-10",
+    "chapter": "data-providers",
+    "section": "budget-considerations",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How should your data budget scale with fund size?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Small fund (under $50M): Focus on 1-2 core providers. Mid-size ($50-250M): 3-5 providers typical. Large (over $250M): 3-5 providers but more expensive, plus additional budget for project/deal specific sources"
+      },
+      {
+        "id": "b",
+        "text": "All funds should use the same providers"
+      },
+      {
+        "id": "c",
+        "text": "Only large funds need data providers"
+      },
+      {
+        "id": "d",
+        "text": "Budget doesn't matter"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Data budget should scale with fund size: Small fund (under $50M): Focus on 1-2 core providers, start with what you absolutely need. Mid-size fund ($50-250M): Can afford broader coverage, 3-5 providers typical. Large fund (over $250M): 3-5 providers (but typically more expensive), then additional budget reserved for project or deal specific data sources.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/starter-kits"
+  }
+]

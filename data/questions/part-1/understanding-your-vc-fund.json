@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "understanding-fund-001",
+      "chapter": "understanding-your-vc-fund",
+      "section": "The Critical First Question",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the critical first question you need to answer before writing any code?",
+      "options": [
+        {"id": "a", "text": "What programming language should I use?"},
+        {"id": "b", "text": "What type of fund am I building for?"},
+        {"id": "c", "text": "What database should I use?"},
+        {"id": "d", "text": "What cloud provider should I use?"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Before writing a single line of code, you need to answer: What type of fund am I building for? This isn't academic. The stage focus, investment strategy, and fund structure determine what data you need to track, how complex your workflows need to be, what integrations matter, how much automation is possible, and what your data model should look like. Building generic 'VC software' is a recipe for failure.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#the-critical-first-question"
+    },
+    {
+      "id": "understanding-fund-002",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Types by Stage",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is a typical characteristic of pre-seed and seed funds ($10M-$100M)?",
+      "options": [
+        {"id": "a", "text": "They make 5-10 investments per year with check sizes around $500K-$2M"},
+        {"id": "b", "text": "They make 100+ investments per year"},
+        {"id": "c", "text": "They have 3-6 month diligence processes"},
+        {"id": "d", "text": "They only invest in public companies"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "A typical seed fund might make 5-10 investments per year with check sizes around $500K-$2M. These funds are often run by small teams of 2-5 people. The diligence process is relatively quick (1-3 weeks typically) but still substantive. They're evaluating founder quality, market opportunity, early traction, and whether the company has a real shot at reaching Series A.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#pre-seed-and-seed-funds-10m-100m"
+    },
+    {
+      "id": "understanding-fund-003",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Types by Stage",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How do Series A and B funds differ from seed funds?",
+      "options": [
+        {"id": "a", "text": "They see moderate deal volume (20-40 companies per fund), write checks in the $2M-$10M range, have substantial diligence processes, and usually take board seats"},
+        {"id": "b", "text": "They operate exactly the same as seed funds"},
+        {"id": "c", "text": "They only invest in public companies"},
+        {"id": "d", "text": "They don't take board seats"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Series A and B funds occupy the middle ground. They see moderate deal volume (20-40 companies per fund), write checks in the $2M-$10M range, and have substantial diligence processes. These funds usually take board seats. They reserve 30-50% of their capital for follow-on investments in their best companies. Deal teams are larger here with 5-10 investment professionals.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#series-a-and-b-funds-50m-300m"
+    },
+    {
+      "id": "understanding-fund-004",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Types by Stage",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What are characteristics of growth equity funds ($500M-$2B+)? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Low deal volume (maybe 10-20 companies per fund)"},
+        {"id": "b", "text": "Very large checks ($25M-$100M+)"},
+        {"id": "c", "text": "Diligence processes that can stretch 3-6 months"},
+        {"id": "d", "text": "Focus shifts from 'will this work?' to 'can this scale profitably?'"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Growth equity funds operate at the other end of the spectrum. Low deal volume (maybe 10-20 companies per fund), very large checks ($25M-$100M+), and diligence processes that can stretch 3-6 months. These deals look more like acquisitions than venture bets. The fund is evaluating mature businesses with real revenue, established customers, and clear unit economics. The focus shifts from 'will this work?' to 'can this scale profitably?'",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#growth-equity-500m-2b"
+    },
+    {
+      "id": "understanding-fund-005",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Types by Stage",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "How does the role of technology change in Private Equity / Buyout funds compared to VC funds?",
+      "options": [
+        {"id": "a", "text": "Technology is not needed in PE funds"},
+        {"id": "b", "text": "The technologist's role shifts from building systems to being part of the deal team itself, using data to help deal teams get to conviction"},
+        {"id": "c", "text": "PE funds use the same technology as VC funds"},
+        {"id": "d", "text": "PE funds only need basic spreadsheets"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "In PE, the questions deal teams ask are often so bespoke that the technologist's role shifts from building systems to being part of the deal team itself. You're using data to help deal teams get to conviction. Can we model the impact of operational improvements? What does the competitive landscape look like quantitatively? Each project is tailored to bespoke needs. This isn't about building one platform that serves all portfolio companies. It's about being a data and technology partner embedded in the operational work of the fund and its portfolio.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#private-equity--buyout-funds"
+    },
+    {
+      "id": "understanding-fund-006",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Types by Stage",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is a key challenge when building for multi-strategy funds?",
+      "options": [
+        {"id": "a", "text": "You're building infrastructure that needs to support multiple funds with different sourcing methods, evaluation criteria, workflows, LPs, and reporting requirements"},
+        {"id": "b", "text": "They only have one fund"},
+        {"id": "c", "text": "They don't need shared infrastructure"},
+        {"id": "d", "text": "Each fund operates completely independently"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Multi-strategy funds run separate vehicles for different stages: a seed fund, a Series A/B fund, a growth fund. Each vehicle operates with its own strategy, team, and capital base, but under one brand and shared infrastructure. The challenge is managing complexity while maintaining the benefits of integration. Each fund needs its own LP reporting, its own capital tracking, its own performance metrics. But deals, companies, and relationships should be shared.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#multi-strategy-funds"
+    },
+    {
+      "id": "understanding-fund-007",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Investment Strategies",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How does geographic focus shape technical architecture?",
+      "options": [
+        {"id": "a", "text": "It doesn't matter"},
+        {"id": "b", "text": "Multi-entity structures require careful data modeling, currency handling affects portfolio valuation, time zones affect scheduling, and access control becomes more complex"},
+        {"id": "c", "text": "Only currency matters"},
+        {"id": "d", "text": "Only time zones matter"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Geographic focus shapes your architecture significantly. Multi-entity structures require careful data modeling: which legal entity made which investment? How do you aggregate performance across entities while maintaining separation for legal and tax purposes? Currency handling affects portfolio valuation and financial reporting. Time zones affect scheduling features, notification timing, and how you display dates. Access control becomes more complex: regional partners might only see deals in their geography, while HQ needs global visibility.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#geographic-focus"
+    },
+    {
+      "id": "understanding-fund-008",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Investment Strategies",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "How does industry specialization shape technical requirements? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Deep tech funds need access to patent databases, grant tracking systems, and academic research"},
+        {"id": "b", "text": "Fintech funds integrate with regulatory databases and compliance monitoring"},
+        {"id": "c", "text": "Crypto funds might pull data from blockchain explorers and token analytics platforms"},
+        {"id": "d", "text": "B2B SaaS funds focus heavily on financial metrics like ARR, net retention, CAC, LTV"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Industry specialization shapes your sourcing and research infrastructure especially. A deep tech fund needs access to patent databases, grant tracking systems, and academic research. A fintech fund integrates with regulatory databases and compliance monitoring. A crypto fund might pull data from blockchain explorers and token analytics platforms. Your deal sourcing changes - defense tech funds track government contract databases, biotech funds monitor clinical trials, and B2B SaaS funds benchmark against industry ARR data.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#industry-specialization"
+    },
+    {
+      "id": "understanding-fund-009",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Fund Investment Strategies",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the technical challenge for generalist funds?",
+      "options": [
+        {"id": "a", "text": "They don't need any technology"},
+        {"id": "b", "text": "Flexibility without chaos - categorization systems need to handle companies that don't fit neat boxes, tagging and metadata become more important, signal processing requires broader pattern matching"},
+        {"id": "c", "text": "They only invest in one sector"},
+        {"id": "d", "text": "They use the same systems as specialized funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The technical challenge for generalist funds is flexibility without chaos. Your categorization systems need to handle companies that don't fit neat boxes. Tagging and metadata become more important than rigid hierarchies. Signal processing for deal flow requires broader pattern matching: you can't rely on sector-specific signals, so you need systems that surface opportunities based on founder quality, market dynamics, and thesis fit across different industries. Your metric tracking needs to gracefully handle B2B SaaS, consumer apps, marketplaces, and hardware companies in the same portfolio.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#generalist-funds"
+    },
+    {
+      "id": "understanding-fund-010",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Understanding Your Fund's Thesis",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the best way to understand what a fund actually looks for?",
+      "options": [
+        {"id": "a", "text": "Trust the pitch deck to LPs"},
+        {"id": "b", "text": "Analyze what they've actually invested in - 'Show me your portfolio and I'll show you your thesis'"},
+        {"id": "c", "text": "Ask the partners what they say they invest in"},
+        {"id": "d", "text": "Look at their marketing materials"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "A fund's stated thesis and their actual thesis often differ. The pitch deck to LPs might say 'Series A B2B SaaS' but the portfolio tells a different story. The best way to understand what a fund actually looks for is to analyze what they've invested in. Start by looking at the portfolio data: What stages are they actually investing at? What industries keep appearing? What check sizes are common? What geographies show up? What patterns exist in founding teams?",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#show-me-your-portfolio-and-ill-show-you-your-thesis"
+    },
+    {
+      "id": "understanding-fund-011",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Meeting with GPs: The Right Questions",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What types of questions should you ask GPs to understand technical requirements? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "About thesis creation and evolution"},
+        {"id": "b", "text": "About deal flow - walk me through how a deal comes in"},
+        {"id": "c", "text": "About due diligence - what does your process look like?"},
+        {"id": "d", "text": "About portfolio management and LP reporting"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "To understand what to build, you need to understand how the GPs actually work. Ask about: Thesis creation and evolution - How do you develop and refine your investment thesis? Deal flow - Walk me through how a deal comes in and what happens next. Due diligence - What does your diligence process look like? Portfolio management - How often do you interact with portfolio companies? LP reporting - How often do you report to LPs? Pain points - What takes the most time that shouldn't? The goal isn't to gather feature requests. It's to understand workflows, pain points, and data needs before proposing solutions.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#meeting-with-gps-the-right-questions"
+    },
+    {
+      "id": "understanding-fund-012",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Observation Over Interviews",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why is observation more valuable than interviews?",
+      "options": [
+        {"id": "a", "text": "Interviews tell you what people think they do, observation shows you what they actually do - there's always a gap"},
+        {"id": "b", "text": "Interviews are always accurate"},
+        {"id": "c", "text": "Observation is not important"},
+        {"id": "d", "text": "They are the same"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "Interviews tell you what people think they do. Observation shows you what they actually do. There's always a gap. Shadow the team whenever possible. Sit in on partner meetings. Watch how deals get discussed. See how they prepare for IC. Observe portfolio company interactions. Watch the current tools in use. What spreadsheets do they maintain? These often reveal the data they care about most. Look specifically for workarounds - these are gold for understanding what's broken.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#observation-over-interviews"
+    },
+    {
+      "id": "understanding-fund-013",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Observation Over Interviews",
+      "difficulty": "advanced",
+      "type": "multiple",
+      "question": "What are red flags in conversations that indicate you don't understand the fund well enough yet? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "'We'll figure out the process as we build the tool'"},
+        {"id": "b", "text": "'Just build something flexible and we'll adapt'"},
+        {"id": "c", "text": "'Make it like [other fund's tool] but better'"},
+        {"id": "d", "text": "'We need everything that [vendor] has'"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Watch for red flags in your conversations. If someone says 'We'll figure out the process as we build the tool,' that's a sign you don't understand their workflow yet. If they say 'Just build something flexible and we'll adapt,' they don't actually know what they need. If they say 'Make it like [other fund's tool] but better,' they're guessing about what might work. If they say 'We need everything that [vendor] has,' they haven't thought about their actual requirements. These red flags mean you don't understand the fund well enough yet. Keep observing, keep asking questions, and don't start building until you have real clarity.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#observation-over-interviews"
+    },
+    {
+      "id": "understanding-fund-014",
+      "chapter": "understanding-your-vc-fund",
+      "section": "Translating Thesis to Technical Requirements",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "For a concentrated seed fund making 5-8 investments per year with $500K-$1.5M check sizes, what should you NOT build?",
+      "options": [
+        {"id": "a", "text": "Don't build for processing hundreds of deals per month - this fund is selective, not volume-driven"},
+        {"id": "b", "text": "Don't assume minimal engagement - seed funds care deeply about their portfolio"},
+        {"id": "c", "text": "Don't skip follow-on investment tracking - many seed funds reserve significant capital for follow-ons"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "For a concentrated seed fund making 5-8 investments per year: What not to build - Don't build for processing hundreds of deals per month. This fund is selective, not volume-driven. Don't assume minimal engagement. Seed funds care deeply about their portfolio companies and stay closely involved. Don't skip follow-on investment tracking. Many seed funds reserve significant capital for follow-ons and need to manage that actively. The deal flow tool needs to support research-driven sourcing, track companies proactively, and support a pipeline from research to decision.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#example-1-concentrated-seed-fund"
+    },
+    {
+      "id": "understanding-fund-015",
+      "chapter": "understanding-your-vc-fund",
+      "section": "The Bottom Line",
+      "difficulty": "advanced",
+      "type": "multiple",
+      "question": "What are the seven critical questions you need to answer before writing code? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Stage - What stage does this fund invest at?"},
+        {"id": "b", "text": "Volume - What's the deal volume?"},
+        {"id": "c", "text": "Strategy - What's the investment strategy?"},
+        {"id": "d", "text": "Involvement - How hands-on is the fund?"},
+        {"id": "e", "text": "Team - What does the team look like?"},
+        {"id": "f", "text": "Thesis - What do they actually invest in?"},
+        {"id": "g", "text": "Operating Style - What's the organization's culture?"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d", "e", "f", "g"],
+      "explanation": "Before you write any code, get clear on seven critical questions: Stage - What stage does this fund invest at? Volume - What's the deal volume? Strategy - What's the investment strategy? Involvement - How hands-on is the fund? Team - What does the team look like? Thesis - What do they actually invest in? Operating Style - What's the organization's culture? These seven answers determine your entire technical architecture. There's no one-size-fits-all solution. The most expensive mistake you can make is building generic VC software and trying to adapt it later.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/understanding-your-vc-fund#the-bottom-line"
+    }
+  ]
+}

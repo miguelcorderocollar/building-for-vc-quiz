@@ -1,0 +1,422 @@
+[
+  {
+    "id": "emerging-trends-001",
+    "chapter": "emerging-trends",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why are LLMs described as the most significant technology shift for VC infrastructure in the past decade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They reduce cloud costs"
+      },
+      {
+        "id": "b",
+        "text": "They've changed how you build tools, extract information from documents, analyze companies, and how fast you can ship features as a solo developer"
+      },
+      {
+        "id": "c",
+        "text": "They replace the need for data"
+      },
+      {
+        "id": "d",
+        "text": "They are only useful for chatbots"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Large language models are the most significant technology shift for VC infrastructure in the past decade. They've changed how you build tools, how you extract information from documents, how you analyze companies, and how fast you can ship features as a solo developer. If you're building VC technology without using LLMs, you're working at a significant disadvantage.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-002",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is MCP (Model Context Protocol)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A database protocol"
+      },
+      {
+        "id": "b",
+        "text": "Anthropic's standard for connecting AI assistants to data sources - build MCP servers that expose your data in a standardized way"
+      },
+      {
+        "id": "c",
+        "text": "A network security protocol"
+      },
+      {
+        "id": "d",
+        "text": "A file format for models"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Model Context Protocol (MCP) is Anthropic's standard for connecting AI assistants to data sources. Instead of copy-pasting data into Claude or building custom integrations, you build MCP servers that expose your data in a standardized way. Claude Code (and other MCP-compatible tools) can then query your internal systems directly.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-003",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the alternative view on MCP servers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are always necessary"
+      },
+      {
+        "id": "b",
+        "text": "Some developers argue MCPs are unnecessary abstraction - just write CLI tools instead, which are more universal and simpler to build"
+      },
+      {
+        "id": "c",
+        "text": "They should never be used"
+      },
+      {
+        "id": "d",
+        "text": "They only work with OpenAI"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Some developers argue MCPs are unnecessary abstraction and you should just write CLI tools instead. Claude Code can already execute bash commands. A simple CLI script is more universal than an MCP server (works with any tool that can run bash), simpler to build (no SDK required), and easier to maintain.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-004",
+    "chapter": "emerging-trends",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why does connecting AI to internal data matter for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It reduces headcount"
+      },
+      {
+        "id": "b",
+        "text": "You have valuable data scattered across systems. MCP/CLI tools let AI query your CRM, data warehouse, and research directly without you being the intermediary"
+      },
+      {
+        "id": "c",
+        "text": "It's required by LPs"
+      },
+      {
+        "id": "d",
+        "text": "It improves model accuracy"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "VC funds have valuable data scattered across systems: companies in CRM, research in data warehouse, portfolio metrics in dashboards. When analyzing data, you currently need to manually pull from each system. MCP servers or CLI tools let AI access this data directly, becoming specialized tools that understand your fund's portfolio and pipeline.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-005",
+    "chapter": "emerging-trends",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are MCP Apps?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mobile applications for MCP"
+      },
+      {
+        "id": "b",
+        "text": "MCP servers that can expose UI components directly to the LLM client - forms, charts, tables, approval workflows"
+      },
+      {
+        "id": "c",
+        "text": "App store for AI tools"
+      },
+      {
+        "id": "d",
+        "text": "A replacement for web apps"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "MCP Apps allow MCP servers to expose UI components directly to the LLM client. Instead of just providing tools that return text, an MCP server can now render interactive interfaces: forms, charts, tables, approval workflows. This blurs the line between 'AI assistant' and 'application platform' even further.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-006",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the next evolution in AI-assisted development beyond single sessions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Longer context windows"
+      },
+      {
+        "id": "b",
+        "text": "Agent orchestration - multiple AI agents working in parallel on the same codebase through git worktrees"
+      },
+      {
+        "id": "c",
+        "text": "Better syntax highlighting"
+      },
+      {
+        "id": "d",
+        "text": "Faster typing"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The next evolution is multiple AI agents working in parallel on the same codebase through git worktrees. Instead of one Claude Code session, you might have ten agents simultaneously: one implementing frontend, one building backend APIs, one writing tests, one updating documentation, etc. Each works in its own git worktree and creates PRs you review.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-007",
+    "chapter": "emerging-trends",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are examples of agent orchestration platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "GitHub, GitLab, Bitbucket"
+      },
+      {
+        "id": "b",
+        "text": "Conductor, Emdash, Superset"
+      },
+      {
+        "id": "c",
+        "text": "VS Code, Cursor, Vim"
+      },
+      {
+        "id": "d",
+        "text": "Slack, Teams, Discord"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Agent orchestration systems are being built: Conductor, Emdash, and Superset. These platforms help coordinate multiple AI agents working in parallel on the same codebase. The building blocks exist: git worktrees are a standard git feature, Claude Code can already work with git.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-008",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why was RAG (Retrieval Augmented Generation) necessary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To improve model accuracy"
+      },
+      {
+        "id": "b",
+        "text": "RAG was a workaround for limited context windows - if you could only fit 8K-32K tokens, you needed to chunk documents and retrieve relevant pieces"
+      },
+      {
+        "id": "c",
+        "text": "It was required by regulations"
+      },
+      {
+        "id": "d",
+        "text": "To reduce API costs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "RAG existed as a workaround for limited context windows. If you could only fit 8K or 32K tokens into context, you couldn't give an AI access to hundreds of documents. So you chunked documents, embedded them, and retrieved only the most relevant pieces for each query.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-009",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What are file-native agents and why are they replacing RAG?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agents that only work with file extensions"
+      },
+      {
+        "id": "b",
+        "text": "Agents with large context windows and file system access that work with documents directly - no chunking, embedding, or graph extraction needed"
+      },
+      {
+        "id": "c",
+        "text": "Agents that create files automatically"
+      },
+      {
+        "id": "d",
+        "text": "A new file format"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "File-native agents have direct access to files in their native formats, use tools to search and analyze (grep, specialized readers), and maintain context through compaction. Context windows are now large enough - agents can work with files directly like humans do. No chunking, no embedding, no graph extraction needed.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-010",
+    "chapter": "emerging-trends",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why do files work as a shared abstraction between humans and AI agents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Files are the most efficient format"
+      },
+      {
+        "id": "b",
+        "text": "Files aren't optimal for agents or humans individually, but they're common ground both can navigate - enabling collaboration. Agent-only structures break this"
+      },
+      {
+        "id": "c",
+        "text": "Files are required by operating systems"
+      },
+      {
+        "id": "d",
+        "text": "Files are easier to secure"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Files work because they're a shared abstraction. They're not optimal for agents or humans individually, but they're common ground both can navigate. This shared interface enables collaboration. If you create agent-only structures (vector databases, proprietary knowledge graphs), you break the collaborative aspect.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-011",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What should you ignore when building VC AI features?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Don't fine-tune models - foundation models work fine for almost all VC use cases"
+      },
+      {
+        "id": "b",
+        "text": "Don't add AI just to say you have AI - build features that solve actual problems"
+      },
+      {
+        "id": "c",
+        "text": "AGI timelines don't matter for your job - build tools that work now"
+      },
+      {
+        "id": "d",
+        "text": "Don't overcomplicate model selection - use Claude Sonnet for most tasks, Opus for deep reasoning"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "What to ignore: Don't fine-tune models (foundation models work fine for VC use cases). Don't add AI for theater ('AI-powered market maps' that are just LLM text). AGI timelines don't matter for your job. Model selection is simple - use Claude Sonnet for most tasks, Opus for deep reasoning.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-012",
+    "chapter": "emerging-trends",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What sandboxed environments exist for running AI-generated code safely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modal Sandboxes - container-based with network controls"
+      },
+      {
+        "id": "b",
+        "text": "Vercel Sandbox - ephemeral Linux VMs for AI agents"
+      },
+      {
+        "id": "c",
+        "text": "Sprites - hardware-isolated Firecracker VMs with persistent state"
+      },
+      {
+        "id": "d",
+        "text": "Running on your local machine"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Sandboxed environments for agent execution: Modal Sandboxes (container-based with network controls, scaling to 50,000+ concurrent), Vercel Sandbox (ephemeral Linux VMs for AI agents with SDK-first integration), and Sprites (hardware-isolated Firecracker VMs with persistent state and layer 3 network policies).",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-013",
+    "chapter": "emerging-trends",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the competitive advantage with LLMs in VC technology?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That you're using LLMs at all"
+      },
+      {
+        "id": "b",
+        "text": "How you're using them and what you're building on top of them - LLMs are becoming baseline, not cutting-edge"
+      },
+      {
+        "id": "c",
+        "text": "Using the most expensive model"
+      },
+      {
+        "id": "d",
+        "text": "Having the most API calls"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "LLMs are becoming baseline, not cutting-edge. Every fund is using ChatGPT. Every engineer is using Claude Code or Cursor. The competitive advantage isn't that you're using LLMs, it's how you're using them and what you're building on top of them.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-014",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When should you still use traditional database queries instead of file-native agents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always"
+      },
+      {
+        "id": "b",
+        "text": "For large external datasets like all companies from PitchBook with millions of records - continue using data warehouse and SQL"
+      },
+      {
+        "id": "c",
+        "text": "Never - file-native agents replace everything"
+      },
+      {
+        "id": "d",
+        "text": "Only for backup purposes"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The one exception to file-native agents: For large external datasets (all companies from PitchBook, millions of records), traditional database queries are still appropriate. File-native agents are for documents and internal research, not for structured data at scale. Continue using your data warehouse and SQL for that use case.",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  },
+  {
+    "id": "emerging-trends-015",
+    "chapter": "emerging-trends",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What resources are recommended for staying current on VC technology trends?",
+    "options": [
+      {
+        "id": "a",
+        "text": "X (Twitter) - follow engineers and VC tech practitioners"
+      },
+      {
+        "id": "b",
+        "text": "Hacker News - Show HN surfaces new tools, comments contain practical wisdom"
+      },
+      {
+        "id": "c",
+        "text": "Data Driven VC - community specifically for VC data infrastructure"
+      },
+      {
+        "id": "d",
+        "text": "Vestberry VC Day - conferences on VC operations and technology"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Staying current: X/Twitter (follow engineers in AI space, VC tech practitioners), Hacker News (Show HN surfaces new tools, comments have practical wisdom), Data Driven VC (community specifically for VC data infrastructure), and Vestberry VC Day (conferences on VC operations and technology).",
+    "sourceUrl": "/guide/part-3-technical-foundations/emerging-trends"
+  }
+]

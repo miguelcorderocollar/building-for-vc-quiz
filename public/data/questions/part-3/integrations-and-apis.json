@@ -1,0 +1,422 @@
+[
+  {
+    "id": "integrations-001",
+    "chapter": "integrations-and-apis",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is much of the technical work at a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building machine learning models"
+      },
+      {
+        "id": "b",
+        "text": "Building glue between tools - connecting meeting notes to CRM, data providers to warehouse, portfolio data to dashboards"
+      },
+      {
+        "id": "c",
+        "text": "Designing user interfaces"
+      },
+      {
+        "id": "d",
+        "text": "Managing servers"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Much of the technical work at a VC fund is building glue between tools. Connecting meeting notes to your CRM, data providers to your warehouse, portfolio data to dashboards. Some integrations exist out of the box, but many require custom code.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-002",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why should you never trust external APIs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are always slow"
+      },
+      {
+        "id": "b",
+        "text": "API schemas change, vendors return errors in unexpected formats, required fields are sometimes null, data types don't match documentation"
+      },
+      {
+        "id": "c",
+        "text": "They are too expensive"
+      },
+      {
+        "id": "d",
+        "text": "They don't support authentication"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Never trust external APIs. Validate everything. The biggest source of problems in integrations is trusting external APIs to return what you expect. API schemas change. Vendors return errors in unexpected formats. Required fields are sometimes null. Data types don't match documentation.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-003",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What validation libraries should you use for API responses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "jQuery for TypeScript, Django for Python"
+      },
+      {
+        "id": "b",
+        "text": "Zod for TypeScript, Pydantic for Python"
+      },
+      {
+        "id": "c",
+        "text": "Axios for TypeScript, Requests for Python"
+      },
+      {
+        "id": "d",
+        "text": "Validation is not needed"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For TypeScript: Zod. For Python: Pydantic. These libraries let you define schemas for your data and automatically validate objects against them. This catches errors at the boundary - when an API returns bad data, you know immediately rather than letting corrupted data spread through your systems.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-004",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What happens without API response validation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Everything works fine"
+      },
+      {
+        "id": "b",
+        "text": "Bad data silently flows into your system - your data warehouse has invalid data, dashboards show wrong information, analyses are incorrect"
+      },
+      {
+        "id": "c",
+        "text": "APIs return errors"
+      },
+      {
+        "id": "d",
+        "text": "Performance improves"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Without validation, bad data silently flows into your system. A field that's supposed to be a number is suddenly a string. A required field is null. These errors cascade: your data warehouse has invalid data, your dashboards show wrong information, your analyses are incorrect.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-005",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are key considerations for webhook handling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify signatures to prove the request came from the vendor"
+      },
+      {
+        "id": "b",
+        "text": "Handle idempotency - processing the same event twice should be safe"
+      },
+      {
+        "id": "c",
+        "text": "Return quickly (200 OK within seconds) - process asynchronously"
+      },
+      {
+        "id": "d",
+        "text": "Ignore all webhooks and use polling instead"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Key webhook considerations: Verify signatures (always verify webhooks came from the vendor using HMAC), handle idempotency (vendors may send the same webhook multiple times - track event IDs and skip duplicates), and return quickly (accept the webhook, queue the work, return success, process asynchronously).",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-006",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is exponential backoff and when should you use it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A database backup strategy used daily"
+      },
+      {
+        "id": "b",
+        "text": "A retry strategy when hitting rate limits or transient errors - wait 1s, then 2s, then 4s, then 8s between retries"
+      },
+      {
+        "id": "c",
+        "text": "A way to speed up API calls"
+      },
+      {
+        "id": "d",
+        "text": "A pricing model for APIs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When you hit a rate limit or get a transient error, retry with exponential backoff: First retry wait 1 second, second retry wait 2 seconds, third retry wait 4 seconds, fourth retry wait 8 seconds, give up after 5 attempts. Add jitter (random variation) to prevent many clients from retrying simultaneously.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-007",
+    "chapter": "integrations-and-apis",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Which HTTP errors are retriable vs non-retriable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All errors should be retried"
+      },
+      {
+        "id": "b",
+        "text": "Retriable: 429 (rate limit), 503, 504, network errors. Non-retriable: 400, 401, 403, 404"
+      },
+      {
+        "id": "c",
+        "text": "No errors should be retried"
+      },
+      {
+        "id": "d",
+        "text": "Only 500 errors should be retried"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Categorize errors: Retriable - 429 (rate limit), 503 (service unavailable), 504 (timeout), network errors. Retry with backoff. Non-retriable - 400 (bad request), 401 (unauthorized), 403 (forbidden), 404 (not found). Fix the problem or skip the request. 500 (server error) might be temporary - retry a few times but not indefinitely.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-008",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why should you use database transactions for integrations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They make queries faster"
+      },
+      {
+        "id": "b",
+        "text": "When working with databases, wrap operations that need to succeed together - if anything fails, the transaction rolls back to avoid partial failures"
+      },
+      {
+        "id": "c",
+        "text": "They reduce storage costs"
+      },
+      {
+        "id": "d",
+        "text": "They aren't needed for integrations"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When working with databases, wrap operations that need to succeed together in transactions. If anything fails, the transaction rolls back. For example, when inserting a company and its funding rounds, if any insert fails, everything rolls back - avoiding partial failures and inconsistent data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-009",
+    "chapter": "integrations-and-apis",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What makes a useful error message?",
+    "options": [
+      {
+        "id": "a",
+        "text": "'An error occurred'"
+      },
+      {
+        "id": "b",
+        "text": "Include context: what failed, why it failed, what happens next. Example: 'Failed to sync company Acme Inc from PitchBook: Rate limit exceeded (429). Will retry in 60 seconds.'"
+      },
+      {
+        "id": "c",
+        "text": "Just log the error code"
+      },
+      {
+        "id": "d",
+        "text": "Don't log errors"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When something fails, include context: what failed, why it failed, what happens next. Not 'An error occurred.' Instead: 'Failed to sync company Acme Inc from PitchBook: Rate limit exceeded (429). Will retry in 60 seconds.' This makes debugging much easier.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-010",
+    "chapter": "integrations-and-apis",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why should you use an AI gateway when building LLM features?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To make models smarter"
+      },
+      {
+        "id": "b",
+        "text": "LLM providers have frequent outages and rate limits. AI gateways like Vercel's AI SDK or LiteLLM provide automatic failover between providers"
+      },
+      {
+        "id": "c",
+        "text": "To reduce costs"
+      },
+      {
+        "id": "d",
+        "text": "AI gateways aren't needed"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "If you're building features that use LLMs, use an AI gateway for failover. LLM providers have frequent outages and rate limits. Services like Vercel's AI SDK or LiteLLM provide automatic failover between providers, ensuring your features stay working even when one provider is down.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-011",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are best practices for storing API tokens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use environment variables, not hardcoded in code"
+      },
+      {
+        "id": "b",
+        "text": "Use a secrets manager for production"
+      },
+      {
+        "id": "c",
+        "text": "Never commit tokens to git"
+      },
+      {
+        "id": "d",
+        "text": "Rotate periodically"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Store API tokens securely: Use environment variables, not hardcoded in code. Use a secrets manager for production. Never commit tokens to git. Rotate periodically. These practices prevent security breaches from exposed credentials.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-012",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What timeout should you set for LLM API requests?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5 seconds"
+      },
+      {
+        "id": "b",
+        "text": "60-90 seconds, since LLM requests can take 30+ seconds"
+      },
+      {
+        "id": "c",
+        "text": "No timeout needed"
+      },
+      {
+        "id": "d",
+        "text": "1 second"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Set 60-90 second timeouts for LLM requests. LLM requests can take 30+ seconds, so you need longer timeouts than typical API calls. This prevents slow requests from blocking indefinitely while still giving enough time for complex responses.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-013",
+    "chapter": "integrations-and-apis",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What tool can you use for local webhook development?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Postman"
+      },
+      {
+        "id": "b",
+        "text": "webhook.site for testing with dummy data"
+      },
+      {
+        "id": "c",
+        "text": "Excel"
+      },
+      {
+        "id": "d",
+        "text": "Webhooks can't be tested locally"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For webhook development, you need an HTTPS endpoint the vendor can reach. Use webhook.site for local development with dummy data. This lets you test your webhook handling logic before deploying to production.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-014",
+    "chapter": "integrations-and-apis",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "How should you handle API costs beyond rate limits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only request data you actually need"
+      },
+      {
+        "id": "b",
+        "text": "Cache responses so you don't request the same data repeatedly"
+      },
+      {
+        "id": "c",
+        "text": "Batch requests when possible"
+      },
+      {
+        "id": "d",
+        "text": "Validate input before making API calls to avoid wasting money on requests that will fail"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Beyond rate limits, many vendors charge per request or per entity. Handle API costs by: only requesting data you actually need, caching responses so you don't request repeatedly, batching requests when possible, and validating input before making API calls to avoid wasting money on requests that will fail. Monitor spending and set up alerts.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  },
+  {
+    "id": "integrations-015",
+    "chapter": "integrations-and-apis",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What orchestration tools are recommended for scheduled data imports?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cron jobs only"
+      },
+      {
+        "id": "b",
+        "text": "Dagster or Airflow - workflow orchestration tools that can schedule imports and transformations"
+      },
+      {
+        "id": "c",
+        "text": "Manual execution"
+      },
+      {
+        "id": "d",
+        "text": "Excel macros"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For scheduled data imports, use orchestration tools: Dagster (data orchestration, can schedule imports and transformations) or Airflow (workflow orchestration, similar to Dagster). These provide better monitoring, retry logic, and dependency management than simple cron jobs.",
+    "sourceUrl": "/guide/part-3-technical-foundations/integrations-and-apis"
+  }
+]

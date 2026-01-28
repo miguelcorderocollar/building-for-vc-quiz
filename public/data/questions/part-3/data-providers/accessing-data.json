@@ -1,0 +1,300 @@
+[
+  {
+    "id": "accessing-data-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What are the two main ways data providers deliver data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Email and phone calls"
+      },
+      {
+        "id": "b",
+        "text": "APIs and files"
+      },
+      {
+        "id": "c",
+        "text": "Cloud storage and databases"
+      },
+      {
+        "id": "d",
+        "text": "Dashboards and reports"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data providers deliver data in two main ways: APIs (REST APIs with JSON responses) and files (CSV, Parquet, or JSON files). Each has different implications for integration and cost.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-2",
+    "chapter": "data-providers",
+    "section": "api-based-delivery",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What are the benefits of API-based data delivery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Query exactly what you need without downloading everything"
+      },
+      {
+        "id": "b",
+        "text": "Easy to integrate into applications like CRM enrichment"
+      },
+      {
+        "id": "c",
+        "text": "Can build interactive features like search and live updates"
+      },
+      {
+        "id": "d",
+        "text": "No rate limits"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "API-based delivery allows querying exactly what you need, easy integration into applications, and building interactive features. However, APIs do have rate limits, which is a consideration, not a benefit.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-3",
+    "chapter": "data-providers",
+    "section": "api-based-delivery",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are the main considerations when using API-based data delivery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rate limits constrain how fast you can query"
+      },
+      {
+        "id": "b",
+        "text": "Per-request or per-entity costs"
+      },
+      {
+        "id": "c",
+        "text": "Need to handle failures, retries, and validation"
+      },
+      {
+        "id": "d",
+        "text": "API schemas change over time"
+      },
+      {
+        "id": "e",
+        "text": "Data is always a snapshot and might be stale"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "API considerations include rate limits, per-request/per-entity costs, handling failures/retries/validation, and API schema changes. Data staleness is more of a concern with file-based delivery, though APIs can also have freshness issues.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-4",
+    "chapter": "data-providers",
+    "section": "file-based-delivery",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When is file-based delivery typically preferred over API-based delivery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For real-time CRM enrichment"
+      },
+      {
+        "id": "b",
+        "text": "For bulk data loading into data warehouses"
+      },
+      {
+        "id": "c",
+        "text": "For interactive search features"
+      },
+      {
+        "id": "d",
+        "text": "For small, frequent queries"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "File-based delivery is common for bulk data (entire company database, historical funding data, periodic dumps) and is preferred for loading data warehouses. APIs are better for real-time enrichment, interactive features, and small frequent queries.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-5",
+    "chapter": "data-providers",
+    "section": "file-based-delivery",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are the benefits of file-based data delivery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cheaper than API calls if you need the full dataset"
+      },
+      {
+        "id": "b",
+        "text": "Get everything at once, good for analytics"
+      },
+      {
+        "id": "c",
+        "text": "Predictable costs (usually flat fee)"
+      },
+      {
+        "id": "d",
+        "text": "No rate limits once you have the file"
+      },
+      {
+        "id": "e",
+        "text": "Always more up-to-date than API data"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "File-based delivery benefits include lower cost for full datasets, getting everything at once (good for analytics), predictable flat fees, and no rate limits. However, file data is often a snapshot and might be stale compared to API data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-6",
+    "chapter": "data-providers",
+    "section": "file-formats",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which file format should you prefer when vendors offer multiple options?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CSV/TSV"
+      },
+      {
+        "id": "b",
+        "text": "Parquet"
+      },
+      {
+        "id": "c",
+        "text": "JSON/JSONL"
+      },
+      {
+        "id": "d",
+        "text": "Excel"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Always choose Parquet. It includes schema information (you know data types without guessing), compresses well (smaller files), and loads much faster into data warehouses. JSON/JSONL is decent but more cumbersome. CSV/TSV requires parsing, has encoding issues, no schema, and is slower.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-7",
+    "chapter": "data-providers",
+    "section": "file-formats",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why is Parquet preferred over CSV for data warehouse loading?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It includes schema information and compresses well"
+      },
+      {
+        "id": "b",
+        "text": "It's easier to read in a text editor"
+      },
+      {
+        "id": "c",
+        "text": "It's universally supported by all tools"
+      },
+      {
+        "id": "d",
+        "text": "It's always smaller than CSV files"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Parquet includes schema information (you know data types without guessing), compresses well (smaller files), and loads much faster into data warehouses. CSV files require parsing, have encoding issues, no schema, and are slower to work with.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-8",
+    "chapter": "data-providers",
+    "section": "hybrid-approaches",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the ideal approach when a vendor offers both APIs and bulk exports?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use only APIs for everything"
+      },
+      {
+        "id": "b",
+        "text": "Use only bulk exports for everything"
+      },
+      {
+        "id": "c",
+        "text": "Use APIs for interactive features and bulk exports for data warehouse loading"
+      },
+      {
+        "id": "d",
+        "text": "Use whichever is cheaper"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Hybrid approaches are ideal: use the API for real-time enrichment and interactive features, use bulk exports to populate your data warehouse efficiently. This gives you the benefits of both delivery methods.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-9",
+    "chapter": "data-providers",
+    "section": "file-delivery-authentication",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are the three common options for file-based vendor authentication?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Email, phone, and portal access"
+      },
+      {
+        "id": "b",
+        "text": "They upload to their S3 bucket, they upload to your S3 bucket, or they provide download links through their portal"
+      },
+      {
+        "id": "c",
+        "text": "API keys, OAuth tokens, and basic auth"
+      },
+      {
+        "id": "d",
+        "text": "SSH keys, GPG keys, and certificates"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For file-based vendors, common options are: (1) They upload files to their own S3 bucket that you can access (they provide AWS credentials), (2) They upload files directly to your S3 bucket (you provide write-only credentials), or (3) They provide download links through their portal. The third option doesn't scale well - prefer vendors who integrate with cloud storage.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  },
+  {
+    "id": "accessing-data-10",
+    "chapter": "data-providers",
+    "section": "file-delivery-authentication",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why should you prefer vendors who can integrate with your cloud storage over manual download portals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manual downloads are always more expensive"
+      },
+      {
+        "id": "b",
+        "text": "Manual download doesn't scale well"
+      },
+      {
+        "id": "c",
+        "text": "Cloud storage integration is required by law"
+      },
+      {
+        "id": "d",
+        "text": "Manual downloads have better security"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Manual download portals don't scale well. You need to download files manually or via script, which becomes cumbersome at scale. Prefer vendors who can integrate with your cloud storage (either their S3 bucket or yours) for automated, scalable file delivery.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/accessing-data"
+  }
+]

@@ -1,0 +1,430 @@
+[
+  {
+    "id": "security-compliance-001",
+    "chapter": "security-and-compliance",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What types of sensitive data do VC funds handle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only public information"
+      },
+      {
+        "id": "b",
+        "text": "LP PII (limited partner personally identifiable information), Material Non-Public Information (MNPI), portfolio company data, internal investment analysis"
+      },
+      {
+        "id": "c",
+        "text": "Only company websites"
+      },
+      {
+        "id": "d",
+        "text": "No sensitive data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "VC funds handle several types of sensitive data: LP PII (names, addresses, SSNs/tax IDs, bank account details, investment amounts), Material Non-Public Information (MNPI - upcoming fundraising rounds, acquisition discussions, financial performance, product roadmaps), portfolio company data (detailed financials, metrics, cap tables, customer lists), internal investment analysis (investment memos, due diligence notes, IC discussions, proprietary research).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-002",
+    "chapter": "security-and-compliance",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What are basic security principles you should follow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build your own authentication and encryption"
+      },
+      {
+        "id": "b",
+        "text": "Use proven tools (OAuth providers, authentication services, standard encryption libraries), encrypt data (HTTPS everywhere, database encryption at rest), implement access controls (RBAC), principle of least privilege, keep data only as long as needed"
+      },
+      {
+        "id": "c",
+        "text": "Don't use encryption"
+      },
+      {
+        "id": "d",
+        "text": "Give everyone full access"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Basic security principles: Use proven tools (don't write your own authentication, encryption, or access control - use OAuth providers like Google/Okta, authentication services like Auth0/Clerk, standard encryption libraries), Encrypt data (HTTPS everywhere for data in transit, enable database encryption at rest, consider application-level encryption for LP PII or MNPI), Implement access controls (role-based access control - define roles and permissions, use audit logs), Principle of least privilege (give people and services only minimum access needed), Keep data only as long as needed (define retention policies with compliance team).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-003",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What questions should you ask before building systems that handle sensitive data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No questions needed"
+      },
+      {
+        "id": "b",
+        "text": "What regulatory requirements apply? Who should have access? How long should we keep data? Do we need audit trails? Are there specific security controls required?"
+      },
+      {
+        "id": "c",
+        "text": "Only ask about cost"
+      },
+      {
+        "id": "d",
+        "text": "Only ask about performance"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Before building systems that handle sensitive data, ask: What regulatory requirements apply to this data? (LP information has different requirements than CRM data), Who should have access to this data? (Define roles and permissions upfront), How long should we keep this data? (Set retention policies early), Do we need audit trails? (Usually yes for LP data or MNPI), Are there specific security controls required? (Encryption, MFA, etc.). Your compliance officer can answer these questions.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-004",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is Material Non-Public Information (MNPI)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public company information"
+      },
+      {
+        "id": "b",
+        "text": "Information that isn't public: upcoming fundraising rounds, acquisition discussions, financial performance, product roadmaps, major hires or departures. Mishandling it has legal consequences"
+      },
+      {
+        "id": "c",
+        "text": "Only company websites"
+      },
+      {
+        "id": "d",
+        "text": "Public press releases"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Material Non-Public Information (MNPI) is information that isn't public: upcoming fundraising rounds, acquisition discussions, financial performance, product roadmaps, major hires or departures. This is MNPI, and mishandling it has legal consequences. SEC enforcement actions for improper handling of MNPI aren't theoretical - they happen, and they're expensive.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-005",
+    "chapter": "security-and-compliance",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What regulatory requirements apply to VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No requirements"
+      },
+      {
+        "id": "b",
+        "text": "Private fund advisers managing $150M or more in AUM must register as RIAs with the SEC, which comes with specific compliance obligations. Funds below this threshold can often qualify as Exempt Reporting Advisers (ERAs) with lighter requirements"
+      },
+      {
+        "id": "c",
+        "text": "All funds have the same requirements"
+      },
+      {
+        "id": "d",
+        "text": "Only large funds have requirements"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Private fund advisers managing $150M or more in AUM must register as RIAs (Registered Investment Advisers) with the SEC, which comes with specific compliance obligations around data handling. Funds below this threshold can often qualify as Exempt Reporting Advisers (ERAs) with lighter requirements. But regardless of registration status, LPs invest millions and need to trust you'll handle their information properly.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-006",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What security practices should you implement for CRM systems?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use SSO (single sign-on) with your company's identity provider for central access management"
+      },
+      {
+        "id": "b",
+        "text": "Set up role-based permissions so not everyone can see all data"
+      },
+      {
+        "id": "c",
+        "text": "Enable audit logging if the CRM supports it"
+      },
+      {
+        "id": "d",
+        "text": "Give everyone full access"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "For CRM systems: Use SSO (single sign-on) with your company's identity provider so you can centrally manage access, Set up role-based permissions so not everyone can see all data, Enable audit logging if the CRM supports it. This ensures proper access control and auditability.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-007",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What security practices should you implement for data warehouses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enable encryption at rest (checkbox in most managed services)"
+      },
+      {
+        "id": "b",
+        "text": "Use separate credentials for different services (research platform should have different database credentials than portfolio dashboard)"
+      },
+      {
+        "id": "c",
+        "text": "Limit access to production data - most people should use development/staging environments"
+      },
+      {
+        "id": "d",
+        "text": "Set up query logging so you can audit who accessed what data"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "For data warehouses: Enable encryption at rest (checkbox in most managed services), Use separate credentials for different services (your research platform should have different database credentials than your portfolio dashboard), Limit access to production data (most people should use development/staging environments), Set up query logging (so you can audit who accessed what data).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-008",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What security practices should you implement for internal tools and dashboards?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require authentication (don't build unauthenticated internal tools)"
+      },
+      {
+        "id": "b",
+        "text": "Use HTTPS everywhere"
+      },
+      {
+        "id": "c",
+        "text": "Use established auth frameworks (NextAuth, Clerk) rather than rolling your own"
+      },
+      {
+        "id": "d",
+        "text": "Consider IP allowlisting for particularly sensitive tools"
+      },
+      {
+        "id": "e",
+        "text": "Implement session timeouts"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e"],
+    "explanation": "For internal tools and dashboards: Require authentication (don't build unauthenticated internal tools that anyone with the URL can access), Use HTTPS everywhere, Use an established auth framework (NextAuth, Clerk) rather than rolling your own, Consider IP allowlisting for particularly sensitive tools (only accessible from office network or VPN), Implement session timeouts (so inactive sessions don't stay logged in forever).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-009",
+    "chapter": "security-and-compliance",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What security practices should you implement for API integrations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Store API keys securely (environment variables or secrets manager, never in code)"
+      },
+      {
+        "id": "b",
+        "text": "Use separate API keys for production vs. development"
+      },
+      {
+        "id": "c",
+        "text": "Rotate API keys periodically (every 6-12 months)"
+      },
+      {
+        "id": "d",
+        "text": "Monitor API usage for anomalies (sudden spike might indicate compromised credentials)"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "For API integrations with external vendors: Store API keys securely (environment variables or secrets manager, never in code), Use separate API keys for production vs. development, Rotate API keys periodically (every 6-12 months), Monitor API usage for anomalies (sudden spike in requests might indicate compromised credentials).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-010",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the principle of least privilege?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give everyone full access"
+      },
+      {
+        "id": "b",
+        "text": "Give people and services only the minimum access needed. This limits damage if credentials are compromised"
+      },
+      {
+        "id": "c",
+        "text": "No access for anyone"
+      },
+      {
+        "id": "d",
+        "text": "Access based on seniority only"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Principle of least privilege: Give people and services only the minimum access needed. This limits damage if credentials are compromised. Not everyone needs access to everything. Use role-based access control: define roles (partner, associate, operations) and permissions (read portfolio data, edit CRM, view LP info).",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-011",
+    "chapter": "security-and-compliance",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why should you work with compliance and legal teams?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You don't need to"
+      },
+      {
+        "id": "b",
+        "text": "As an engineer building systems for a VC fund, you're not expected to be a compliance expert. You need to work with people who are. They understand RIA regulations, SEC requirements, and what your fund's specific obligations are"
+      },
+      {
+        "id": "c",
+        "text": "They slow things down"
+      },
+      {
+        "id": "d",
+        "text": "They're not needed"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Work with your compliance and legal teams: As an engineer or data person building systems for a VC fund, you're not expected to be a compliance expert. But you need to work with people who are. Your compliance officer or external compliance consultant can answer questions about regulatory requirements, access controls, retention policies, and security controls. They understand RIA regulations, SEC requirements, and what your fund's specific obligations are.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-012",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What should you do when launching new tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Launch immediately without review"
+      },
+      {
+        "id": "b",
+        "text": "Get compliance review before launching. Have compliance check whether access controls are appropriate, whether data handling meets requirements, and whether you're missing anything important"
+      },
+      {
+        "id": "c",
+        "text": "Only tell users"
+      },
+      {
+        "id": "d",
+        "text": "Don't tell anyone"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When launching new tools, get compliance review: Before you launch a new LP portal, portfolio dashboard, or research platform, have compliance review it. They'll check whether access controls are appropriate, whether data handling meets requirements, and whether you're missing anything important. This isn't adversarial - compliance teams want you to build good tools, they just need to make sure those tools don't create regulatory or legal problems.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-013",
+    "chapter": "security-and-compliance",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are advanced security measures you might consider?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOC 2 compliance (demonstrates systems meet security, availability, confidentiality standards)"
+      },
+      {
+        "id": "b",
+        "text": "Penetration testing (regular testing by security professionals to identify vulnerabilities)"
+      },
+      {
+        "id": "c",
+        "text": "Data Loss Prevention (DLP) systems (monitor file transfers, emails, data movement)"
+      },
+      {
+        "id": "d",
+        "text": "Advanced threat detection (SIEM systems with machine learning)"
+      },
+      {
+        "id": "e",
+        "text": "All of the above (but ask compliance team what's actually required vs. nice to have)"
+      }
+    ],
+    "correctAnswers": ["e"],
+    "explanation": "Advanced security measures (if you want to go above and beyond): SOC 2 compliance (demonstrates systems meet security, availability, confidentiality standards - common for enterprises, sometimes required by LPs at larger funds), Penetration testing (regular testing by security professionals to identify vulnerabilities), Data Loss Prevention (DLP) systems (monitor file transfers, emails, data movement), Advanced threat detection (SIEM systems aggregate logs and use ML to detect incidents). Ask your compliance team what's actually required vs. what's nice to have for your fund's specific situation.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-014",
+    "chapter": "security-and-compliance",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What should you document for security and compliance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing"
+      },
+      {
+        "id": "b",
+        "text": "Write down who has access to what systems, what data is stored where, what encryption you use, and how long you retain data. This documentation is useful for audits, onboarding, and compliance reviews"
+      },
+      {
+        "id": "c",
+        "text": "Only document code"
+      },
+      {
+        "id": "d",
+        "text": "Only document when asked"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Document your security and access controls: Write down who has access to what systems, what data is stored where, what encryption you use, and how long you retain data. This documentation is useful for audits, for onboarding new team members, and for compliance reviews. It helps demonstrate that you're meeting requirements and makes it easier to maintain security practices.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  },
+  {
+    "id": "security-compliance-015",
+    "chapter": "security-and-compliance",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the most important thing to recognize about security and compliance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You need to become an expert in SEC regulations"
+      },
+      {
+        "id": "b",
+        "text": "Recognize what requires specialized expertise. You don't need to become an expert in SEC regulations or RIA compliance. You need to build systems that make it possible to meet those requirements, and work with people who understand the legal side"
+      },
+      {
+        "id": "c",
+        "text": "Ignore compliance"
+      },
+      {
+        "id": "d",
+        "text": "Do everything yourself"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Most importantly, recognize what requires specialized expertise. You don't need to become an expert in SEC regulations or RIA compliance. You need to build systems that make it possible to meet those requirements, and you need to work with people who understand the legal side. Get compliance review before launching tools that handle sensitive data. Document your security controls. Use managed services that handle security fundamentals for you. And when in doubt, ask your compliance team.",
+    "sourceUrl": "/guide/part-3-technical-foundations/security-and-compliance"
+  }
+]

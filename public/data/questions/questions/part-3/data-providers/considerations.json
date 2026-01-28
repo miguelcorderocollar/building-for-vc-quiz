@@ -1,0 +1,354 @@
+[
+  {
+    "id": "considerations-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is a key characteristic of data providers for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are inexpensive and require minimal management"
+      },
+      {
+        "id": "b",
+        "text": "They are expensive and require ongoing management"
+      },
+      {
+        "id": "c",
+        "text": "They are free and open source"
+      },
+      {
+        "id": "d",
+        "text": "They don't require any budget planning"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data providers are foundational infrastructure, but they're also expensive and require ongoing management. Budget for them appropriately and understand different pricing models.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-2",
+    "chapter": "data-providers",
+    "section": "pricing-models",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What are the common pricing models for data providers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Per-request or per-entity pricing"
+      },
+      {
+        "id": "b",
+        "text": "Subscriptions (fixed amount per year)"
+      },
+      {
+        "id": "c",
+        "text": "Per-seat pricing"
+      },
+      {
+        "id": "d",
+        "text": "Free unlimited access"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Common pricing models include: per-request or per-entity (you pay for each API call or entity returned), subscriptions (fixed amount per year for unlimited or high-limit access), and per-seat pricing (pay per user who has access, common for platforms with dashboards).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-3",
+    "chapter": "data-providers",
+    "section": "cost-management",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are effective cost management strategies for data providers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start with what you actually need"
+      },
+      {
+        "id": "b",
+        "text": "Monitor spending and set up alerts"
+      },
+      {
+        "id": "c",
+        "text": "Cache data to avoid repeated requests"
+      },
+      {
+        "id": "d",
+        "text": "Use bulk exports when possible"
+      },
+      {
+        "id": "e",
+        "text": "Subscribe to every vendor available"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Effective strategies include: start with what you actually need (don't subscribe to everything), monitor spending (set up alerts when usage exceeds thresholds), cache data (don't request the same data repeatedly - but check terms first), and use bulk exports when possible (cheaper than thousands of API requests).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-4",
+    "chapter": "data-providers",
+    "section": "cost-management",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What should you always check before implementing caching strategies for data provider responses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The vendor's pricing model"
+      },
+      {
+        "id": "b",
+        "text": "The vendor's terms about how you can cache data"
+      },
+      {
+        "id": "c",
+        "text": "The vendor's API documentation"
+      },
+      {
+        "id": "d",
+        "text": "The vendor's support hours"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Some data providers have strict rules about how you can cache data. Always check their terms before implementing caching strategies. Caching can save money and respect rate limits, but you must comply with vendor terms.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-5",
+    "chapter": "data-providers",
+    "section": "budget-planning",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How should data costs be factored into your technology budget?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're usually negligible compared to infrastructure costs"
+      },
+      {
+        "id": "b",
+        "text": "They can easily exceed infrastructure costs and should be factored in from the start"
+      },
+      {
+        "id": "c",
+        "text": "They only matter for large funds"
+      },
+      {
+        "id": "d",
+        "text": "They're fixed and don't scale"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data costs can easily exceed infrastructure costs (servers, databases, etc.). Factor this into your overall technology budget from the start (ideally before you start building out the team). Costs scale with fund size and data needs.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-6",
+    "chapter": "data-providers",
+    "section": "working-with-vendors",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How frequently do data vendor APIs change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rarely - APIs are stable and don't change"
+      },
+      {
+        "id": "b",
+        "text": "More often than you'd expect - they rename fields, change formats, add attributes, deprecate endpoints"
+      },
+      {
+        "id": "c",
+        "text": "Only when vendors go out of business"
+      },
+      {
+        "id": "d",
+        "text": "Only once per year"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data vendors update their APIs more often than you'd expect. They rename fields, change data formats, add new attributes, deprecate old endpoints. Your integrations can break when this happens. Pay attention to vendor communications and announcements.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-7",
+    "chapter": "data-providers",
+    "section": "working-with-vendors",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "How can you collaborate effectively with newer data vendors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Establish trust and provide feedback on their API design"
+      },
+      {
+        "id": "b",
+        "text": "Tell them if their API returns data in an awkward format"
+      },
+      {
+        "id": "c",
+        "text": "Ask for missing fields you need"
+      },
+      {
+        "id": "d",
+        "text": "Request features like Parquet format if they only provide CSV"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "With newer vendors, establish trust and provide feedback on their API design. If their API returns data awkwardly, tell them. If they're missing fields you need, ask for them. If rate limits are too restrictive, negotiate. If they only provide CSV but you need Parquet, request it. This is win-win: they improve their product, you get a better API.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-8",
+    "chapter": "data-providers",
+    "section": "support-documentation",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What should you factor into vendor selection beyond just data quality?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the price"
+      },
+      {
+        "id": "b",
+        "text": "Whether you can actually build on top of it - documentation and support quality"
+      },
+      {
+        "id": "c",
+        "text": "Only the data coverage"
+      },
+      {
+        "id": "d",
+        "text": "Only the API response time"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Factor documentation and support quality into vendor selection. If you're building critical infrastructure on a vendor's data, you need good documentation and reliable support. Don't just evaluate the data quality, evaluate whether you can actually build on top of it.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-9",
+    "chapter": "data-providers",
+    "section": "data-quality",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the best way to evaluate vendor accuracy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read vendor marketing materials"
+      },
+      {
+        "id": "b",
+        "text": "Test against your portfolio companies where you know the ground truth"
+      },
+      {
+        "id": "c",
+        "text": "Compare vendor prices"
+      },
+      {
+        "id": "d",
+        "text": "Ask other funds what they use"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The best way to evaluate vendor accuracy is to test against your portfolio companies, companies where you know the ground truth. Check if funding amounts match, if team data is current, if descriptions are accurate. This tells you what each vendor is actually good for and where they fall short.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-10",
+    "chapter": "data-providers",
+    "section": "data-quality",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are the trade-offs between accuracy and speed in data providers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Some vendors prioritize accuracy (verify before publishing, resulting in lag)"
+      },
+      {
+        "id": "b",
+        "text": "Others prioritize speed (publish quickly, may have more errors)"
+      },
+      {
+        "id": "c",
+        "text": "You should always choose accuracy over speed"
+      },
+      {
+        "id": "d",
+        "text": "Choose based on your use case"
+      }
+    ],
+    "correctAnswers": ["a", "b", "d"],
+    "explanation": "Some vendors prioritize accuracy (verify information before publishing, resulting in lag). Others prioritize speed (publish quickly, may have more errors). Choose based on your use case - sometimes you need speed (sourcing signals), sometimes accuracy (due diligence).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-11",
+    "chapter": "data-providers",
+    "section": "coverage-differences",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "How do vendors differ in coverage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By stage (some better for early-stage, others for growth/late-stage)"
+      },
+      {
+        "id": "b",
+        "text": "By geography (strong US coverage vs weak international)"
+      },
+      {
+        "id": "c",
+        "text": "By sector (deep tech, bio, fintech specializations)"
+      },
+      {
+        "id": "d",
+        "text": "All vendors have identical coverage"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Vendors excel at different stages (some better for early-stage, others for growth/late-stage), geographies (strong US coverage vs weak international), and sectors (deep tech, bio, fintech specializations). Test coverage against your target market.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  },
+  {
+    "id": "considerations-12",
+    "chapter": "data-providers",
+    "section": "data-freshness",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why is understanding data freshness important?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It doesn't matter - all data is equally fresh"
+      },
+      {
+        "id": "b",
+        "text": "Vendors update at different cadences and you shouldn't present stale data as current"
+      },
+      {
+        "id": "c",
+        "text": "It only matters for real-time applications"
+      },
+      {
+        "id": "d",
+        "text": "Freshness is always the same across all vendors"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Vendors update at different cadences (real-time, daily, weekly, monthly). Know how fresh the data is and don't present stale data as current. This is important for making accurate decisions and not misleading your team with outdated information.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/considerations"
+  }
+]

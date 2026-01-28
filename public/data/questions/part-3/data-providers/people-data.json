@@ -1,0 +1,242 @@
+[
+  {
+    "id": "people-data-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why is people data critical for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To track company valuations"
+      },
+      {
+        "id": "b",
+        "text": "To evaluate teams and identify potential hires"
+      },
+      {
+        "id": "c",
+        "text": "To monitor funding rounds"
+      },
+      {
+        "id": "d",
+        "text": "To analyze market trends"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "People data is critical for evaluating teams. You need information about founders (background, previous experience, education), executives (who's leading the company), and employees (team size, hiring patterns, talent quality). This helps evaluate founding teams and identify potential hires for portfolio companies.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-2",
+    "chapter": "data-providers",
+    "section": "founder-profiles",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "What information should be included in founder and executive profiles?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Work history and previous companies"
+      },
+      {
+        "id": "b",
+        "text": "Education and credentials"
+      },
+      {
+        "id": "c",
+        "text": "Previous exits and successes"
+      },
+      {
+        "id": "d",
+        "text": "Board positions and advisors"
+      },
+      {
+        "id": "e",
+        "text": "Current company's funding amount"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Founder and executive profiles should include work history and previous companies, education and credentials, previous exits and successes, and board positions and advisors. Current company's funding amount would be company data, not people data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-3",
+    "chapter": "data-providers",
+    "section": "team-composition",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What team composition information is valuable for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee count over time"
+      },
+      {
+        "id": "b",
+        "text": "Department breakdown (engineering, sales, etc.)"
+      },
+      {
+        "id": "c",
+        "text": "Leadership team changes"
+      },
+      {
+        "id": "d",
+        "text": "Key hires and departures"
+      },
+      {
+        "id": "e",
+        "text": "Company's total funding raised"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Team composition information includes employee count over time, department breakdown, leadership team changes, and key hires and departures. Total funding raised is company data, not team composition data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-4",
+    "chapter": "data-providers",
+    "section": "talent-signals",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What are talent signals used for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tracking company valuations"
+      },
+      {
+        "id": "b",
+        "text": "Identifying where people are moving from/to and hiring from strong companies"
+      },
+      {
+        "id": "c",
+        "text": "Monitoring funding rounds"
+      },
+      {
+        "id": "d",
+        "text": "Analyzing market size"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Talent signals help identify where people are moving from/to, hiring from strong companies, and founder quality indicators. These signals help evaluate team quality and company momentum.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-5",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which people data provider is noted for great support and free 'cleaner' APIs useful in data pipelines?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People Data Labs"
+      },
+      {
+        "id": "b",
+        "text": "Coresignal"
+      },
+      {
+        "id": "c",
+        "text": "Mixrank"
+      },
+      {
+        "id": "d",
+        "text": "Crunchbase"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "People Data Labs has been noted for great support (personal experience) and free 'cleaner' APIs useful in data pipelines. However, it uses Elasticsearch SQL which can make filtering difficult via API.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-6",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which provider offers managed SQL databases for easier integration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People Data Labs"
+      },
+      {
+        "id": "b",
+        "text": "Coresignal"
+      },
+      {
+        "id": "c",
+        "text": "Mixrank"
+      },
+      {
+        "id": "d",
+        "text": "Tracxn"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Mixrank offers managed SQL databases for easier integration. However, its API can be difficult to work with.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-7",
+    "chapter": "data-providers",
+    "section": "considerations",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are important considerations when working with people data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data privacy implications"
+      },
+      {
+        "id": "b",
+        "text": "Accuracy varies - professional profiles may be outdated"
+      },
+      {
+        "id": "c",
+        "text": "People data is often used to enrich signal data"
+      },
+      {
+        "id": "d",
+        "text": "Coverage is identical across all providers"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c"],
+    "explanation": "Important considerations include: data privacy implications (understand what data you're getting and how it was collected), accuracy varies (professional profiles may be outdated, current employer might be stale), and people data is often used to enrich signal data (add founder backgrounds to company records). Coverage is not identical across providers - test data quality by comparing with your portfolio.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  },
+  {
+    "id": "people-data-8",
+    "chapter": "data-providers",
+    "section": "providers",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How does coverage compare across people data providers compared to company data providers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coverage gaps are larger for people data providers"
+      },
+      {
+        "id": "b",
+        "text": "Coverage is relatively similar across people data providers, not as large a gap as with company data providers"
+      },
+      {
+        "id": "c",
+        "text": "All providers have identical coverage"
+      },
+      {
+        "id": "d",
+        "text": "People data providers don't have coverage differences"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Coverage across people data providers is relatively similar - not as large a gap as with company data providers. Choose based on which data points matter to you, how timely updates are, and quality of support.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers/people-data"
+  }
+]

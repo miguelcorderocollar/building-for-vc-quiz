@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "hiring-001",
+      "chapter": "hiring-your-data-team",
+      "section": "When to Hire Your First Data Person",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What are signals that you're ready to hire your first data person?",
+      "options": [
+        {"id": "a", "text": "Partners are spending significant time on manual data tasks that could be automated"},
+        {"id": "b", "text": "You have a specific technical initiative that needs leadership"},
+        {"id": "c", "text": "The fund has conviction that data and technology will be core to differentiation"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Signals that you're ready: partners are spending significant time on manual data tasks that could be automated, you have a specific technical initiative that needs leadership (not just a vague 'we should be more data-driven'), the fund has conviction that data and technology will be core to differentiation (not just operational efficiency), and you have budget for the hire and the tools, infrastructure, and data they'll need.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#when-to-hire-your-first-data-person"
+    },
+    {
+      "id": "hiring-002",
+      "chapter": "hiring-your-data-team",
+      "section": "When to Hire Your First Data Person",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are signals that you're NOT ready to hire?",
+      "options": [
+        {"id": "a", "text": "'Data-driven' is a buzzword in your marketing, not a real strategy"},
+        {"id": "b", "text": "You expect one person to solve all technical problems while you figure out what you actually need"},
+        {"id": "c", "text": "There's no budget for data subscriptions, cloud infrastructure, or tooling beyond salary"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Signals that you're not ready: 'Data-driven' is a buzzword in your marketing, not a real strategy. You expect one person to solve all technical problems while you figure out what you actually need. There's no budget for data subscriptions, cloud infrastructure, or tooling beyond salary. Partners aren't willing to invest time in defining problems and giving feedback. Many successful funds operate without dedicated technical staff using off-the-shelf tools.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#when-to-hire-your-first-data-person"
+    },
+    {
+      "id": "hiring-003",
+      "chapter": "hiring-your-data-team",
+      "section": "What to Look for in Your First Hire",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the ideal technical profile for your first hire?",
+      "options": [
+        {"id": "a", "text": "Broad software engineering skills, data engineering depth, VC domain knowledge"},
+        {"id": "b", "text": "Only VC domain knowledge"},
+        {"id": "c", "text": "Only technical skills"},
+        {"id": "d", "text": "Only data engineering skills"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "The ideal technical profile: broad software engineering skills, data engineering depth (pipelines, databases, integrations), and VC domain knowledge. Technical skills are learnable. Product sense in a specialized domain like VC is harder to acquire. How much you weight vision-selling versus hands-on execution depends on fund size and team structure.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#what-to-look-for-in-your-first-hire"
+    },
+    {
+      "id": "hiring-004",
+      "chapter": "hiring-your-data-team",
+      "section": "What to Look for in Your First Hire",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the biggest mistake funds make when hiring their first technical person?",
+      "options": [
+        {"id": "a", "text": "Hiring too senior"},
+        {"id": "b", "text": "Hiring too junior - someone early in their career often struggles without external structure"},
+        {"id": "c", "text": "Hiring someone with too much experience"},
+        {"id": "d", "text": "Hiring someone from a tech company"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Hiring too junior is the biggest mistake funds make. Someone early in their career, even if technically capable, often struggles without external structure. Look for someone who has shipped projects end-to-end with minimal supervision. The first tech hire should be able to sell the vision of what's possible with data & tech internally and generate excitement among partners. They need to be self-motivated to identify opportunities and pitch their own projects.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#what-to-look-for-in-your-first-hire"
+    },
+    {
+      "id": "hiring-005",
+      "chapter": "hiring-your-data-team",
+      "section": "What to Look for in Your First Hire",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "According to Ties Boukema at Dawn Capital, what should the first tech hire be able to do?",
+      "options": [
+        {"id": "a", "text": "Sell the vision of what's possible with data & tech internally and generate excitement"},
+        {"id": "b", "text": "Be self-motivated to identify opportunities where data, tech & AI can add value and pitch their own projects"},
+        {"id": "c", "text": "Be proactive problem-identifiers who can independently scope and drive their own work"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "The first tech hire should be able to sell the vision of what's possible with data & tech internally and generate excitement among partners. They need to be self-motivated to identify opportunities where data, tech & AI can add value and pitch their own projects. Great tech hires need to be proactive problem-identifiers who can independently scope and drive their own work rather than wait for assignments. This is different from typical banking or consulting analysts who are accustomed to working on urgent, well-scoped deliverables.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#what-to-look-for-in-your-first-hire"
+    },
+    {
+      "id": "hiring-006",
+      "chapter": "hiring-your-data-team",
+      "section": "How Hiring Evolves",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "When should you hire a second person?",
+      "options": [
+        {"id": "a", "text": "Immediately after hiring the first person"},
+        {"id": "b", "text": "When you have clear, separable workstreams, the first hire is consistently underwater, or you've identified a big swing that requires dedicated focus"},
+        {"id": "c", "text": "After one year regardless of workload"},
+        {"id": "d", "text": "When the first hire asks for help"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Don't hire a second person until the first hire has identified clear workstreams to divide. When to hire a second person: you have clear, separable workstreams (e.g., data infrastructure vs. internal tools vs. ML/AI initiatives), the first hire is consistently underwater despite good prioritization, or you've identified a big swing that requires dedicated focus and the first hire can't abandon other responsibilities. The first hire's job isn't just building tools - it's discovering what the fund actually needs.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#how-hiring-evolves"
+    },
+    {
+      "id": "hiring-007",
+      "chapter": "hiring-your-data-team",
+      "section": "How Hiring Evolves",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "When should you hire specialists (ML engineers, data engineers, etc.)?",
+      "options": [
+        {"id": "a", "text": "Immediately to have a complete team"},
+        {"id": "b", "text": "Only hire specialists when there's enough work to keep them occupied long-term"},
+        {"id": "c", "text": "Hire them before the generalist"},
+        {"id": "d", "text": "Hire them for short-term projects"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Only hire specialists when there's enough work to keep them occupied long-term. If you want to take a big swing on AI/ML, use the first hire to scope it and build the data infrastructure to support it, then hire someone dedicated to that initiative. For niche specialties with uncertain long-term demand, use consultants for the initial build. Larger funds often do this: bring in external help to ship something, then decide whether the workstream justifies a full-time hire. The pattern is: generalist first to figure out what matters, then specialists for sustained investment in specific areas.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#how-hiring-evolves"
+    },
+    {
+      "id": "hiring-008",
+      "chapter": "hiring-your-data-team",
+      "section": "Compensation and Role Definition",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the compensation structure typically like for VC fund technical roles?",
+      "options": [
+        {"id": "a", "text": "Base salaries typically in line with tech companies, carry is rare but becoming more common, equity is non-existent"},
+        {"id": "b", "text": "Much lower than tech companies"},
+        {"id": "c", "text": "Equity like startups"},
+        {"id": "d", "text": "Only carry, no base salary"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "On compensation: base salaries are typically in line with tech companies. Carried interest (carry) is still rare for technical hires but becoming more common, especially at senior levels. Equity is non-existent (VC funds don't have equity like startups do). The value proposition is: interesting problems, high autonomy, direct impact, exposure to the startup ecosystem. VC fund technical roles sit awkwardly in the market - you're not a big tech company with standard levels, you're not a startup with equity upside.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#compensation-and-role-definition"
+    },
+    {
+      "id": "hiring-009",
+      "chapter": "hiring-your-data-team",
+      "section": "Red Flags in Candidates",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What are red flags to watch out for in candidates? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "No evidence of independent ownership - every example involves working within a well-defined scope"},
+        {"id": "b", "text": "Dismissive of 'boring' work like data pipelines and integrations"},
+        {"id": "c", "text": "Can't explain technical concepts simply to non-technical people"},
+        {"id": "d", "text": "Has shipped projects end-to-end with minimal supervision"}
+      ],
+      "correctAnswers": ["a", "b", "c"],
+      "explanation": "Watch out for these warning signs: No evidence of independent ownership - ask about projects they drove end-to-end. If every example involves working within a well-defined scope set by someone else, they'll struggle in a VC environment. Dismissive of 'boring' work - data pipelines, integrations, and internal tools aren't glamorous. If a candidate only wants to work on interesting technical problems, they won't do the unglamorous work that actually matters. Can't explain technical concepts simply - they'll be working with non-technical people every day. If they can't translate technical trade-offs into business terms, they'll struggle to get buy-in for projects.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#red-flags-in-candidates"
+    },
+    {
+      "id": "hiring-010",
+      "chapter": "hiring-your-data-team",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the bottom line for hiring your first data person?",
+      "options": [
+        {"id": "a", "text": "Your first hire needs broad software skills with depth in data engineering and VC domain knowledge"},
+        {"id": "b", "text": "They should be able to sell the vision and deliver on it"},
+        {"id": "c", "text": "Avoid hiring too junior"},
+        {"id": "d", "text": "All of the above"}
+      ],
+      "correctAnswers": ["d"],
+      "explanation": "Your first hire needs broad software skills with depth in data engineering and VC domain knowledge. They should be able to sell the vision and deliver on it. Avoid hiring too junior. Let your first hire identify what actually matters before expanding the team. The first technical hire at a VC fund is a unique role: part engineer, part product manager, part internal consultant. Getting it right means finding someone who can operate independently in an ambiguous environment while delivering real value.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-1-understanding-vc/hiring-your-data-team#the-bottom-line"
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "id": "entity-resolution-001",
+    "chapter": "entity-resolution",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Determining which records across different data sources refer to the same real-world entity"
+      },
+      {
+        "id": "b",
+        "text": "Resolving API errors"
+      },
+      {
+        "id": "c",
+        "text": "Optimizing database queries"
+      },
+      {
+        "id": "d",
+        "text": "Cleaning up data formats"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Entity resolution is determining which records refer to the same real-world entity. When pulling company data from multiple sources (Crunchbase, PitchBook, LinkedIn, your CRM), the same company appears differently in each. 'Acme Inc,' 'Acme Corporation,' 'Acme,' all the same company, but your system doesn't know that.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-002",
+    "chapter": "entity-resolution",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why does entity resolution matter for VC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's optional and doesn't really matter"
+      },
+      {
+        "id": "b",
+        "text": "Without it, analytics are wrong, you can't aggregate data, knowledge graphs break, sourcing is inefficient, and portfolio tracking fails"
+      },
+      {
+        "id": "c",
+        "text": "It only matters for large funds"
+      },
+      {
+        "id": "d",
+        "text": "It's only needed for public companies"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Without entity resolution, your data infrastructure breaks: analytics are wrong (duplicates inflate metrics), you can't aggregate data (can't combine Crunchbase with PitchBook), knowledge graphs break (same company appears as multiple nodes), sourcing is inefficient (re-evaluating same companies), and portfolio tracking fails (can't link records across systems).",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-003",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are simple matching rules you should start with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match on URLs (normalize domains)"
+      },
+      {
+        "id": "b",
+        "text": "Match on LinkedIn URLs"
+      },
+      {
+        "id": "c",
+        "text": "Match on email addresses"
+      },
+      {
+        "id": "d",
+        "text": "Exact string matches after normalizing names"
+      },
+      {
+        "id": "e",
+        "text": "Build sophisticated ML models immediately"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Start simple: match on URLs (normalize domains - remove protocol, www, trailing slashes, lowercase), match on LinkedIn URLs (stable identifiers), match on email addresses, exact string matches after normalizing (lowercase, remove punctuation, standardize abbreviations). These simple rules catch 70-80% of matches without sophisticated infrastructure.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-004",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When can you avoid entity resolution entirely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never, you always need it"
+      },
+      {
+        "id": "b",
+        "text": "Use single authoritative sources instead of stitching together multiple sources. Only invest in entity resolution when you have validated use cases that require combining multiple sources"
+      },
+      {
+        "id": "c",
+        "text": "Only for small funds"
+      },
+      {
+        "id": "d",
+        "text": "Only for large funds"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Before investing in sophisticated entity resolution, consider whether you actually need to combine data sources. Use single authoritative sources: analyze funding with PitchBook exclusively, track employee counts with one provider only, use fund operations as single source of truth. Only invest in entity resolution when you have validated use cases that genuinely require combining multiple sources.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-005",
+    "chapter": "entity-resolution",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the canonical ID approach for entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use external IDs from vendors directly"
+      },
+      {
+        "id": "b",
+        "text": "Assign one internal ID per entity. All records from external sources map to these canonical IDs. When you query for an entity, you query by canonical ID, which pulls data from all sources"
+      },
+      {
+        "id": "c",
+        "text": "Don't use IDs at all"
+      },
+      {
+        "id": "d",
+        "text": "Use different IDs for each source"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The canonical ID approach: assign one internal ID per entity. Every company or person gets exactly one canonical ID in your system. All records from external sources (Crunchbase, PitchBook, LinkedIn, your CRM) map to these canonical IDs. When you query for a company, you query by canonical ID, which pulls data from all sources that reference that entity.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-006",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What fields should you match on for companies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Name (fuzzy string matching with normalization)"
+      },
+      {
+        "id": "b",
+        "text": "URL/Domain (strongest signal)"
+      },
+      {
+        "id": "c",
+        "text": "LinkedIn URL"
+      },
+      {
+        "id": "d",
+        "text": "Location (city and country)"
+      },
+      {
+        "id": "e",
+        "text": "Founding date (if close, supports match)"
+      },
+      {
+        "id": "f",
+        "text": "Description similarity"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e", "f"],
+    "explanation": "Match companies on multiple fields: name (fuzzy string matching with normalization), URL/domain (strongest signal - if domains match, very high confidence), LinkedIn URL (similarly strong), location (city and country provide supporting evidence), founding date (if close within a year, supports match), description similarity (embeddings or keyword analysis).",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-007",
+    "chapter": "entity-resolution",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is probabilistic matching?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Requiring exact matches on all fields"
+      },
+      {
+        "id": "b",
+        "text": "Using a scoring system instead of requiring exact matches. Define thresholds for automatic matching, human review, and rejection"
+      },
+      {
+        "id": "c",
+        "text": "Guessing randomly"
+      },
+      {
+        "id": "d",
+        "text": "Only matching on one field"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Probabilistic matching uses a scoring system instead of requiring exact matches. If name is 90% similar, domain matches, and location matches, that's high confidence (>95%) - automatic match. If only name is 70% similar and location matches, that's medium confidence (60-80%) - might need human review. Define thresholds for automatic matching, human review, and rejection.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-008",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What matching strategies work best for people?",
+    "options": [
+      {
+        "id": "a",
+        "text": "LinkedIn URL (strongest signal)"
+      },
+      {
+        "id": "b",
+        "text": "Email (exact match is strong signal)"
+      },
+      {
+        "id": "c",
+        "text": "Name + Company (if first name, last name, and current company all match)"
+      },
+      {
+        "id": "d",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "For people: LinkedIn URL is the strongest signal (LinkedIn profiles have stable IDs). Email is strong if you have email addresses from multiple sources (exact match). Name + Company: if first name, last name, and current company all match, very likely the same person.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-009",
+    "chapter": "entity-resolution",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "Why do you need human-in-the-loop interfaces for entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automated matching is always 100% accurate"
+      },
+      {
+        "id": "b",
+        "text": "Automated matching will never be 100% accurate. You need review interfaces, merge interfaces, and split interfaces for humans to correct mistakes"
+      },
+      {
+        "id": "c",
+        "text": "Humans are faster than computers"
+      },
+      {
+        "id": "d",
+        "text": "You don't need human interfaces"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Automated matching will never be 100% accurate. You will have false positives (incorrectly merged entities) and false negatives (incorrectly split entities). You need tooling for humans to review and correct mistakes: review interface (show suggested matches with confidence scores), merge interface (combine entities), split interface (separate incorrectly merged entities).",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-010",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are common pitfalls in entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matching too aggressively (false positives)"
+      },
+      {
+        "id": "b",
+        "text": "Matching too conservatively (false negatives)"
+      },
+      {
+        "id": "c",
+        "text": "Not handling name changes over time"
+      },
+      {
+        "id": "d",
+        "text": "Not handling acquisitions properly"
+      },
+      {
+        "id": "e",
+        "text": "No interface for fixing mistakes"
+      },
+      {
+        "id": "f",
+        "text": "Assuming automated matching is enough"
+      },
+      {
+        "id": "g",
+        "text": "Not preserving history"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e", "f", "g"],
+    "explanation": "Common pitfalls: matching too aggressively (false positives corrupt analytics), matching too conservatively (false negatives create duplicates), not handling name changes over time (companies rebrand), not handling acquisitions properly (need different entity models for different use cases), no interface for fixing mistakes (non-technical team can't help), assuming automated matching is enough (human review necessary), not preserving history (need audit trails).",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-011",
+    "chapter": "entity-resolution",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the incremental matching workflow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match everything at once"
+      },
+      {
+        "id": "b",
+        "text": "When a new company record arrives: check URL/LinkedIn match → if yes, link it. If no URL match, check high-confidence name+location match → if yes, link it. If medium confidence, flag for human review. If no match, create new canonical entity"
+      },
+      {
+        "id": "c",
+        "text": "Only match manually"
+      },
+      {
+        "id": "d",
+        "text": "Match randomly"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The incremental matching workflow: when a new company record arrives, check if it has a URL or LinkedIn URL that matches an existing canonical entity → if yes, link it. If no URL match, check for high-confidence name + location match → if yes, link it. If medium confidence match, flag for human review. If no match found, create a new canonical entity. This workflow runs every time you ingest data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-012",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What are entity resolution services and when do they make sense?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Services like Senzing, Tamr, AWS Entity Resolution. They make sense if you're at significant scale (hundreds of thousands of companies, 5+ data sources) but are tremendously expensive"
+      },
+      {
+        "id": "b",
+        "text": "They're free for everyone"
+      },
+      {
+        "id": "c",
+        "text": "They're always the best choice"
+      },
+      {
+        "id": "d",
+        "text": "They don't exist"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Entity resolution services exist (Senzing, Tamr, AWS Entity Resolution) but are tremendously expensive - enterprise pricing often starts at tens of thousands per year. They make sense if you're at significant scale (tracking hundreds of thousands of companies, integrating 5+ data sources, have engineering resources but want to avoid building matching infrastructure). For smaller funds, the cost probably doesn't justify the benefit.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-013",
+    "chapter": "entity-resolution",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What percentage of matches can simple rules catch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10-20%"
+      },
+      {
+        "id": "b",
+        "text": "30-40%"
+      },
+      {
+        "id": "c",
+        "text": "70-80%"
+      },
+      {
+        "id": "d",
+        "text": "100%"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Simple matching rules (URL matching, LinkedIn URLs, email addresses, exact string matches after normalization) will catch 70-80% of matches without any sophisticated infrastructure. Implement these first. Only move to more complex solutions when simple matching stops working.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-014",
+    "chapter": "entity-resolution",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How should you handle name changes over time (e.g., Facebook becoming Meta)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Create separate entities for each name"
+      },
+      {
+        "id": "b",
+        "text": "Store name changes with effective dates so you know what to call the company at different points in time. The same canonical entity might have multiple names over its history"
+      },
+      {
+        "id": "c",
+        "text": "Ignore name changes"
+      },
+      {
+        "id": "d",
+        "text": "Delete old names"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Your entity resolution needs to handle temporal changes. Companies rebrand (Facebook became Meta). The same canonical entity might have multiple names over its history. Store name changes with effective dates so you know what to call the company at different points in time.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  },
+  {
+    "id": "entity-resolution-015",
+    "chapter": "entity-resolution",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the fundamental challenge of entity resolution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There's no universal, stable identifier for companies or people across all data sources. Each source assigns their own IDs. You need to create mappings between these IDs"
+      },
+      {
+        "id": "b",
+        "text": "APIs are slow"
+      },
+      {
+        "id": "c",
+        "text": "Data is always perfect"
+      },
+      {
+        "id": "d",
+        "text": "Storage is expensive"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "The fundamental challenge is that there's no universal, stable identifier for companies or people across all data sources. Each source assigns their own IDs. You need to create mappings between these IDs to know when records refer to the same entity.",
+    "sourceUrl": "/guide/part-3-technical-foundations/entity-resolution"
+  }
+]

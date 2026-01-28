@@ -1,0 +1,344 @@
+{
+  "questions": [
+    {
+      "id": "part2-crm-001",
+      "chapter": "crm-and-deal-flow",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What does CRM stand for, and why is it a terrible name for what VC funds need?",
+      "options": [
+        {"id": "a", "text": "Customer Relationship Management - but VCs don't have customers, they track relationships with founders and manage deal pipeline"},
+        {"id": "b", "text": "Company Resource Management - but it's not about resources"},
+        {"id": "c", "text": "Capital Relationship Management - but it's not about capital"},
+        {"id": "d", "text": "CRM doesn't stand for anything"}
+      ],
+      "correctAnswers": ["a"],
+      "explanation": "CRM stands for Customer Relationship Management, which is a terrible name for what venture funds need. You're not managing customers. You're tracking relationships with founders, managing deal pipeline, coordinating your team, and maintaining institutional memory about every company you've ever talked to.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow"
+    },
+    {
+      "id": "part2-crm-002",
+      "chapter": "crm-and-deal-flow",
+      "section": "Why CRMs Feel Terrible",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why do CRMs feel terrible to use for VC funds?",
+      "options": [
+        {"id": "a", "text": "Because they're too expensive"},
+        {"id": "b", "text": "Because they're built for sales organizations with standardized stages, but VC is messier - every deal is different and stages aren't linear"},
+        {"id": "c", "text": "Because they don't have enough features"},
+        {"id": "d", "text": "Because they're too complicated"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "CRMs feel terrible because they're built for sales organizations. Enterprise sales has standardized stages: lead, qualified, demo, proposal, negotiation, closed. Venture doesn't work this way - deals move forward, sideways, and sometimes back. The stages aren't linear. The timeline isn't predictable. CRMs force you to contort your process into their model.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#why-crms-feel-terrible"
+    },
+    {
+      "id": "part2-crm-003",
+      "chapter": "crm-and-deal-flow",
+      "section": "What You Actually Need",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What are the core functions a CRM needs to support for VC funds? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Relationship tracking - every person you've met and the context of your relationship"},
+        {"id": "b", "text": "Company tracking - every company you've evaluated"},
+        {"id": "c", "text": "Deal pipeline - what deals are active and what stage they're at"},
+        {"id": "d", "text": "Team coordination - who's talking to which founders"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "A CRM needs to support: (1) Relationship tracking - every person you've met, how you met them, when you last talked, what you talked about. (2) Company tracking - every company you've evaluated and the full history of interactions. (3) Deal pipeline - what deals are active, who's working on them, what stage they're at. (4) Team coordination - preventing duplicate outreach and surfacing relevant context.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#what-you-actually-need"
+    },
+    {
+      "id": "part2-crm-004",
+      "chapter": "crm-and-deal-flow",
+      "section": "What You Actually Need",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "Why should you model your CRM at the deal level rather than the company level?",
+      "options": [
+        {"id": "a", "text": "Because deals are more important than companies"},
+        {"id": "b", "text": "Because VCs invest in deals (specific funding rounds), not companies - you can't mark a company as both 'Invested' and 'Passed' at the same time"},
+        {"id": "c", "text": "Because companies don't matter"},
+        {"id": "d", "text": "Because it's easier to track"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "VCs invest in deals (specific funding rounds), not companies. Model your CRM at the deal level: 'Acme Corp Seed Round' (Invested), 'Acme Corp Series A' (Invested), 'Acme Corp Series B' (Passed). If you model at the company level, you'll have problems when follow-on rounds come up - you can't mark a company as both 'Invested' and 'Passed' at the same time.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#what-you-actually-need"
+    },
+    {
+      "id": "part2-crm-005",
+      "chapter": "crm-and-deal-flow",
+      "section": "Choosing Your CRM",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the recommendation regarding building your own CRM?",
+      "options": [
+        {"id": "a", "text": "Always build custom CRM"},
+        {"id": "b", "text": "Don't build your own CRM from scratch - buy something customizable like Attio or Affinity"},
+        {"id": "c", "text": "Only build if you're a large fund"},
+        {"id": "d", "text": "CRMs aren't necessary"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Building your own CRM from scratch is worse than using an existing one. Buy something customizable, integrate it with your other tools, and commit to actually using it. Don't build it yourself.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#choosing-your-crm"
+    },
+    {
+      "id": "part2-crm-006",
+      "chapter": "crm-and-deal-flow",
+      "section": "Choosing Your CRM",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are the main differences between Attio and Affinity?",
+      "options": [
+        {"id": "a", "text": "Attio is more expensive"},
+        {"id": "b", "text": "Attio is more flexible and customizable, while Affinity is built specifically for VC with purpose-built workflows but less flexibility"},
+        {"id": "c", "text": "They're identical"},
+        {"id": "d", "text": "Attio doesn't integrate with email"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Attio is modern, flexible, and designed with relationship-centric businesses in mind. Better UX than traditional CRMs, strong customization without requiring a full-time admin. Affinity is built specifically for relationship-driven industries like venture capital, automatically enriches contact data, and has purpose-built VC workflows out of the box but less flexibility.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#choosing-your-crm"
+    },
+    {
+      "id": "part2-crm-007",
+      "chapter": "crm-and-deal-flow",
+      "section": "Choosing Your CRM",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Why shouldn't you start with Airtable or Notion for deal flow tracking?",
+      "options": [
+        {"id": "a", "text": "Because they're too expensive"},
+        {"id": "b", "text": "Because they don't integrate well with email and calendar - you have to manually enter everything"},
+        {"id": "c", "text": "Because they don't work"},
+        {"id": "d", "text": "Because they're only for large teams"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Don't start with Airtable or Notion. The problem is that they don't integrate well with email and calendar. You have to manually enter everything. What happens is that people stop updating it within weeks. You end up with a partially-filled database that nobody trusts or uses, and you've lost all the email and meeting history that a real CRM would have captured automatically.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#choosing-your-crm"
+    },
+    {
+      "id": "part2-crm-008",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is the single most important habit for making CRM work?",
+      "options": [
+        {"id": "a", "text": "Updating it once per month"},
+        {"id": "b", "text": "Using it in deal flow calls - updating company stages, adding notes, assigning next steps"},
+        {"id": "c", "text": "Only one person uses it"},
+        {"id": "d", "text": "Keeping it separate from other tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The single most important habit: Use it in deal flow calls. When your team discusses deal flow, have the CRM open. Update company stages. Add notes. Assign next steps. If you talk about a company and don't update the CRM, information gets lost. Make it part of the meeting process, not something you do afterward.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-009",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Why is integrating CRM with email and calendar critical?",
+      "options": [
+        {"id": "a", "text": "Because it looks more professional"},
+        {"id": "b", "text": "Because the less manual data entry, the more people will actually use it"},
+        {"id": "c", "text": "Because it's required by law"},
+        {"id": "d", "text": "Because it's cheaper"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Integrate with your other tools. The CRM should connect to your email (Gmail, Outlook), calendar, and other tools. When you email a founder, it logs automatically. When you have a meeting, it logs automatically. The less manual data entry, the more people will actually use it.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-010",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the key difference between VC deal flow and transactional sales workflows?",
+      "options": [
+        {"id": "a", "text": "VC deals are always linear"},
+        {"id": "b", "text": "VC deal flow isn't linear - companies move forward, sideways, and sometimes back"},
+        {"id": "c", "text": "There's no difference"},
+        {"id": "d", "text": "VC deals are simpler"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The key difference from transactional sales workflows: VC deal flow isn't linear. Companies move forward, sideways, and sometimes back. You might pass on a company's seed round and lead their Series A. A 'watchlist' company might sit dormant for two years then become your best investment.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-011",
+      "chapter": "crm-and-deal-flow",
+      "section": "Choosing Your CRM",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "When should you consider Salesforce for CRM?",
+      "options": [
+        {"id": "a", "text": "Always - it's the best option"},
+        {"id": "b", "text": "Only if you're large enough to have dedicated CRM admin resources"},
+        {"id": "c", "text": "Never - it's too expensive"},
+        {"id": "d", "text": "Only for small funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Salesforce is the enterprise standard - extremely customizable with a massive ecosystem. The downsides are cost (expensive for small funds), complexity (requires real admin overhead), and UX that feels dated. Larger, established funds with dedicated operations teams sometimes use Salesforce because they need complex workflows and have resources to maintain it. Not recommended for small funds.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#choosing-your-crm"
+    },
+    {
+      "id": "part2-crm-012",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you prioritize when setting up your CRM workflow?",
+      "options": [
+        {"id": "a", "text": "Designing the perfect pipeline with many stages"},
+        {"id": "b", "text": "Start simple - you can always add complexity later"},
+        {"id": "c", "text": "Copy exactly what other funds do"},
+        {"id": "d", "text": "Use every feature available"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Don't overthink the workflow. Many funds spend weeks designing the perfect pipeline stages and custom fields. This is usually overengineering. Start simple. You can always add complexity later. The basics (who are we talking to, what stage are they at, what's the next step) cover 80% of what you need.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-013",
+      "chapter": "crm-and-deal-flow",
+      "section": "What You Actually Need",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why is search and filtering important in a CRM?",
+      "options": [
+        {"id": "a", "text": "Because it looks impressive"},
+        {"id": "b", "text": "Because if you can't find information quickly, you won't use the system"},
+        {"id": "c", "text": "Because it's required by law"},
+        {"id": "d", "text": "Because it's cheaper"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Search and filtering are critical. Find all the AI infrastructure companies you talked to in the last year. Find everyone you met at that conference. Find all the founders you passed on who you said you'd check back with in six months. If you can't find information quickly, you won't use the system. Unfortunately, search systems on CRMs are inexplicably poor.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#what-you-actually-need"
+    },
+    {
+      "id": "part2-crm-014",
+      "chapter": "crm-and-deal-flow",
+      "section": "Real Example: Attio at Inflection",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What were the key distinctions in Inflection's deal funnel stages?",
+      "options": [
+        {"id": "a", "text": "They only had two stages"},
+        {"id": "b", "text": "Watchlist (companies we might revisit) versus Passed (definitely not), and Lost (we wanted to but couldn't) versus Passed (we chose not to)"},
+        {"id": "c", "text": "They used the same stages as sales"},
+        {"id": "d", "text": "They didn't use stages"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Inflection's deal funnel included stages like New, Initial Contact, Research, Term Sheet, Invested, Watchlist, Passed, and Lost. The key distinctions are Watchlist (companies we might revisit) versus Passed (definitely not), and Lost (we wanted to but couldn't) versus Passed (we chose not to). These capture the non-linear nature of VC relationships better than a pure sales funnel.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#real-example-attio-at-inflection"
+    },
+    {
+      "id": "part2-crm-015",
+      "chapter": "crm-and-deal-flow",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the hardest part of implementing a CRM?",
+      "options": [
+        {"id": "a", "text": "Choosing the right tool"},
+        {"id": "b", "text": "The discipline of actually using it consistently"},
+        {"id": "c", "text": "The cost"},
+        {"id": "d", "text": "The technical setup"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The hardest part isn't choosing the right tool. It's the discipline of actually using it consistently. Use it in deal flow calls. Make sure email and meeting tracking work automatically. Keep the data current. A mediocre CRM used consistently is better than a perfect CRM that nobody updates.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#the-bottom-line"
+    },
+    {
+      "id": "part2-crm-016",
+      "chapter": "crm-and-deal-flow",
+      "section": "What You Actually Need",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "How can funds use CRM beyond deal flow management?",
+      "options": [
+        {"id": "a", "text": "They can't - CRM is only for deal flow"},
+        {"id": "b", "text": "Many funds also use their CRM to manage LP relationships - tracking interactions, managing fundraising pipelines, maintaining investor reporting history"},
+        {"id": "c", "text": "Only for portfolio companies"},
+        {"id": "d", "text": "Only for internal team management"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Beyond deal flow, many funds also use their CRM to manage LP relationships. Tracking interactions with current and potential LPs, managing fundraising pipelines, and maintaining investor reporting history. The same principles apply: relationship tracking, interaction history, and systematic follow-up. Some funds use separate systems for LPs, others use the same CRM with different pipelines.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#what-you-actually-need"
+    },
+    {
+      "id": "part2-crm-017",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What should you do with CRM APIs?",
+      "options": [
+        {"id": "a", "text": "Ignore them"},
+        {"id": "b", "text": "Use them to build light integrations between your CRM and research platform, sourcing tools, and anything else you use"},
+        {"id": "c", "text": "Only use them if you're technical"},
+        {"id": "d", "text": "They're not important"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Most CRMs have APIs. Use them. Build light integrations between your CRM and your research platform, your sourcing tools, and anything else you use. The CRM becomes more valuable when it's connected to the rest of your stack.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-018",
+      "chapter": "crm-and-deal-flow",
+      "section": "Making It Actually Work",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What happens if you don't commit to entering data in your CRM?",
+      "options": [
+        {"id": "a", "text": "Nothing - it works automatically"},
+        {"id": "b", "text": "The system becomes incomplete and people stop trusting it"},
+        {"id": "c", "text": "It gets better on its own"},
+        {"id": "d", "text": "It doesn't matter"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Commit to entering data. There's no way around this. Someone needs to enter information about companies, founders, and meetings. With good email and calendar integration, a lot happens automatically. But initial company setup, notes from meetings that aren't on calendar, and context about relationships still require manual entry. The key is making it low-friction.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#making-it-actually-work"
+    },
+    {
+      "id": "part2-crm-019",
+      "chapter": "crm-and-deal-flow",
+      "section": "Choosing Your CRM",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What should you prioritize when choosing a CRM?",
+      "options": [
+        {"id": "a", "text": "The one with the most features"},
+        {"id": "b", "text": "Prioritize customizability over features - you'll need to adapt the CRM to match your fund's specific process"},
+        {"id": "c", "text": "The cheapest option"},
+        {"id": "d", "text": "The one everyone else uses"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Prioritize customizability over features. You'll need to adapt the CRM to match your fund's specific process. Attio and Affinity are both good choices for most funds. Attio if you want more control over structure and workflow. Affinity if you want VC-specific features.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#choosing-your-crm"
+    },
+    {
+      "id": "part2-crm-020",
+      "chapter": "crm-and-deal-flow",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the bottom line recommendation for CRM?",
+      "options": [
+        {"id": "a", "text": "Build your own CRM"},
+        {"id": "b", "text": "Buy a CRM (Attio or Affinity for most funds), customize it, integrate it, and commit to using it"},
+        {"id": "c", "text": "Don't use a CRM at all"},
+        {"id": "d", "text": "Only use spreadsheets"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Buy a CRM. Don't build one. Don't start with Airtable or Notion. Choose something designed for relationship management (Attio or Affinity for most funds), customize it to match your process, integrate it with your other tools, and commit to using it.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/crm-and-deal-flow#the-bottom-line"
+    }
+  ]
+}

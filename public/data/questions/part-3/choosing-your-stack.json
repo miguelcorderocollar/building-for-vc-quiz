@@ -1,0 +1,434 @@
+[
+  {
+    "id": "choosing-stack-001",
+    "chapter": "choosing-your-stack",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the default technology stack recommended for VC web applications at Inflection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "React, Python, MongoDB, AWS"
+      },
+      {
+        "id": "b",
+        "text": "Next.js, TypeScript, PostgreSQL, Vercel"
+      },
+      {
+        "id": "c",
+        "text": "Vue.js, JavaScript, MySQL, Heroku"
+      },
+      {
+        "id": "d",
+        "text": "Angular, Java, Oracle, Azure"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The default stack is Next.js (React framework), TypeScript (static typing), PostgreSQL (relational database), Neon (serverless Postgres), Drizzle (TypeScript ORM), shadcn/ui (component library), Vercel AI SDK (for LLM integrations), deployed on Vercel. This stack prioritizes velocity and integration over cutting-edge technology.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-002",
+    "chapter": "choosing-your-stack",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why does velocity matter more than performance for VC tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "VC funds have millions of users"
+      },
+      {
+        "id": "b",
+        "text": "You're building tools for tens of users, not millions. A platform that exists in 2 weeks matters more than one that loads 150ms faster"
+      },
+      {
+        "id": "c",
+        "text": "Performance doesn't matter at all"
+      },
+      {
+        "id": "d",
+        "text": "VC tools require real-time processing"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Velocity matters more than performance because you're building for 5-20 people, not millions. A research platform that loads in 200ms versus 50ms makes no difference to a GP. But a platform that exists in 2 weeks versus 2 months makes a huge difference to whether you get support for the next project.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-003",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When should you introduce new technology beyond the default stack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always use the newest frameworks"
+      },
+      {
+        "id": "b",
+        "text": "Pick one or two new technologies per project when they solve a problem the default stack doesn't address"
+      },
+      {
+        "id": "c",
+        "text": "Never introduce new technology"
+      },
+      {
+        "id": "d",
+        "text": "Introduce as many new technologies as possible"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The rule is: pick one or two new technologies per project, not more. For example, at Inflection's Kepler research platform, they introduced Tiptap for Notion-like editing. They didn't also introduce a new database, deployment platform, state management library, and UI framework. Change one thing where it matters.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-004",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What questions should you ask when evaluating new technology?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Does the default stack actually not solve this?"
+      },
+      {
+        "id": "b",
+        "text": "Is this technology mature and well-maintained?"
+      },
+      {
+        "id": "c",
+        "text": "Does it have financial backing?"
+      },
+      {
+        "id": "d",
+        "text": "Does it integrate well with your existing stack?"
+      },
+      {
+        "id": "e",
+        "text": "Will AI coding agents understand it?"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e"],
+    "explanation": "Evaluate new technology with these questions: Does the default stack actually not solve this? Is this technology mature and well-maintained? Does it have financial backing? Does it integrate well with your existing stack? Will AI coding agents understand it? Popular libraries mean AI tools work better and you ship faster.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-005",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When does Python make sense in a VC tech stack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For all web applications"
+      },
+      {
+        "id": "b",
+        "text": "For data analysis, data transformations in the warehouse (dbt), machine learning, and AI work"
+      },
+      {
+        "id": "c",
+        "text": "Never use Python"
+      },
+      {
+        "id": "d",
+        "text": "Only for backend APIs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Python makes sense for: data analysis and exploration (Jupyter/Hex notebooks), data transformations in the warehouse (dbt with Snowpark/BigQuery DataFrames/PySpark), and machine learning/AI work (scikit-learn, numpy, PyTorch). The approach: TypeScript by default for everything, Python when you genuinely need it for data work.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-006",
+    "chapter": "choosing-your-stack",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "When should you rewrite existing code that's in a different stack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always rewrite immediately"
+      },
+      {
+        "id": "b",
+        "text": "Only if it's blocking new features, unmaintainable, or actively broken"
+      },
+      {
+        "id": "c",
+        "text": "Never rewrite, always keep legacy code"
+      },
+      {
+        "id": "d",
+        "text": "Rewrite every 6 months"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Only rewrite existing code if: it's blocking new features (architecture is inflexible), it's unmaintainable (fixing bugs takes weeks instead of hours), or it's actively broken (tools don't work, GPs don't use them). If existing tools work and serve GPs well, continue building on them. If you do rewrite, do it incrementally.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-007",
+    "chapter": "choosing-your-stack",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why should you lean on managed services?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're always cheaper"
+      },
+      {
+        "id": "b",
+        "text": "Your engineering time is worth more than the cost difference. Spending 4 hours managing infrastructure to save $200 is a terrible trade"
+      },
+      {
+        "id": "c",
+        "text": "They're always more secure"
+      },
+      {
+        "id": "d",
+        "text": "They never have downtime"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Use managed services for everything unless you have a specific reason not to. Your engineering time, at fully-loaded cost, is worth $100-200/hour at a VC fund. Spending 4 hours a month managing infrastructure to save $200 on hosting is a terrible trade. Spend that time building features that help GPs make better investment decisions.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-008",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are examples of managed services recommended for VC tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vercel for Next.js apps hosting"
+      },
+      {
+        "id": "b",
+        "text": "Neon, Supabase, or PlanetScale for Postgres databases"
+      },
+      {
+        "id": "c",
+        "text": "Trigger.dev, Inngest, or Vercel workflow SDK for background jobs"
+      },
+      {
+        "id": "d",
+        "text": "Sentry for error tracking"
+      },
+      {
+        "id": "e",
+        "text": "Running your own servers on EC2"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "For hosting: Vercel for Next.js apps, Railway/Render/Fly.io for other services. For databases: Neon/Supabase/PlanetScale for Postgres, AWS RDS if committed to AWS. For background jobs: Trigger.dev, Inngest, or Vercel workflow SDK. For monitoring: Vercel's built-in monitoring or Sentry. Don't run your own infrastructure unless you have specific compliance requirements.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-009",
+    "chapter": "choosing-your-stack",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the recommended approach for dependencies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimize dependencies, but don't be dogmatic. Use well-maintained libraries that solve problems and let you ship faster"
+      },
+      {
+        "id": "b",
+        "text": "Never use any dependencies"
+      },
+      {
+        "id": "c",
+        "text": "Use as many dependencies as possible"
+      },
+      {
+        "id": "d",
+        "text": "Only use dependencies from big tech companies"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "Minimize dependencies, but don't be dogmatic. If a well-maintained library solves your problem and lets you ship faster, use it. In VC ecosystem, you'll use vendor SDKs, Vercel AI SDK, Drizzle/Prisma. Be selective about other dependencies. Be wary of micro-dependencies, dependencies with no recent commits, and dependencies that pull in huge transitive dependency trees.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-010",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why does Next.js make sense for VC tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's the newest framework"
+      },
+      {
+        "id": "b",
+        "text": "It gives you full-stack in one framework - UI, API endpoints, background jobs, and webhooks all in the same codebase"
+      },
+      {
+        "id": "c",
+        "text": "It has the best performance"
+      },
+      {
+        "id": "d",
+        "text": "It's the easiest to learn"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Next.js gives you full-stack in one framework. You can build UI, API endpoints, background jobs, and webhooks all in the same codebase. For a research platform or sourcing tool, this means you don't need separate frontend and backend repos, separate deployments, or coordination between different frameworks. One codebase, one deployment, less complexity.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-011",
+    "chapter": "choosing-your-stack",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What matters most to GPs about the tools you build?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That you used the newest framework"
+      },
+      {
+        "id": "b",
+        "text": "Whether the tools help them find better companies, make better decisions, and generate better returns"
+      },
+      {
+        "id": "c",
+        "text": "That the code is perfectly optimized"
+      },
+      {
+        "id": "d",
+        "text": "That you used cutting-edge technology"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "GPs don't care that you used Next.js or have elegant architecture. They care about whether your tools help them find better companies, make better decisions, and generate better returns. Your value comes from building research platforms that surface insights, sourcing tools that identify companies early, and analyses that inform thesis development.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-012",
+    "chapter": "choosing-your-stack",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How do modern AI coding tools change technology selection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They don't change anything"
+      },
+      {
+        "id": "b",
+        "text": "Choose popular, well-documented frameworks because AI tools work dramatically better with them, letting you ship faster. Prioritize VC domain knowledge over specialized technical expertise when hiring"
+      },
+      {
+        "id": "c",
+        "text": "You should use obscure frameworks"
+      },
+      {
+        "id": "d",
+        "text": "AI tools work equally well with all frameworks"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Modern AI tools change everything. With Claude Code or Cursor, learning any language or framework is fast. AI agents handle syntax, suggest patterns, and catch mistakes. Choose popular, well-documented frameworks - AI tools work dramatically better with them. For hiring: prioritize VC domain knowledge and product sense over specialized technical expertise.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-013",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why is TypeScript recommended for VC tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's faster than JavaScript"
+      },
+      {
+        "id": "b",
+        "text": "It catches errors before they reach users. When shipping fast with limited testing, static typing is your safety net. Modern AI coding tools understand TypeScript's explicitness better"
+      },
+      {
+        "id": "c",
+        "text": "It's required for Next.js"
+      },
+      {
+        "id": "d",
+        "text": "It's easier to learn than JavaScript"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "TypeScript catches errors before they reach users. When you're shipping fast with limited testing, static typing is your safety net. The compiler catches bugs that would otherwise break production. And with modern AI coding tools, TypeScript's explicitness helps Claude Code understand your codebase and generate correct code.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-014",
+    "chapter": "choosing-your-stack",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are core dependencies that make sense in the VC ecosystem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "API wrappers from your data providers"
+      },
+      {
+        "id": "b",
+        "text": "Vercel AI SDK for LLM integrations"
+      },
+      {
+        "id": "c",
+        "text": "Drizzle or Prisma for database access"
+      },
+      {
+        "id": "d",
+        "text": "Zod for validation"
+      },
+      {
+        "id": "e",
+        "text": "Micro-dependencies that do things you could write in 10 lines"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Core dependencies that make sense: API wrappers from your data providers, Vercel AI SDK for LLM integrations, Drizzle or Prisma for database access, Zod for validation, date-fns for dates, Vitest for testing. These are maintained by companies with financial incentive to keep them working. Be wary of micro-dependencies.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  },
+  {
+    "id": "choosing-stack-015",
+    "chapter": "choosing-your-stack",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the exception to using managed services?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There are no exceptions"
+      },
+      {
+        "id": "b",
+        "text": "If you have specific compliance requirements (data residency, audit reasons), you might need self-hosted infrastructure"
+      },
+      {
+        "id": "c",
+        "text": "Managed services are always more expensive"
+      },
+      {
+        "id": "d",
+        "text": "Self-hosting is always better"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The exception: If you have specific compliance requirements (data residency or audit reasons), you might need self-hosted infrastructure. But this is rare for most funds. Work with your CISO or compliance officer to find a path forward. Default to managed services.",
+    "sourceUrl": "/guide/part-3-technical-foundations/choosing-your-stack"
+  }
+]

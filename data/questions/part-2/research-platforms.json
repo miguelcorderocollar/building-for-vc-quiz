@@ -1,0 +1,430 @@
+[
+  {
+    "id": "research-1",
+    "chapter": "research-platforms",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the best advantage you have as an investor according to the research platforms chapter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Access to more deals"
+      },
+      {
+        "id": "b",
+        "text": "Clarity of thought"
+      },
+      {
+        "id": "c",
+        "text": "More capital"
+      },
+      {
+        "id": "d",
+        "text": "Better network"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The best advantage you have as an investor is clarity of thought. When everyone else is chasing the same hot deals, clarity lets you see opportunities others miss.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-2",
+    "chapter": "research-platforms",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "How do the best funds operate differently from most funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They reactively evaluate deals that come through the network"
+      },
+      {
+        "id": "b",
+        "text": "They operate proactively, developing strong points of view about markets before seeing deals"
+      },
+      {
+        "id": "c",
+        "text": "They invest in more companies"
+      },
+      {
+        "id": "d",
+        "text": "They have larger teams"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The best funds operate proactively. They develop strong points of view about markets, technologies, and trends before seeing deals in those areas. They publish their thinking and reach out to founders building in spaces they find interesting.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-3",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are the key features that research platforms need to support thesis-driven investing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Networked research with bidirectional links"
+      },
+      {
+        "id": "b",
+        "text": "Market and technology research as first-class entities"
+      },
+      {
+        "id": "c",
+        "text": "Thesis development workflows"
+      },
+      {
+        "id": "d",
+        "text": "Publishing workflow"
+      },
+      {
+        "id": "e",
+        "text": "Company and founder tracking"
+      },
+      {
+        "id": "f",
+        "text": "Search and connection surfacing"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e", "f"],
+    "explanation": "Research platforms need networked research (bidirectional links), market/technology research as first-class entities, thesis development workflows, publishing workflows, company/founder tracking, and search/connection surfacing.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-4",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why do tools like Notion fall short for research platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're too expensive"
+      },
+      {
+        "id": "b",
+        "text": "They're hierarchical by design, not network-first, which makes it hard to see connections between ideas"
+      },
+      {
+        "id": "c",
+        "text": "They don't support collaboration"
+      },
+      {
+        "id": "d",
+        "text": "They don't support markdown"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Notion is hierarchical by design, not network-first. You can link pages, but the mental model is folders and databases, not a knowledge graph. This matters less if your research is more structured, but weakens networked thinking.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-5",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When does building a custom research platform make sense?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When you're just starting thesis development"
+      },
+      {
+        "id": "b",
+        "text": "When your thesis development process is unique, publishing integration is critical, and networked thinking is central to your research approach"
+      },
+      {
+        "id": "c",
+        "text": "When you have a small team with basic collaborative needs"
+      },
+      {
+        "id": "d",
+        "text": "When research isn't core to your competitive advantage"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Building makes sense when your thesis development process is unique, publishing integration is critical to your strategy, networked thinking is central to your research approach, and the value compounds exponentially over time.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-6",
+    "chapter": "research-platforms",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the recommended approach for starting with research platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build a custom platform immediately"
+      },
+      {
+        "id": "b",
+        "text": "Start with Obsidian or Notion, use it for six months, develop your research process, then build custom based on what's frustrating"
+      },
+      {
+        "id": "c",
+        "text": "Use only spreadsheets"
+      },
+      {
+        "id": "d",
+        "text": "Buy the most expensive tool available"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Start with Obsidian (if comfortable with markdown) or Notion (if team collaboration matters more). Use it for six months. Develop your research process. Pay attention to what's frustrating. When you do build custom, you'll know exactly what features matter.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-7",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What type of funds should prioritize research platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Network-driven funds that invest reactively"
+      },
+      {
+        "id": "b",
+        "text": "Thesis-driven funds that compete on clarity of thought"
+      },
+      {
+        "id": "c",
+        "text": "Funds focused on late-stage deals with quantitative analysis"
+      },
+      {
+        "id": "d",
+        "text": "Solo GPs with simple note-taking needs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Research platforms are most valuable at thesis-driven funds that compete on clarity of thought, funds that publish thinking, and collaborative research teams where multiple people research adjacent areas.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-8",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are the main limitations of networked thinking tools like Obsidian and Roam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're built for individual use, not team collaboration"
+      },
+      {
+        "id": "b",
+        "text": "Team collaboration requires sync solutions that feel less natural"
+      },
+      {
+        "id": "c",
+        "text": "They're too expensive"
+      },
+      {
+        "id": "d",
+        "text": "They don't support markdown"
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "explanation": "Networked thinking tools like Obsidian are built for individual use. Team collaboration requires sync solutions (Obsidian Sync, Git repositories, or shared folders) which work but feel less natural than true collaborative platforms.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-9",
+    "chapter": "research-platforms",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the key technical challenge when building custom research platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The technology stack (Next.js vs React vs Vue)"
+      },
+      {
+        "id": "b",
+        "text": "Product design: how to model relationships, surface connections naturally, build smooth publishing workflows, and ensure the research experience competes with Claude/ChatGPT/Perplexity"
+      },
+      {
+        "id": "c",
+        "text": "Database selection (Postgres vs MongoDB)"
+      },
+      {
+        "id": "d",
+        "text": "Hosting infrastructure"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The key technical challenges are more about product design than technology: how to model relationships between research entities, what makes relevant connections surface naturally, how to build publishing workflows that feel smooth, and how to ensure the research experience is as good as Claude, ChatGPT, and Perplexity.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-10",
+    "chapter": "research-platforms",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the primary value of publishing research?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It generates revenue"
+      },
+      {
+        "id": "b",
+        "text": "It demonstrates to founders that you understand their space, attracts inbound, and forces you to clarify your own thinking"
+      },
+      {
+        "id": "c",
+        "text": "It's required by LPs"
+      },
+      {
+        "id": "d",
+        "text": "It helps with compliance"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Publishing serves multiple purposes: it demonstrates to founders that you understand their space, it attracts inbound from companies building in areas you find interesting, and it forces you to clarify your own thinking.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-11",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "How does research create competitive advantage when evaluating deals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It gives you access to more deals"
+      },
+      {
+        "id": "b",
+        "text": "When you've spent months researching a market, you develop deep conviction and can move quickly because you already have context"
+      },
+      {
+        "id": "c",
+        "text": "It reduces the need for due diligence"
+      },
+      {
+        "id": "d",
+        "text": "It guarantees better returns"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When you've spent months researching a market, you develop deep conviction. You understand key players, technology trends, business model challenges, and opportunities. When a company in that space raises a round, you don't need three months of diligence - you already have context and can move quickly.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-12",
+    "chapter": "research-platforms",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are the key components of networked research that differentiate it from simple note-taking?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bidirectional links"
+      },
+      {
+        "id": "b",
+        "text": "Automatic backlinks"
+      },
+      {
+        "id": "c",
+        "text": "Ability to see how different pieces of research relate"
+      },
+      {
+        "id": "d",
+        "text": "Building a knowledge graph where insights emerge from connections"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Networked research requires bidirectional links, automatic backlinks, the ability to see how different pieces of research relate, and building a knowledge graph where insights emerge from connections rather than isolated documents.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-13",
+    "chapter": "research-platforms",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What was the key insight from Inflection's experience building Kepler?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Research platforms are unnecessary"
+      },
+      {
+        "id": "b",
+        "text": "The real value came when partners started using it as the source for published thinking, synthesizing months of research instead of writing from scratch"
+      },
+      {
+        "id": "c",
+        "text": "Building custom platforms is always a mistake"
+      },
+      {
+        "id": "d",
+        "text": "Notion is sufficient for all research needs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The real value came when partners started using Kepler as the source for published thinking. Instead of writing from scratch, they'd synthesize months of research captured in Kepler. The platform went from research storage to thinking tool to content engine.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-14",
+    "chapter": "research-platforms",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What should you NOT build a research platform for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To think more clearly"
+      },
+      {
+        "id": "b",
+        "text": "To organize notes better"
+      },
+      {
+        "id": "c",
+        "text": "To publish more coherently"
+      },
+      {
+        "id": "d",
+        "text": "To move faster when opportunities appear"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Don't build a research platform to organize notes better. Build it to think more clearly, publish more coherently, and move faster when opportunities appear in spaces you already understand deeply.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  },
+  {
+    "id": "research-15",
+    "chapter": "research-platforms",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How do small teams compete with large ones using research platforms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By having more people"
+      },
+      {
+        "id": "b",
+        "text": "By making each person's research more valuable through better connections and institutional memory"
+      },
+      {
+        "id": "c",
+        "text": "By investing more capital"
+      },
+      {
+        "id": "d",
+        "text": "By focusing on different sectors"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Small teams can compete with large ones not by having more people, but by making each person's research more valuable through better connections and institutional memory. When multiple people research adjacent areas, their insights connect and create unique value.",
+    "sourceUrl": "/guide/part-2-tech-stack/research-platforms"
+  }
+]

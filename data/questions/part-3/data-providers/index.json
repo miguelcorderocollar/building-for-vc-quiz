@@ -1,0 +1,234 @@
+[
+  {
+    "id": "data-providers-index-1",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the primary purpose of data providers for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To replace internal CRM systems"
+      },
+      {
+        "id": "b",
+        "text": "To supply external data about companies, funding, people, and markets"
+      },
+      {
+        "id": "c",
+        "text": "To manage portfolio company relationships"
+      },
+      {
+        "id": "d",
+        "text": "To handle compliance and regulatory reporting"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Data providers supply external data about companies, funding, people, and markets. This data feeds CRMs, powers sourcing tools, and enriches data warehouses. They don't replace internal systems but provide the foundational data needed to operate.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-2",
+    "chapter": "data-providers",
+    "section": "types-of-data",
+    "difficulty": "beginner",
+    "type": "multiple",
+    "question": "Which of the following are types of data that VC funds typically need from external providers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Company and funding data"
+      },
+      {
+        "id": "b",
+        "text": "People data"
+      },
+      {
+        "id": "c",
+        "text": "Signal and sourcing data"
+      },
+      {
+        "id": "d",
+        "text": "Market and competitive data"
+      },
+      {
+        "id": "e",
+        "text": "Research data"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e"],
+    "explanation": "VC funds need all five types: company/funding data (foundation of deal flow), people data (founder/team evaluation), signal data (early indicators), market/competitive data (sector analysis), and research data (academic papers, patents for deep tech).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-3",
+    "chapter": "data-providers",
+    "section": "types-of-data",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is signal and sourcing data primarily used for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tracking historical funding rounds"
+      },
+      {
+        "id": "b",
+        "text": "Identifying companies before they're widely known"
+      },
+      {
+        "id": "c",
+        "text": "Managing portfolio company relationships"
+      },
+      {
+        "id": "d",
+        "text": "Generating financial reports"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Signal and sourcing data includes early indicators like investor interest signals, company registry filings, talent movements, headcount growth, web traffic, and funding predictions. These help identify companies before they're widely known, which is crucial for sourcing tools.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-4",
+    "chapter": "data-providers",
+    "section": "types-of-data",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Which type of data is especially valuable for deep tech funds evaluating novel technology or scientific founding teams?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Company and funding data"
+      },
+      {
+        "id": "b",
+        "text": "People data"
+      },
+      {
+        "id": "c",
+        "text": "Research data"
+      },
+      {
+        "id": "d",
+        "text": "Signal data"
+      }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "Research data, including academic papers, patents, and technical publications, is especially valuable for deep tech funds. These funds need to evaluate novel technology and scientific founding teams, which requires understanding academic research and technical publications.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-5",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "True or False: Most data providers specialize in only one category of data (e.g., only company data or only people data).",
+    "options": [
+      {
+        "id": "a",
+        "text": "True - providers typically focus on one category"
+      },
+      {
+        "id": "b",
+        "text": "False - many providers span multiple categories"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Many providers span multiple categories. For example, People Data Labs offers both person and company data. Signal providers often include company fundamentals. The chapters are organized by primary focus, but don't assume a provider only does one thing.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-6",
+    "chapter": "data-providers",
+    "section": "types-of-data",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What information is typically included in company and funding data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Company name, location, founding date, description, website, employee count, industry"
+      },
+      {
+        "id": "b",
+        "text": "Funding rounds, amounts, dates, investors, valuations"
+      },
+      {
+        "id": "c",
+        "text": "Founder educational backgrounds"
+      },
+      {
+        "id": "d",
+        "text": "Web traffic estimates"
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "explanation": "Company and funding data includes basic company information (name, location, founding date, description, website, employee count, industry) and funding history (rounds, amounts, dates, investors, valuations). Founder backgrounds are people data, and web traffic is signal data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-7",
+    "chapter": "data-providers",
+    "section": "types-of-data",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "How does people data differ from company data in terms of primary use cases for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People data is used for deal flow tracking, while company data is for evaluating teams"
+      },
+      {
+        "id": "b",
+        "text": "People data is used for evaluating founding teams and identifying potential hires, while company data is for deal flow tracking and market analysis"
+      },
+      {
+        "id": "c",
+        "text": "Both are used interchangeably for the same purposes"
+      },
+      {
+        "id": "d",
+        "text": "People data is only relevant for portfolio support, not sourcing"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "People data (founders, executives, employees) is crucial for evaluating founding teams and identifying potential hires for portfolio companies. Company data (company info and funding history) is the foundation of deal flow tracking, market analysis, and portfolio monitoring. They serve complementary but distinct purposes.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  },
+  {
+    "id": "data-providers-index-8",
+    "chapter": "data-providers",
+    "section": "overview",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are the key considerations when selecting data providers for a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cost and pricing models"
+      },
+      {
+        "id": "b",
+        "text": "Data delivery methods (API vs files)"
+      },
+      {
+        "id": "c",
+        "text": "Coverage by geography, stage, and sector"
+      },
+      {
+        "id": "d",
+        "text": "Data quality and freshness"
+      },
+      {
+        "id": "e",
+        "text": "Only the cheapest option"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Key considerations include cost and pricing models (data providers are expensive), data delivery methods (APIs vs bulk files), coverage differences (geography, stage, sector), and data quality/freshness. Cost alone shouldn't be the only factor - you need data that matches your fund's needs.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-providers"
+  }
+]

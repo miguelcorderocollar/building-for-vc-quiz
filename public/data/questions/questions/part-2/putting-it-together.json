@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "part2-putting-001",
+      "chapter": "putting-it-together",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the biggest mistake new technical hires at VC funds make?",
+      "options": [
+        {"id": "a", "text": "Not buying enough tools"},
+        {"id": "b", "text": "Trying to build everything at once - spreading resources too thin"},
+        {"id": "c", "text": "Focusing too much on one tool"},
+        {"id": "d", "text": "Not hiring enough people"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The biggest mistake new technical hires at VC funds make is trying to build everything at once. They see the full landscape of what's possible and want to implement a comprehensive tech stack from day one. This spreads resources too thin and delivers less value than focusing on fewer things done well.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together"
+    },
+    {
+      "id": "part2-putting-002",
+      "chapter": "putting-it-together",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are the three phases for sequencing your tech stack implementation?",
+      "options": [
+        {"id": "a", "text": "Build, buy, integrate"},
+        {"id": "b", "text": "Learn what your fund needs, build the backbone and quick wins, decide on your big swing"},
+        {"id": "c", "text": "Research, implement, optimize"},
+        {"id": "d", "text": "Plan, execute, review"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "There are three phases: Phase 1 - Learn what your fund actually needs, Phase 2 - Build the backbone and quick wins, Phase 3 - Decide on your big swing. Don't skip phases.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together"
+    },
+    {
+      "id": "part2-putting-003",
+      "chapter": "putting-it-together",
+      "section": "Phase 1: Learn What Your Fund Needs First",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you do before building anything significant?",
+      "options": [
+        {"id": "a", "text": "Start building immediately"},
+        {"id": "b", "text": "Spend time understanding your fund - observation comes before building"},
+        {"id": "c", "text": "Copy what other funds do"},
+        {"id": "d", "text": "Only focus on technology"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Before you build anything significant, spend time understanding your fund. Observation comes before building. Talk to the people doing the work, understand the thesis and strategy, identify the actual pain points. Don't assume - just because EQT built Motherbrain or Inflection built Kepler doesn't mean your fund needs the same thing.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-1-learn-what-your-fund-needs-first"
+    },
+    {
+      "id": "part2-putting-004",
+      "chapter": "putting-it-together",
+      "section": "Phase 2: Build the Backbone and Quick Wins",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are the two parallel tracks in Phase 2?",
+      "options": [
+        {"id": "a", "text": "Research and sourcing"},
+        {"id": "b", "text": "The backbone (foundational infrastructure) and quick wins (small tools that prove value)"},
+        {"id": "c", "text": "Building and buying"},
+        {"id": "d", "text": "Internal and external tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Once you understand your fund, start with two parallel tracks: the backbone (foundational infrastructure everyone needs) and quick wins (small tools that solve specific pain points and prove your value to the team).",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-2-build-the-backbone-and-quick-wins"
+    },
+    {
+      "id": "part2-putting-005",
+      "chapter": "putting-it-together",
+      "section": "Phase 2: Build the Backbone and Quick Wins",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What are the backbone tools that every fund needs?",
+      "options": [
+        {"id": "a", "text": "Research platforms and sourcing tools"},
+        {"id": "b", "text": "CRM and fund operations - don't build these, buy them"},
+        {"id": "c", "text": "Portfolio support platforms"},
+        {"id": "d", "text": "Custom websites"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The backbone: CRM and fund operations. These are non-negotiable infrastructure. Every fund needs to track deal flow and manage fund operations. Don't build these. Buy them. Get CRM set up immediately and make sure your team actually uses it.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-2-build-the-backbone-and-quick-wins"
+    },
+    {
+      "id": "part2-putting-006",
+      "chapter": "putting-it-together",
+      "section": "Phase 2: Build the Backbone and Quick Wins",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What are quick wins?",
+      "options": [
+        {"id": "a", "text": "Large comprehensive platforms"},
+        {"id": "b", "text": "Small tools that solve specific pain points, take days or weeks (not months), and prove your value"},
+        {"id": "c", "text": "Only for large funds"},
+        {"id": "d", "text": "Tools that take years to build"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Quick wins are small tools that solve specific pain points and prove your value to the team. Examples: a simple dashboard showing portfolio company metrics, automating a painful manual process, a lightweight research workflow improvement. Quick wins should take days or weeks, not months. They should solve real problems people have right now.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-2-build-the-backbone-and-quick-wins"
+    },
+    {
+      "id": "part2-putting-007",
+      "chapter": "putting-it-together",
+      "section": "Phase 3: Decide on Your Big Swing",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What should you align on before committing to your big project?",
+      "options": [
+        {"id": "a", "text": "Only the timeline"},
+        {"id": "b", "text": "What data you'll need and ensure you have proper funding for both the data and the build"},
+        {"id": "c", "text": "Only the budget"},
+        {"id": "d", "text": "Nothing - just start building"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Before committing to your big project, align with fund leadership on what data you'll need and ensure you have proper funding for both the data and the build. Data subscriptions are expensive. PitchBook costs tens of thousands per year. Harmonic and Specter are significant investments. Have this conversation before you start.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-3-decide-on-your-big-swing"
+    },
+    {
+      "id": "part2-putting-008",
+      "chapter": "putting-it-together",
+      "section": "Phase 3: Decide on Your Big Swing",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What is your 'big swing'?",
+      "options": [
+        {"id": "a", "text": "Your first tool"},
+        {"id": "b", "text": "One big project where you differentiate - maybe a research platform, sourcing infrastructure, or portfolio support tools"},
+        {"id": "c", "text": "Everything at once"},
+        {"id": "d", "text": "Only buying tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "After you've built the backbone and delivered quick wins, you've earned the credibility and understanding to take on one big project. This is where you differentiate. You get one big swing. Maybe it's a research platform. Maybe it's sophisticated sourcing infrastructure. Maybe it's portfolio support tools. Choose based on where your fund's competitive advantage actually is.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-3-decide-on-your-big-swing"
+    },
+    {
+      "id": "part2-putting-009",
+      "chapter": "putting-it-together",
+      "section": "Phase 1: Learn What Your Fund Needs First",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "How long might the learning phase take?",
+      "options": [
+        {"id": "a", "text": "One day"},
+        {"id": "b", "text": "A few months - that's fine, building the wrong thing wastes more time"},
+        {"id": "c", "text": "One year"},
+        {"id": "d", "text": "Never - just start building"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "This learning phase might take a few months. That's fine. Building the wrong thing wastes more time than taking time to understand what to build.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#phase-1-learn-what-your-fund-needs-first"
+    },
+    {
+      "id": "part2-putting-010",
+      "chapter": "putting-it-together",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the bottom line for sequencing your tech stack?",
+      "options": [
+        {"id": "a", "text": "Build everything immediately"},
+        {"id": "b", "text": "Three phases - don't skip them. Learn first, build backbone and quick wins, then decide on your big swing."},
+        {"id": "c", "text": "Only focus on one tool"},
+        {"id": "d", "text": "Copy what other funds do"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Three phases. Don't skip them. Phase 1: Learn what your fund needs. Phase 2: Build the backbone (CRM, fund ops) and quick wins. Phase 3: Decide on your big swing based on where your fund's competitive advantage is. This approach avoids common mistakes and builds momentum.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/putting-it-together#the-bottom-line"
+    }
+  ]
+}

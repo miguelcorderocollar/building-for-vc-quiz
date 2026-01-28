@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "part2-website-001",
+      "chapter": "website-and-external-presence",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is your website and external presence primarily about?",
+      "options": [
+        {"id": "a", "text": "Complex technology"},
+        {"id": "b", "text": "First impressions, credibility, branding, design, and content"},
+        {"id": "c", "text": "Only for large funds"},
+        {"id": "d", "text": "Not important"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Your website and external presence are about first impressions and credibility. They're less about technology and more about branding, design, and content. The technology should be simple and stay out of the way. What matters is that your website clearly communicates what your fund is about, looks professional, and makes it easy for people to understand if you're the right investor for them.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence"
+    },
+    {
+      "id": "part2-website-002",
+      "chapter": "website-and-external-presence",
+      "section": "Your Website",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What should you do regarding design for your website?",
+      "options": [
+        {"id": "a", "text": "Design it yourself"},
+        {"id": "b", "text": "Hire a brand agency to design your website unless you have design expertise on your team"},
+        {"id": "c", "text": "Don't worry about design"},
+        {"id": "d", "text": "Only for large funds"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Hire design help. Unless you have design expertise on your team, hire a brand agency to design your website. The difference between a professionally designed site and one you design yourself is immediately obvious. Founders and LPs are forming judgments based on these first impressions. Good design communicates professionalism and attention to detail.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#your-website"
+    },
+    {
+      "id": "part2-website-003",
+      "chapter": "website-and-external-presence",
+      "section": "Your Website",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why should you use a modern CMS for your website?",
+      "options": [
+        {"id": "a", "text": "Because it's required"},
+        {"id": "b", "text": "Because you'll get frequent requests to update content - non-technical team members should be able to update content themselves"},
+        {"id": "c", "text": "Because it's cheaper"},
+        {"id": "d", "text": "Because it looks better"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Use a modern CMS. Choose a content management system that makes it easy to update your website without editing code. You'll get frequent requests to update content: adding new investments, updating team member bios, changing copy, publishing new content. If updating the website requires a developer every time, it becomes a bottleneck.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#your-website"
+    },
+    {
+      "id": "part2-website-004",
+      "chapter": "website-and-external-presence",
+      "section": "Your Website",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "What should your website communicate? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Your fund's investment focus - stages, sectors, geography"},
+        {"id": "b", "text": "Your portfolio - show investments prominently"},
+        {"id": "c", "text": "Your team - who makes investment decisions"},
+        {"id": "d", "text": "How to reach you - clear contact information"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Your website should communicate: (1) Your fund's investment focus - what stages, sectors, technologies, geography. (2) Your portfolio - show investments prominently to build credibility. (3) Your team - who makes investment decisions, their backgrounds. (4) Your thinking - if you publish research, feature it. (5) How to reach you - clear contact information, ideally a simple way to submit a pitch.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#your-website"
+    },
+    {
+      "id": "part2-website-005",
+      "chapter": "website-and-external-presence",
+      "section": "Publishing Research and Thought Leadership",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Why should you publish research?",
+      "options": [
+        {"id": "a", "text": "Because everyone else does"},
+        {"id": "b", "text": "It demonstrates expertise in your focus areas and attracts founders building in spaces you understand deeply"},
+        {"id": "c", "text": "It's required"},
+        {"id": "d", "text": "It doesn't help"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Publishing demonstrates expertise in your focus areas. When a founder is building in infrastructure software and they read your detailed analysis of the infrastructure market, they're more likely to reach out to you. Publishing also attracts inbound deal flow. Founders building in spaces you've researched see your content and realize you're a relevant investor.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#publishing-research-and-thought-leadership"
+    },
+    {
+      "id": "part2-website-006",
+      "chapter": "website-and-external-presence",
+      "section": "Publishing Research and Thought Leadership",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What should you publish?",
+      "options": [
+        {"id": "a", "text": "Only marketing content"},
+        {"id": "b", "text": "The research you're already doing - market analysis, technology trends, thesis pieces"},
+        {"id": "c", "text": "Only portfolio company news"},
+        {"id": "d", "text": "Anything to fill space"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Publish the research you're already doing. Market analysis, technology trends, thesis pieces about where you're investing and why. Turn your internal research into external content. The key is that publishing should come from real research, not be forced marketing content. Founders can tell the difference.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#publishing-research-and-thought-leadership"
+    },
+    {
+      "id": "part2-website-007",
+      "chapter": "website-and-external-presence",
+      "section": "Social Media and Other Channels",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What platforms should you focus on for social media?",
+      "options": [
+        {"id": "a", "text": "Every platform available"},
+        {"id": "b", "text": "LinkedIn and X where founders and LPs already are - do those well before expanding"},
+        {"id": "c", "text": "Only Instagram"},
+        {"id": "d", "text": "Don't use social media"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "For social media, focus on LinkedIn and X where founders and LPs already are. Individual partners having their own presence on LinkedIn and X often matters more than the fund's official accounts. When partners share their thinking, make introductions, and engage with their networks, it builds the fund's reputation through their personal brands. Do those well before expanding to other channels.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#social-media-and-other-channels"
+    },
+    {
+      "id": "part2-website-008",
+      "chapter": "website-and-external-presence",
+      "section": "Your Website",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "Why does branding matter for your website?",
+      "options": [
+        {"id": "a", "text": "It doesn't matter"},
+        {"id": "b", "text": "Your website should reflect the type of fund you are - a deep tech fund should feel different from a consumer fund"},
+        {"id": "c", "text": "Only for large funds"},
+        {"id": "d", "text": "It's only about colors"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Branding is essential. Your website should reflect the type of fund you are. A deep tech fund focused on technical founders should feel different from a consumer fund focused on brand and community. Your visual identity, tone, and content choices all communicate who you are. This is why design help matters - good designers understand how to make these choices cohesively.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#your-website"
+    },
+    {
+      "id": "part2-website-009",
+      "chapter": "website-and-external-presence",
+      "section": "Publishing Research and Thought Leadership",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What matters more than the platform when publishing research?",
+      "options": [
+        {"id": "a", "text": "The platform is everything"},
+        {"id": "b", "text": "The consistency and quality of the content - if you're publishing thoughtful research regularly, the specific platform doesn't make much difference"},
+        {"id": "c", "text": "Only Substack matters"},
+        {"id": "d", "text": "Only Medium matters"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The platform matters less than the consistency and quality of the content. Many funds use Substack for regular content. Others publish on Medium. Some publish directly on their website using their CMS. If you're publishing thoughtful research regularly, the specific platform doesn't make much difference.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#publishing-research-and-thought-leadership"
+    },
+    {
+      "id": "part2-website-010",
+      "chapter": "website-and-external-presence",
+      "section": "The Bottom Line",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the bottom line for website and external presence?",
+      "options": [
+        {"id": "a", "text": "Build complex technology"},
+        {"id": "b", "text": "The technology is simple - focus on creating content that demonstrates expertise and building a presence that attracts the right founders"},
+        {"id": "c", "text": "Only for large funds"},
+        {"id": "d", "text": "Not important"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The technology is simple. Hire design help for your website. Use a modern CMS so non-technical team members can update content. Focus on clearly communicating your investment focus, portfolio, team, and how to reach you. Publishing research builds your brand. For social media, focus on LinkedIn and X. The work is creating content that demonstrates expertise and building a presence that attracts the right founders.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/website-and-external-presence#the-bottom-line"
+    }
+  ]
+}

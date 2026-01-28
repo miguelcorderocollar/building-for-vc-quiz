@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "part2-intro-001",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the main purpose of Part 2 of the Building for VC guide?",
+      "options": [
+        {"id": "a", "text": "To understand VC fund fundamentals and structures"},
+        {"id": "b", "text": "To learn about the practical tools and technology stacks that VC funds use"},
+        {"id": "c", "text": "To master data modeling and technical foundations"},
+        {"id": "d", "text": "To learn about hiring and team building"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Part 2 focuses on the practical work of building: what tools exist, when to buy versus build, and how to put together a tech stack that serves your fund's needs. It covers research platforms, sourcing tools, CRM, fund operations, portfolio support, fundraising, and websites.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-002",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "multiple",
+      "question": "Which of the following tool categories are covered in Part 2? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Research platforms"},
+        {"id": "b", "text": "Sourcing tools"},
+        {"id": "c", "text": "CRM and deal flow management"},
+        {"id": "d", "text": "Fund operations software"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "Part 2 covers research platforms, sourcing tools, CRM and deal flow management, fund operations, portfolio support, fundraising infrastructure, websites, and external presence. All of these are essential components of a VC fund's tech stack.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-003",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the key principle when deciding whether to build or buy tools for your VC fund?",
+      "options": [
+        {"id": "a", "text": "Always build custom tools for maximum control"},
+        {"id": "b", "text": "Always buy off-the-shelf to save time"},
+        {"id": "c", "text": "Buy commodity functionality, build when you have true differentiation"},
+        {"id": "d", "text": "Build everything to avoid vendor lock-in"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "The key principle is to buy commodity functionality (like CRM basics, email tracking, document signing) and build when you have true differentiation. For example, don't build your own CRM - use Attio or Affinity. But if your fund has a novel sourcing strategy or unique thesis that requires custom tooling, that's worth building.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-004",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "Why is understanding your specific fund's needs critical before building technology?",
+      "options": [
+        {"id": "a", "text": "Because all VC funds operate identically"},
+        {"id": "b", "text": "Because a pre-seed fund needs completely different tools than a growth equity fund"},
+        {"id": "c", "text": "Because technology is too expensive for smaller funds"},
+        {"id": "d", "text": "Because regulations require fund-specific tools"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Not all venture capital is the same. Building software for a pre-seed fund is fundamentally different than building for a growth equity fund. The stage focus, investment strategy, and fund structure determine what data you need to track, how complex your workflows need to be, and what your data model should look like.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-005",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "advanced",
+      "type": "single",
+      "question": "What is the recommended approach when evaluating tools for your VC fund?",
+      "options": [
+        {"id": "a", "text": "Implement all tools immediately to maximize efficiency"},
+        {"id": "b", "text": "Start with research platforms since they're the most important"},
+        {"id": "c", "text": "Sequence implementation: learn what you need, build backbone, then decide on big swings"},
+        {"id": "d", "text": "Focus only on tools that directly generate deal flow"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "The recommended approach is to sequence implementation across three phases: Phase 1 - Learn what your fund needs, Phase 2 - Build the backbone (CRM, fund ops) and quick wins, Phase 3 - Decide on your big swing. Don't try to build everything at once.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-006",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "Which tool category is universally valuable for all VC funds?",
+      "options": [
+        {"id": "a", "text": "Research platforms"},
+        {"id": "b", "text": "Sourcing tools"},
+        {"id": "c", "text": "CRM and deal flow management"},
+        {"id": "d", "text": "Portfolio support platforms"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "Unlike sourcing tools (which work for some funds and not others) or research platforms (which some funds might build), CRM is universally valuable. Every fund tracks relationships and manages deal flow. The question isn't whether you need it, but which tool you use.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-007",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What should you do before writing any code or buying any tools?",
+      "options": [
+        {"id": "a", "text": "Research what other successful funds are using"},
+        {"id": "b", "text": "Understand your specific fund's stage, strategy, and workflows"},
+        {"id": "c", "text": "Set up your development environment"},
+        {"id": "d", "text": "Hire a full engineering team"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "Before writing any code or buying tools, you need to understand your specific fund's stage, strategy, and workflows. Building generic 'VC software' is a recipe for failure. You need to build for a specific fund type based on stage focus, investment strategy, and fund structure.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-008",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "advanced",
+      "type": "multiple",
+      "question": "Which factors determine what technology matters for your fund? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Stage focus (pre-seed vs growth equity)"},
+        {"id": "b", "text": "Investment strategy (thesis-driven vs network-driven)"},
+        {"id": "c", "text": "Fund structure and size"},
+        {"id": "d", "text": "Geographic focus"}
+      ],
+      "correctAnswers": ["a", "b", "c", "d"],
+      "explanation": "All of these factors determine what technology matters: stage focus (a seed fund operates nothing like a growth equity fund), investment strategy (thesis-driven funds need research infrastructure, network-driven funds need relationship tracking), fund structure (multi-fund structures need different data models), and geographic focus (global funds face different challenges than local ones).",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-009",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "beginner",
+      "type": "single",
+      "question": "What is the biggest mistake new technical hires at VC funds make?",
+      "options": [
+        {"id": "a", "text": "Not buying enough tools"},
+        {"id": "b", "text": "Trying to build everything at once"},
+        {"id": "c", "text": "Focusing too much on one tool category"},
+        {"id": "d", "text": "Not hiring enough engineers"}
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "The biggest mistake new technical hires make is trying to build everything at once. They see the full landscape of what's possible and want to implement a comprehensive tech stack from day one. This spreads resources too thin and delivers less value than focusing on fewer things done well.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    },
+    {
+      "id": "part2-intro-010",
+      "chapter": "introduction",
+      "section": "Overview",
+      "difficulty": "intermediate",
+      "type": "single",
+      "question": "What should you prioritize when evaluating tools for your fund?",
+      "options": [
+        {"id": "a", "text": "The tool with the most features"},
+        {"id": "b", "text": "The cheapest option available"},
+        {"id": "c", "text": "Tools that match your fund's specific workflow and needs"},
+        {"id": "d", "text": "Tools that other successful funds are using"}
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "You should prioritize tools that match your fund's specific workflow and needs. Don't assume what works at other funds works at yours. Every fund is different - some operate perfectly well with minimal technology, others gain competitive advantage through sophisticated infrastructure. Figure out which you are before committing to tools.",
+      "sourceUrl": "https://buildingfor.vc/guide/part-2-tech-stack/introduction"
+    }
+  ]
+}

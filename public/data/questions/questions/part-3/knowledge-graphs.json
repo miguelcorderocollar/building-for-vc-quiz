@@ -1,0 +1,290 @@
+[
+  {
+    "id": "knowledge-graphs-001",
+    "chapter": "knowledge-graphs",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is a knowledge graph?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A relational database"
+      },
+      {
+        "id": "b",
+        "text": "A network of entities (nodes) and their relationships (edges). Instead of organizing data into tables, you organize it as a graph where nodes represent entities and edges represent relationships"
+      },
+      {
+        "id": "c",
+        "text": "A spreadsheet"
+      },
+      {
+        "id": "d",
+        "text": "A file system"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "A knowledge graph represents information as a network of entities (nodes) and their relationships (edges). Instead of organizing data into tables with rows and columns, you organize it as a graph where each node represents something (a company, a person, an investor) and each edge represents a relationship between two nodes (works at, invested in, acquired by).",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-002",
+    "chapter": "knowledge-graphs",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "Why do knowledge graphs matter for VC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They don't matter"
+      },
+      {
+        "id": "b",
+        "text": "Venture capital is fundamentally about networks and relationships. Understanding relationships helps with deal flow, diligence, portfolio support, and exits"
+      },
+      {
+        "id": "c",
+        "text": "They're required by law"
+      },
+      {
+        "id": "d",
+        "text": "They're cheaper than databases"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Venture capital is fundamentally about networks and relationships. Understanding these relationships helps with deal flow, diligence, portfolio support, and exits. Knowledge graphs make relationship-heavy queries natural: market mapping, competitor analysis, finding similar companies, tracking networks of people and investors, understanding acquisition patterns.",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-003",
+    "chapter": "knowledge-graphs",
+    "difficulty": "intermediate",
+    "type": "multiple",
+    "question": "What are use cases for knowledge graphs in VC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Market mapping (understanding how companies relate to each other)"
+      },
+      {
+        "id": "b",
+        "text": "Competitor analysis (understanding competitive landscape through relationships)"
+      },
+      {
+        "id": "c",
+        "text": "Company similarity (finding similar companies based on relationships)"
+      },
+      {
+        "id": "d",
+        "text": "Network analysis (tracking who knows whom, co-investment patterns)"
+      },
+      {
+        "id": "e",
+        "text": "Identifying tech hubs (which companies are 'founder factories')"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d", "e"],
+    "explanation": "Use cases for knowledge graphs: Market mapping (understanding how companies relate - competitors, suppliers, customers, founders who worked together), Competitor analysis (how competitors are connected - shared investors, same customers, hiring from each other), Company similarity (similarity based on relationships often reveals more than keywords), Network analysis (who knows whom, co-investment patterns, M&A patterns), Identifying tech hubs (which companies are 'founder factories', which universities produce founders).",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-004",
+    "chapter": "knowledge-graphs",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When should you use knowledge graphs vs. relational databases?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always use knowledge graphs"
+      },
+      {
+        "id": "b",
+        "text": "Use knowledge graphs when queries involve traversing multiple levels of relationships. Stick with relational databases when most queries are about entity attributes, your team knows SQL better, or you're still figuring out your data model"
+      },
+      {
+        "id": "c",
+        "text": "Never use knowledge graphs"
+      },
+      {
+        "id": "d",
+        "text": "Only use relational databases"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Use knowledge graphs when: your core queries involve traversing multiple levels of relationships, you need to visualize network structure, relationship patterns are as important as entity attributes, you're building recommendation systems based on graph similarity. Stick with relational databases when: most queries are about entity attributes, your team is more comfortable with SQL, you're still figuring out your data model, performance is fine with relational databases.",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-005",
+    "chapter": "knowledge-graphs",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the recommended hybrid approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only use graph databases"
+      },
+      {
+        "id": "b",
+        "text": "Model everything in a relational database first, then build knowledge graph views or projections on top when you need relationship-heavy queries"
+      },
+      {
+        "id": "c",
+        "text": "Only use relational databases"
+      },
+      {
+        "id": "d",
+        "text": "Use both equally from the start"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The hybrid approach (recommended): Model everything in a relational database first, then build knowledge graph views or projections on top when you need relationship-heavy queries. Why this works: Your team already knows SQL, relational databases are well-understood and mature, most queries are fine in SQL, you can start simple and add graph capabilities later when you validate the need.",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-006",
+    "chapter": "knowledge-graphs",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is GraphRAG?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A type of database"
+      },
+      {
+        "id": "b",
+        "text": "Graph Retrieval-Augmented Generation - combines knowledge graphs with LLMs to improve how AI systems retrieve and reason about data by using graph structure to find related information"
+      },
+      {
+        "id": "c",
+        "text": "A visualization tool"
+      },
+      {
+        "id": "d",
+        "text": "A query language"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "GraphRAG (Graph Retrieval-Augmented Generation) combines knowledge graphs with large language models to improve how AI systems retrieve and reason about your data. Instead of just retrieving similar text, it can traverse the graph to find related information that might not be textually similar but is semantically connected. This makes retrieval smarter by understanding relationships.",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-007",
+    "chapter": "knowledge-graphs",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are graph database options?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Neo4j (most popular, mature ecosystem, Cypher query language)"
+      },
+      {
+        "id": "b",
+        "text": "Amazon Neptune (managed on AWS, supports Gremlin and SPARQL)"
+      },
+      {
+        "id": "c",
+        "text": "Memgraph (in-memory, streaming data, real-time analytics, Cypher compatible)"
+      },
+      {
+        "id": "d",
+        "text": "FalkorDB (built on Redis, low latency, high throughput, Cypher)"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Graph database options: Neo4j (most popular, mature ecosystem, Cypher query language, good developer experience), Amazon Neptune (managed graph database on AWS, supports both Gremlin and SPARQL, good if already on AWS), Memgraph (in-memory graph database startup, streaming data and real-time analytics, Cypher compatible), FalkorDB (graph database startup built on Redis, emphasizing low latency and high throughput, also uses Cypher).",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-008",
+    "chapter": "knowledge-graphs",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What are key implementation considerations for graph databases?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data modeling (what should be nodes vs. properties, how to model time-varying relationships)"
+      },
+      {
+        "id": "b",
+        "text": "Query performance (depends on graph structure, highly connected nodes can become bottlenecks)"
+      },
+      {
+        "id": "c",
+        "text": "Data freshness (need to keep relational and graph databases in sync)"
+      },
+      {
+        "id": "d",
+        "text": "Team expertise (requires different mental models than relational databases)"
+      },
+      {
+        "id": "e",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswers": ["e"],
+    "explanation": "Key implementation considerations: Data modeling (what should be nodes vs. properties, how to model time-varying relationships, how to handle different relationship types), Query performance (depends heavily on graph structure, highly connected nodes can become bottlenecks, may need denormalization or specialized indexes), Data freshness (if maintaining both relational and graph databases, need to keep them in sync - usually ETL processes that run periodically), Team expertise (requires different mental models, need to learn graph query languages, understand graph algorithms).",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-009",
+    "chapter": "knowledge-graphs",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the difference between nodes and edges in a knowledge graph?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They're the same thing"
+      },
+      {
+        "id": "b",
+        "text": "Nodes are entities (companies, people, investors). Edges are relationships between nodes (works at, invested in, acquired by). Edges can be directional or bidirectional and can have properties"
+      },
+      {
+        "id": "c",
+        "text": "Nodes are relationships, edges are entities"
+      },
+      {
+        "id": "d",
+        "text": "They don't exist in knowledge graphs"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Nodes are entities. In a VC knowledge graph, nodes might represent companies, people, investors, funding rounds, or products. Each node can have properties (name, founding date, sector). Edges are relationships between nodes. These can be directional (Alice works at Acme Corp) or bidirectional (Company A competes with Company B). Edges can also have properties (investment date, amount, ownership percentage).",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  },
+  {
+    "id": "knowledge-graphs-010",
+    "chapter": "knowledge-graphs",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "When should you invest in proper graph infrastructure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediately on day one"
+      },
+      {
+        "id": "b",
+        "text": "If relationship queries become core to your competitive advantage, invest in proper graph infrastructure. Until then, model relationships clearly in relational databases and build graph capabilities as needed"
+      },
+      {
+        "id": "c",
+        "text": "Never invest in graph infrastructure"
+      },
+      {
+        "id": "d",
+        "text": "Only for large funds"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "If relationship queries become core to your competitive advantage, invest in proper graph infrastructure. Until then, model your relationships clearly in relational databases and build graph capabilities as needed. EQT's CompanyKG demonstrates the value at scale (1.17M companies, 51M relationships), but they built this as a research project on top of their existing platform, not as a replacement for it.",
+    "sourceUrl": "/guide/part-3-technical-foundations/knowledge-graphs"
+  }
+]

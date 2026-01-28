@@ -1,0 +1,422 @@
+[
+  {
+    "id": "data-warehousing-001",
+    "chapter": "data-warehousing",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is a data warehouse in the context of a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A physical storage facility for documents"
+      },
+      {
+        "id": "b",
+        "text": "A central repository where you store and analyze data from all your sources: CRM, data vendors, fund operations, portfolio companies, and research platform"
+      },
+      {
+        "id": "c",
+        "text": "A backup system for your CRM"
+      },
+      {
+        "id": "d",
+        "text": "A tool for sending emails"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "A data warehouse is a central repository where you store and analyze data from all your sources: CRM, data vendors, fund operations, portfolio companies, your research platform. Instead of querying different systems separately, you pull everything into one place where you can run analyses that span multiple data sources.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-002",
+    "chapter": "data-warehousing",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "When is the right time to set up a data warehouse for a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before setting up a CRM"
+      },
+      {
+        "id": "b",
+        "text": "After your CRM is set up and being used consistently"
+      },
+      {
+        "id": "c",
+        "text": "Never - spreadsheets are sufficient"
+      },
+      {
+        "id": "d",
+        "text": "Only when you have 100+ portfolio companies"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The right time to set up a data warehouse is after your CRM is set up and being used consistently. The CRM is your source of truth for deal flow and relationships. A data warehouse extends that by tracking historical changes, combining CRM data with external sources, and running analyses that would be painful in your CRM's query interface.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-003",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What database should small VC funds start with for their data warehouse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Snowflake - it's the industry standard"
+      },
+      {
+        "id": "b",
+        "text": "Postgres - it's simpler, cheaper, and works fine for tens of thousands of companies"
+      },
+      {
+        "id": "c",
+        "text": "MongoDB - it's more flexible"
+      },
+      {
+        "id": "d",
+        "text": "Excel - it's free and easy"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For small funds: Start with Postgres. If you're tracking tens of thousands of companies (not millions), Postgres works fine. It's simpler and cheaper than specialized warehouses, your team already knows it, and you can use the same database for applications and analytics.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-004",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is ELT and why is it the modern approach for data warehousing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extract, Load, Transform - loads raw data first, then transforms using SQL inside the warehouse. Simpler because all logic is version-controlled SQL"
+      },
+      {
+        "id": "b",
+        "text": "Extract, Load, Transfer - moves data between cloud providers"
+      },
+      {
+        "id": "c",
+        "text": "Edit, Load, Test - a testing methodology"
+      },
+      {
+        "id": "d",
+        "text": "ETL backwards - transforms data after extraction"
+      }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "The modern approach is ELT (Extract, Load, Transform) using dbt. Traditional ETL transforms data before loading it. ELT loads raw data first, then transforms it using SQL inside the warehouse. This is simpler because all transformation logic is in SQL, version-controlled, and tested like application code.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-005",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is dbt and what role does it play in data warehousing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A database backup tool"
+      },
+      {
+        "id": "b",
+        "text": "A transformation tool that uses SQL models to clean, normalize, and combine data inside the warehouse"
+      },
+      {
+        "id": "c",
+        "text": "A data visualization platform"
+      },
+      {
+        "id": "d",
+        "text": "A CRM system"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "dbt is a transformation tool where you write models (SELECT statements) to transform raw data: clean and normalize, combine sources, calculate metrics, build final tables (marts) for analysis. dbt handles orchestration, testing, and documentation automatically. Analysts query the transformed tables, not raw data.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-006",
+    "chapter": "data-warehousing",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What is the correct layered structure for organizing data in dbt?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raw → Final → Archive"
+      },
+      {
+        "id": "b",
+        "text": "Staging → Intermediate → Marts"
+      },
+      {
+        "id": "c",
+        "text": "Input → Process → Output"
+      },
+      {
+        "id": "d",
+        "text": "Bronze → Silver → Gold"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The layered structure following dbt best practices is: Staging (raw data from sources, lightly cleaned), Intermediate (business logic, joins, entity resolution), and Marts (final tables optimized for specific use cases or business domains that dashboards and analyses query).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-007",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What is the purpose of staging models in dbt?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Complex business logic and calculations"
+      },
+      {
+        "id": "b",
+        "text": "Raw data from sources, lightly cleaned (data types fixed, column names standardized, but otherwise unchanged)"
+      },
+      {
+        "id": "c",
+        "text": "Final tables for dashboards"
+      },
+      {
+        "id": "d",
+        "text": "Backup copies of data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Staging models contain raw data from sources, lightly cleaned (data types fixed, column names standardized, but otherwise unchanged). One staging model per source table. These models just make raw data easier to work with downstream and isolate you from source changes.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-008",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why are staging models valuable when source schemas change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They automatically adapt to changes"
+      },
+      {
+        "id": "b",
+        "text": "They isolate you from source changes - if PitchBook changes their schema, you fix the staging model, not every downstream model"
+      },
+      {
+        "id": "c",
+        "text": "They prevent changes from happening"
+      },
+      {
+        "id": "d",
+        "text": "They aren't valuable for schema changes"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Staging isolates you from source changes. If PitchBook changes their schema, you fix the staging model, not every downstream model. This makes maintenance much easier as you only need to update one place when external data formats change.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-009",
+    "chapter": "data-warehousing",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What are incremental models in dbt used for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Slowly building tables over time"
+      },
+      {
+        "id": "b",
+        "text": "Large tables with historical data - they only process new or changed data rather than rebuilding the entire table"
+      },
+      {
+        "id": "c",
+        "text": "Testing data quality"
+      },
+      {
+        "id": "d",
+        "text": "Deleting old data"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For large tables with historical data (every deal flow snapshot, every change in company data), use incremental models that only process new or changed data rather than rebuilding the entire table. This keeps transformations fast as data grows.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-010",
+    "chapter": "data-warehousing",
+    "difficulty": "beginner",
+    "type": "single",
+    "question": "What is the biggest benefit of having a data warehouse for a VC fund?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pre-built dashboards"
+      },
+      {
+        "id": "b",
+        "text": "Being able to answer ad-hoc questions quickly when GPs ask them"
+      },
+      {
+        "id": "c",
+        "text": "Reduced data vendor costs"
+      },
+      {
+        "id": "d",
+        "text": "Automatic investment decisions"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "The biggest benefit of having a data warehouse isn't pre-built dashboards. It's being able to answer questions quickly when GPs ask them. 'How many companies did we pass on in 2023 that later raised Series B?' With data in a warehouse, these queries are straightforward SQL. Without it, they require manually pulling data from multiple systems.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-011",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "What tools are recommended for building quick dashboards on top of a data warehouse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excel and PowerPoint"
+      },
+      {
+        "id": "b",
+        "text": "Tools like Hex or Mode - write SQL queries and turn them into interactive visualizations"
+      },
+      {
+        "id": "c",
+        "text": "Custom React applications"
+      },
+      {
+        "id": "d",
+        "text": "Email reports"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "When you need dashboards, tools like Hex or Mode let you write SQL queries against your warehouse and turn them into interactive visualizations. These are much faster to build than custom dashboards, and they're easy to iterate on and share with the team. You can spin up a dashboard in an hour or two.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-012",
+    "chapter": "data-warehousing",
+    "difficulty": "advanced",
+    "type": "multiple",
+    "question": "What are common mistakes in data warehousing for VC funds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Over-complicating early with sophisticated models on day one"
+      },
+      {
+        "id": "b",
+        "text": "Not following dbt patterns and inventing your own conventions"
+      },
+      {
+        "id": "c",
+        "text": "Choosing the wrong warehouse for your scale (Snowflake for a 3-person fund)"
+      },
+      {
+        "id": "d",
+        "text": "Not capturing history (only storing current state)"
+      }
+    ],
+    "correctAnswers": ["a", "b", "c", "d"],
+    "explanation": "Common mistakes include: over-complicating early (build sophisticated models on day one), not following dbt patterns (inventing your own structure), choosing the wrong warehouse for your scale (Snowflake for a 3-person fund is overkill, Postgres for billions of rows is inadequate), and not capturing history (losing the ability to analyze changes over time).",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-013",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "Why should you capture historical data in your warehouse from the start?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It's required by law"
+      },
+      {
+        "id": "b",
+        "text": "Six months from now when a GP asks 'how many companies did we talk to in Q3?', you have the data. Without a warehouse, that history might be lost"
+      },
+      {
+        "id": "c",
+        "text": "To reduce storage costs"
+      },
+      {
+        "id": "d",
+        "text": "To make queries faster"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Even if you're not immediately running complex analyses, having a data warehouse captures history. Six months from now, when a GP asks 'how many companies did we talk to in Q3 and what happened to them?', you have the data. Without a warehouse, that history might be lost or scattered across systems.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-014",
+    "chapter": "data-warehousing",
+    "difficulty": "intermediate",
+    "type": "single",
+    "question": "When should you migrate from Postgres to a specialized warehouse like Snowflake?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediately - Snowflake is always better"
+      },
+      {
+        "id": "b",
+        "text": "When Postgres performance degrades with millions of companies and complex aggregations"
+      },
+      {
+        "id": "c",
+        "text": "Never - Postgres is always sufficient"
+      },
+      {
+        "id": "d",
+        "text": "After raising your first fund"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "For larger funds: When Postgres performance degrades (millions of companies, complex aggregations), migrate to a specialized warehouse. The migration is straightforward - you're already structuring data in a warehouse pattern, just moving to a more powerful database.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  },
+  {
+    "id": "data-warehousing-015",
+    "chapter": "data-warehousing",
+    "difficulty": "advanced",
+    "type": "single",
+    "question": "What Postgres extensions can provide analytics database benefits without migrating to Snowflake?",
+    "options": [
+      {
+        "id": "a",
+        "text": "pg_admin and pg_backup"
+      },
+      {
+        "id": "b",
+        "text": "pg_mooncake (Iceberg/Delta Lake on S3) and Hydra (columnar storage with 200x+ speedups)"
+      },
+      {
+        "id": "c",
+        "text": "pg_crypto and pg_ssl"
+      },
+      {
+        "id": "d",
+        "text": "There are no such extensions"
+      }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Before migrating to a specialized warehouse, consider Postgres extensions: pg_mooncake (Iceberg/Delta Lake format on S3) or Hydra (columnar storage, 200x+ speedups for analytics). These let you keep Postgres while getting analytics database benefits.",
+    "sourceUrl": "/guide/part-3-technical-foundations/data-warehousing"
+  }
+]
