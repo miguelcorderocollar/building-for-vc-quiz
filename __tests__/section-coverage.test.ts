@@ -4,6 +4,9 @@ import * as path from "path";
 /**
  * This test verifies that all sections from the original documentation
  * have corresponding question JSON files with actual questions.
+ * 
+ * Note: Data Providers sections are individual JSON files but are combined
+ * into a single quiz in the UI for better user experience.
  */
 
 // All sections from the original docs (C:\Users\mcorderocollar\Dev\Other\building-for-vc\guide)

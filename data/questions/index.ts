@@ -190,71 +190,27 @@ export const QUIZZES: Quiz[] = [
     chapter: "emerging-trends",
     totalQuestions: 10,
   },
-  // Data Providers Subdirectory
+  // Data Providers - Combined quiz (aggregates all data provider topics)
   {
-    id: "data-providers-overview",
-    title: "Data Providers Overview",
-    description: "Understanding data provider landscape",
+    id: "data-providers",
+    title: "Data Providers",
+    description: "Company, people, and signal data sources, access patterns, and vendor considerations",
     part: 3,
-    chapter: "data-providers/index",
-    totalQuestions: 8,
+    chapter: "data-providers", // Special marker for combined quiz
+    totalQuestions: 78, // Sum of all data provider questions
   },
-  {
-    id: "accessing-data",
-    title: "Accessing Data",
-    description: "API vs file delivery and authentication",
-    part: 3,
-    chapter: "data-providers/accessing-data",
-    totalQuestions: 10,
-  },
-  {
-    id: "company-data",
-    title: "Company Data Providers",
-    description: "PitchBook, Crunchbase, Dealroom, and alternatives",
-    part: 3,
-    chapter: "data-providers/company-data",
-    totalQuestions: 12,
-  },
-  {
-    id: "people-data",
-    title: "People Data Providers",
-    description: "Founder and team data sources",
-    part: 3,
-    chapter: "data-providers/people-data",
-    totalQuestions: 8,
-  },
-  {
-    id: "signal-data",
-    title: "Signal Data Providers",
-    description: "Early and late stage signal providers",
-    part: 3,
-    chapter: "data-providers/signal-data",
-    totalQuestions: 10,
-  },
-  {
-    id: "other-data",
-    title: "Other Data Sources",
-    description: "Market, patent, and sector-specific data",
-    part: 3,
-    chapter: "data-providers/other-data",
-    totalQuestions: 8,
-  },
-  {
-    id: "data-provider-considerations",
-    title: "Data Provider Considerations",
-    description: "Cost management and vendor relationships",
-    part: 3,
-    chapter: "data-providers/considerations",
-    totalQuestions: 12,
-  },
-  {
-    id: "starter-kits",
-    title: "Data Provider Starter Kits",
-    description: "Recommended stacks by fund type",
-    part: 3,
-    chapter: "data-providers/starter-kits",
-    totalQuestions: 10,
-  },
+];
+
+// Data provider chapter paths for the combined quiz
+export const DATA_PROVIDER_CHAPTERS = [
+  "data-providers/index",
+  "data-providers/accessing-data",
+  "data-providers/company-data",
+  "data-providers/people-data",
+  "data-providers/signal-data",
+  "data-providers/other-data",
+  "data-providers/considerations",
+  "data-providers/starter-kits",
 ];
 
 export function getQuizById(id: string): Quiz | undefined {
@@ -282,9 +238,51 @@ export function getGlobalQuiz(): Quiz {
 
 // Get all quiz paths for loading questions (used by global quiz)
 export function getAllQuizPaths(): { path: string; part: number }[] {
-  return QUIZZES.map((quiz) => ({
-    // Always prepend part-X/ to the chapter path
-    path: `part-${quiz.part}/${quiz.chapter}`,
-    part: quiz.part,
-  }));
+  const paths: { path: string; part: number }[] = [];
+  
+  for (const quiz of QUIZZES) {
+    if (quiz.chapter === "data-providers") {
+      // Expand data-providers to all individual chapter paths
+      for (const chapter of DATA_PROVIDER_CHAPTERS) {
+        paths.push({ path: `part-3/${chapter}`, part: 3 });
+      }
+    } else {
+      paths.push({
+        path: `part-${quiz.part}/${quiz.chapter}`,
+        part: quiz.part,
+      });
+    }
+  }
+  
+  return paths;
+}
+
+// Get quiz paths for a specific part (used by part quizzes)
+export function getQuizPathsByPart(part: 1 | 2 | 3): string[] {
+  const paths: string[] = [];
+  
+  for (const quiz of QUIZZES.filter((q) => q.part === part)) {
+    if (quiz.chapter === "data-providers") {
+      // Expand data-providers to all individual chapter paths
+      for (const chapter of DATA_PROVIDER_CHAPTERS) {
+        paths.push(`part-3/${chapter}`);
+      }
+    } else {
+      paths.push(`part-${quiz.part}/${quiz.chapter}`);
+    }
+  }
+  
+  return paths;
+}
+
+// Get paths for a specific quiz (handles data-providers special case)
+export function getQuizChapterPaths(quizId: string): string[] {
+  const quiz = getQuizById(quizId);
+  if (!quiz) return [];
+  
+  if (quiz.chapter === "data-providers") {
+    return DATA_PROVIDER_CHAPTERS.map((chapter) => `part-3/${chapter}`);
+  }
+  
+  return [`part-${quiz.part}/${quiz.chapter}`];
 }

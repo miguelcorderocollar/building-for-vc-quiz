@@ -7,7 +7,7 @@ import { QuestionCard } from "@/components/quiz/question-card";
 import { AnswerFeedback } from "@/components/quiz/answer-feedback";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { getQuizById, getQuizChapterPaths } from "@/data/questions";
+import { getQuizPathsByPart } from "@/data/questions";
 import type { Question, QuizAnswer } from "@/types/quiz";
 import {
   selectRandomQuestions,
@@ -18,16 +18,22 @@ import {
 import { addQuizResult, clearCurrentQuizProgress } from "@/lib/storage";
 import { X } from "lucide-react";
 
+const PART_TITLES = {
+  1: "Understanding VC",
+  2: "The VC Tech Stack",
+  3: "Technical Foundations",
+};
+
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ partNum: string }>;
 }
 
-export default function QuizPlayPage({ params }: PageProps) {
-  const { slug } = use(params);
+export default function PartQuizPlayPage({ params }: PageProps) {
+  const { partNum } = use(params);
+  const partNumber = parseInt(partNum) as 1 | 2 | 3;
   const router = useRouter();
   const searchParams = useSearchParams();
-  const quiz = getQuizById(slug);
-  const count = parseInt(searchParams.get("count") || "10");
+  const count = parseInt(searchParams.get("count") || "20");
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,19 +44,27 @@ export default function QuizPlayPage({ params }: PageProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Load questions on mount
-  useEffect(() => {
-    const loadQuestions = async () => {
-      if (!quiz) return;
+  const partTitle = PART_TITLES[partNumber] || `Part ${partNumber}`;
 
+  // Validate part number
+  const isValidPart = [1, 2, 3].includes(partNumber);
+
+  // Load questions from part chapters on mount
+  useEffect(() => {
+    if (!isValidPart) {
+      setError("Invalid part number.");
+      setIsLoading(false);
+      return;
+    }
+
+    const loadPartQuestions = async () => {
       try {
         setError(null);
-        // Get all chapter paths for this quiz (handles data-providers combined quiz)
-        const chapterPaths = getQuizChapterPaths(quiz.id);
+        const quizPaths = getQuizPathsByPart(partNumber);
         
-        // Fetch all chapter files in parallel
+        // Fetch all question files in parallel
         const responses = await Promise.allSettled(
-          chapterPaths.map(async (path) => {
+          quizPaths.map(async (path) => {
             const response = await fetch(`/data/questions/${path}.json`);
             if (!response.ok) {
               console.warn(`Failed to load questions from ${path}`);
@@ -69,10 +83,10 @@ export default function QuizPlayPage({ params }: PageProps) {
           .flatMap((result) => result.value);
 
         if (allQuestions.length === 0) {
-          throw new Error("No questions available for this quiz.");
+          throw new Error("No questions available. Please try again later.");
         }
 
-        // Select random subset
+        // Select random subset from all questions
         const selected = selectRandomQuestions(allQuestions, count);
         if (selected.length === 0) {
           throw new Error("Unable to select questions. Please try a different quiz length.");
@@ -85,32 +99,22 @@ export default function QuizPlayPage({ params }: PageProps) {
       }
     };
 
-    loadQuestions();
-  }, [quiz, count]);
-
-  if (!quiz) {
-    return (
-      <div className="container mx-auto px-4 md:px-6 py-12 text-center">
-        <h1 className="text-2xl font-bold mb-4">Quiz Not Found</h1>
-        <p className="text-muted-foreground mb-6">The quiz you&apos;re looking for doesn&apos;t exist.</p>
-        <Button onClick={() => router.push("/quiz")}>Back to Quizzes</Button>
-      </div>
-    );
-  }
+    loadPartQuestions();
+  }, [count, partNumber, isValidPart]);
 
   if (isLoading) {
     return (
       <div className="container mx-auto px-4 md:px-6 py-12 text-center">
-        <p className="text-muted-foreground">Loading quiz...</p>
+        <p className="text-muted-foreground">Loading {partTitle} quiz...</p>
       </div>
     );
   }
 
-  if (error) {
+  if (error || !isValidPart) {
     return (
       <div className="container mx-auto px-4 md:px-6 py-12 text-center">
         <h1 className="text-2xl font-bold mb-4">Error Loading Quiz</h1>
-        <p className="text-muted-foreground mb-6">{error}</p>
+        <p className="text-muted-foreground mb-6">{error || "Invalid part number."}</p>
         <div className="flex gap-4 justify-center">
           <Button onClick={() => router.push("/quiz")}>Back to Quizzes</Button>
           <Button variant="outline" onClick={() => window.location.reload()}>Try Again</Button>
@@ -123,7 +127,7 @@ export default function QuizPlayPage({ params }: PageProps) {
     return (
       <div className="container mx-auto px-4 md:px-6 py-12 text-center">
         <h1 className="text-2xl font-bold mb-4">No Questions Available</h1>
-        <p className="text-muted-foreground mb-6">No questions are available for this quiz.</p>
+        <p className="text-muted-foreground mb-6">No questions are available for {partTitle}.</p>
         <Button onClick={() => router.push("/quiz")}>Back to Quizzes</Button>
       </div>
     );
@@ -150,7 +154,6 @@ export default function QuizPlayPage({ params }: PageProps) {
 
   const handleNext = () => {
     if (isLastQuestion) {
-      // Quiz complete - save result and navigate
       const { score, total, percentage } = calculateScore([
         ...answers,
         {
@@ -164,8 +167,8 @@ export default function QuizPlayPage({ params }: PageProps) {
       const resultId = generateResultId();
       const result = {
         id: resultId,
-        quizId: quiz.id,
-        quizTitle: quiz.title,
+        quizId: `part-${partNumber}`,
+        quizTitle: partTitle,
         score,
         total,
         percentage,
@@ -185,7 +188,6 @@ export default function QuizPlayPage({ params }: PageProps) {
       clearCurrentQuizProgress();
       router.push(`/results/${resultId}`);
     } else {
-      // Move to next question
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswers([]);
       setIsSubmitted(false);
@@ -199,12 +201,11 @@ export default function QuizPlayPage({ params }: PageProps) {
   return (
     <>
       <div className="min-h-screen w-full bg-muted/30">
-        {/* Header */}
         <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
           <div className="w-full">
             <div className="mx-auto max-w-3xl px-4 md:px-6 py-4">
               <div className="flex items-center justify-between mb-4">
-                <h1 className="font-semibold">{quiz.title}</h1>
+                <h1 className="font-semibold text-sm sm:text-base">{partTitle}</h1>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -218,9 +219,8 @@ export default function QuizPlayPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Question */}
         <div className="w-full">
-          <div className="mx-auto max-w-3xl px-4 md:px-6 py-12 space-y-6">
+          <div className="mx-auto max-w-3xl px-4 md:px-6 py-8 sm:py-12 space-y-6">
             <QuestionCard
               question={currentQuestion}
               questionNumber={currentIndex + 1}
@@ -243,7 +243,6 @@ export default function QuizPlayPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Exit Confirmation Dialog */}
       <Dialog open={showExitDialog} onOpenChange={setShowExitDialog}>
         <DialogContent>
           <DialogHeader>

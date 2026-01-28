@@ -25,8 +25,15 @@ function SheetTrigger({ className, ...props }: SheetPrimitive.Trigger.Props) {
   )
 }
 
-function SheetClose({ ...props }: SheetPrimitive.Close.Props) {
-  return <SheetPrimitive.Close data-slot="sheet-close" {...props} />
+function SheetClose({ asChild, ...props }: SheetPrimitive.Close.Props) {
+  // Only pass asChild when it's explicitly true to prevent it from leaking to DOM
+  return (
+    <SheetPrimitive.Close
+      data-slot="sheet-close"
+      {...(asChild === true ? { asChild } : {})}
+      {...props}
+    />
+  )
 }
 
 function SheetPortal({ ...props }: SheetPrimitive.Portal.Props) {
