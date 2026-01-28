@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "8FEm09MksiGqIrEv84UJ5ybDCh7Z8nYgCKzH6JhYTTI",
+  },
   // Icons are handled automatically by Next.js via app/icon.png and app/apple-icon.png
   manifest: "/site.webmanifest",
 };
